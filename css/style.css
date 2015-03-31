@@ -282,7 +282,7 @@ body {
   background-repeat: repeat;
   background-image: url(../img/bg-2.png);
   background-position: top center;
-  background-color: #FFF;
+  background-color: #000;
   height: 650px;
   font-family: 'Source Sans Pro', Sans-serif;
   text-align: center;
@@ -344,7 +344,7 @@ body {
     background-repeat: repeat;
     background-image: url(../img/bg-2.png);
     background-position: top center;
-    background-color: #FFF;
+    background-color: #000;
     height: 700px;
     font-family: 'Source Sans Pro', Sans-serif;
     text-align: center;
