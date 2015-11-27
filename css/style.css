@@ -11,145 +11,83 @@ body {
   width: inherit;
 }
 
-/* HOME
---------------------------------- */
+/* ---- LARGE DEVICES --- */
 
-#home {
-  color: #676767;
-  height: 500px;
-  margin-top: 0;
-  background-image: url(../img/back-5-new-mobile.jpg);
-  background-color: #f5f7f6;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: left top;
-  text-align: center;
-  z-index: 10;
-  overflow: hidden;
-}
+/* --- HOME --- */
 
-@media (min-width: 481px) {
-    #home {
-    color: #676767;
-    height: 800px;
+@media (min-width: 1200px) {
+  #home {
+    color: #333333;
+    height: auto;
     margin-top: 0;
     background-image: url(../img/back-5-new.jpg);
     background-color: #f5f7f6;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center top;
-    text-align: center;
     z-index: 10;
     overflow: hidden;
   }
-}
-
-@media (min-width: 981px) {
-    #home {
-    color: #676767;
-    height: 800px;
-    margin-top: 0;
-    background-image: url(../img/back-5-new.jpg);
-    background-color: #f5f7f6;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: center top;
-    text-align: center;
-    z-index: 10;
-    overflow: hidden;
-  }
-}
-
-/* COVER
---------------------------------- */
-
-#cover {
-  margin: 30px 0 0 0;
-}
-
-#profile-cover img {
-  max-width: 250px;
-  min-width: 100px;
-  position: relative;
-  opacity: 1;
-  -webkit-transition: all .8s ease-in-out;
-  -moz-transition: all .8s ease-in-out;
-  -o-transition: all .8s ease-in-out;
-  transition: all .8s ease-in-out;
-}
-
-#cover i {
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  width: 40px;
-  height: 40px;
-  padding-top: 2px;
-  margin-top: 20px;
-  border: 2px solid #474646;
-  border-radius: 100%;
-  color: #474646;
-}
-
-#nav img {
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  width: 50px;
-  margin-top: 20px;
-  margin-bottom: 30px;
-  border: 1px solid #474646;
-}
-
-@media (min-width: 481px) {
   #cover {
-    margin: 100px 0 0 0;
+    margin: 90px 0;
   }
-
-  #profile-cover img {
-    max-width: 350px;
-    min-width: 100px;
-    position: relative;
-    opacity: 1;
-    -webkit-transition: all .8s ease-in-out;
-    -moz-transition: all .8s ease-in-out;
-    -o-transition: all .8s ease-in-out;
-    transition: all .8s ease-in-out;
+  #cover #links {
+    float: right;
+    margin-bottom: 33px;
   }
-
-  #cover i {
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-    width: 50px;
-    height: 50px;
-    padding-top: 7px;
-    margin-top: 20px;
-    border: 2px solid #474646;
+  #cover #links i {
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    text-align: center;
+    font-size: 1.500em;
+    width: 43px;
+    height: 43px;
+    padding-top: 9px;
+    margin: 0 5px 7px 0;
+    border: 2px solid #333333;
     border-radius: 100%;
-    color: #474646;
+    color: #333333;
   }
-
-  #nav img {
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-    width: 50px;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    border: 1px solid #000;
+  #cover #links i:hover {
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    background-color: #333333;
+    color: #FFC492;
   }
-}
-
-@media (min-width: 981px) {
-  #cover {
-    margin: 60px 0 0 0;
+  #profile-cover p {
+    margin-top: 23px;
+    margin-bottom: 53px;
+    text-align: left;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.438em;
   }
-
+  #profile-cover p > a {
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    background-color: rgba(251, 251, 251, 0.5);
+    color: #333;
+    font-weight: lighter;
+    padding: 0 4px 3px 4px;
+    border-radius: 3px;
+  }
+  #profile-cover p > a:hover, p > a:active  {
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    background-color: rgba(250, 180, 162, .5);
+    color: #333;
+    text-decoration: none;
+    font-weight: regular;
+    padding: 0 4px 3px 4px;
+    border-radius: 3px;
+  }
   #profile-cover img {
     max-width: 450px;
     min-width: 100px;
@@ -160,69 +98,40 @@ body {
     -o-transition: all .8s ease-in-out;
     transition: all .8s ease-in-out;
   }
-
-  #cover i {
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-    width: 60px;
-    height: 60px;
-    padding-top: 13px;
-    margin-top: 50px;
-    border: 2px solid #474646;
-    border-radius: 100%;
-    color: #474646;
+  #cover #nav {
+    padding: 25px 0px 43px 64px;
+    background-image: url('../img/port-background.png');
+    background-size: ;
+    background-repeat: no-repeat;
+  }
+  #cover #nav a {
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    padding: 37px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.313em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 1px;
+  }
+  #cover #nav a:hover {
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    padding: 37px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.313em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgba(250, 180, 162, 1);
   }
 
-  #cover i:hover {
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-    margin-top: 30px;
-  }
-}
+  /* --- PORTFOLIO --- */
 
-/* PORTAFOLIO
---------------------------------- */
-
-#posters {
-  background-attachment: fixed;
-  background-repeat: repeat;
-  background-position: center;
-  height: auto;
-  background-color: #f5f7f6;
-  padding: 0;
-  text-align: center;
-  padding-bottom: 40px;
-}
-
-#posters h3 {
-  margin-top: 25px;
-  margin-bottom: 25px;
-  color: #474646;
-  font-family: 'Source Sans Pro', Sans-serif;
-  font-weight: 200;
-}
-
-#posters p {
-  font-family: 'Source Sans Pro', Sans-serif;
-  font-size: .8em;
-}
-
-.thumbnail {
-  display: inline-block;
-  width: 80%;
-  padding: 0;
-  margin: 20px 5px 10px 5px;
-  background-color: rgba(0,0,0,0);
-  border: none;
-  border-radius: 4px;
-  transition: all 0.2s ease-in-out 0s;
-}
-
-@media (min-width: 481px) {
   #posters {
     background-attachment: fixed;
     background-repeat: repeat;
@@ -231,78 +140,717 @@ body {
     background-color: #f5f7f6;
     padding: 0;
     text-align: center;
-    padding-bottom: 90px;
   }
-
   #posters h3 {
-    margin-top: 25px;
-    margin-bottom: 25px;
-    color: #474646;
-    font-family: 'Source Sans Pro', Sans-serif;
-    font-weight: 200;
+    display: none;
   }
-
   #posters p {
-    font-family: 'Source Sans Pro', Sans-serif;
+    font-family: 'Ubuntu', Sans-serif;
     font-size: .8em;
+    text-align: left;
+    margin-left: 30px;
   }
-
+  #posters a {
+    text-decoration: underline;
+    color: #333;
+  }
   .thumbnail {
     display: inline-block;
     padding: 0;
+    width: 90%;
     margin: 20px 0 10px 0;
     background-color: rgba(0,0,0,0);
     border: none;
-    border-radius: 4px;
-    transition: all 0.2s ease-in-out 0s;
-    -webkit-transition: all 0.2s ease-in-out 0s;
-    -moz-transition: all 0.2s ease-in-out 0s;
-    -o-transition: all 0.2s ease-in-out 0s;
-    box-shadow: 0 10px 6px -6px #888;
-    -webkit-box-shadow: 0 10px 6px -6px #888;
-    -moz-box-shadow: 0 10px 6px -6px #888;
-    box-shadow: 0 10px 6px -6px #888;
-  }
-}
-
-@media (min-width: 981px) {
-  #posters {
-    background-attachment: fixed;
-    background-repeat: repeat;
-    background-position: center;
-    height: auto;
-    background-color: #f5f7f6;
-    padding: 0;
-    text-align: center;
-    padding-bottom: 90px;
-  }
-
-  #posters h3 {
-    margin-top: 25px;
-    margin-bottom: 25px;
-    color: #474646;
-    font-family: 'Source Sans Pro', Sans-serif;
-    font-weight: 200;
-  }
-
-  #posters p {
-    font-family: 'Source Sans Pro', Sans-serif;
-    font-size: .8em;
-  }
-
-  .thumbnail {
-    display: inline-block;
-    padding: 0;
-    margin: 20px 0 10px 0;
-    background-color: rgba(0,0,0,0);
     border-radius: 3px;
     transition: all 0.2s ease-in-out 0s;
     -webkit-transition: all 0.2s ease-in-out 0s;
     -moz-transition: all 0.2s ease-in-out 0s;
     -o-transition: all 0.2s ease-in-out 0s;
-    box-shadow: 0 2px -1px 2px rgba(136,136,136,.7);
-    -webkit-box-shadow: 0 2px -1px 2px rgba(136,136,136,.7);
-    -moz-box-shadow: 0 2px -1px 2px rgba(136,136,136,.7);
+    -webkit-box-shadow: 0 10px 6px -6px #888;;
+    -moz-box-shadow: 0 10px 6px -6px #888;;
+    box-shadow: 0 10px 6px -6px #888;
+  }
+  #posters #bottom-btn i {
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    width: 60px;
+    height: 60px;
+    border: 2px solid;
+    border-color: #333;
+    border-radius: 100%;
+    padding: 8px 9px 9px 12px;
+    margin-top: 33px;
+    margin-bottom: 33px;
+    color:#333;
+    font-size: 2.600em;
+  }
+  #icons i:hover {
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    padding: 14px;
+    margin: 10px;
+    border-color: rgba(90,90,90,0);
+  }
+}
+
+/* ---- MEDIUM DEVICES ---- */
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  #home {
+    color: #333333;
+    height: auto;
+    margin-top: 0;
+    background-image: url(../img/back-5-new.jpg);
+    background-color: #f5f7f6;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center top;
+    z-index: 10;
+    overflow: hidden;
+  }
+  #cover {
+    margin: 120px 0;
+  }
+  #cover #links {
+    float: right;
+    margin-bottom: 33px;
+  }
+  #cover #links i {
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    text-align: center;
+    font-size: 1.500em;
+    width: 43px;
+    height: 43px;
+    padding-top: 9px;
+    margin: 0 5px 7px 0;
+    border: 2px solid #333333;
+    border-radius: 100%;
+    color: #333333;
+  }
+  /*  #cover #links i:hover {
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    background-color: #333333;
+    color: #FFC492;
+  }*/
+  #profile-cover p {
+    margin-top: 33px;
+    margin-bottom: 33px;
+    text-align: left;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.313em;
+  }
+  #profile-cover p > a {
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    background-color: rgba(251, 251, 251, 0.5);
+    color: #333;
+    font-weight: lighter;
+    padding: 0 4px 3px 4px;
+    border-radius: 3px;
+  }
+  #profile-cover img {
+    max-width: 450px;
+    min-width: 100px;
+    position: relative;
+    opacity: 1;
+    -webkit-transition: all .8s ease-in-out;
+    -moz-transition: all .8s ease-in-out;
+    -o-transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out;
+  }
+  #cover #nav {
+    margin-top: 30px;
+    padding: 20px 20px 83px 54px;
+    background-image: url('../img/port-background.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  #cover #nav a {
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    padding: 30px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.125em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+  }
+  /*  #cover #nav a:hover {
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    padding: 30px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.313em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+  }*/
+
+  /* --- PORTFOLIO --- */
+
+  #posters {
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-position: center;
+    height: auto;
+    background-color: #f5f7f6;
+    padding: 0;
+    text-align: center;
+  }
+  #posters h3 {
+    display: none;
+  }
+  #posters p {
+    font-family: 'Ubuntu', Sans-serif;
+    font-size: .8em;
+    text-align: left;
+    margin-left: 15px;
+  }
+  #posters a {
+    text-decoration: underline;
+    color: #333;
+  }
+  .thumbnail {
+    display: inline-block;
+    padding: 0;
+    width: 100%;
+    margin: 20px 0 10px 0;
+    background-color: rgba(0,0,0,0);
+    border: none;
+    border-radius: 3px;
+    transition: all 0.2s ease-in-out 0s;
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    -moz-transition: all 0.2s ease-in-out 0s;
+    -o-transition: all 0.2s ease-in-out 0s;
+    -webkit-box-shadow: 0 10px 6px -6px #888;;
+    -moz-box-shadow: 0 10px 6px -6px #888;;
+    box-shadow: 0 10px 6px -6px #888;
+  }
+  #posters #bottom-btn i {
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    width: 60px;
+    height: 60px;
+    border: 2px solid;
+    border-color: #333;
+    border-radius: 100%;
+    padding: 7px 9px 9px 10px;
+    margin-top: 33px;
+    margin-bottom: 33px;
+    color:#333;
+    font-size: 2.600em;
+  }
+  /*  #icons i:hover {
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    padding: 14px;
+    margin: 10px;
+    border-color: rgba(90,90,90,0);
+  }*/
+}
+
+/* ---- SMALL DEVICES ---- */
+
+@media (min-width: 768px) and (max-width: 992px) {
+  #home {
+    color: #333333;
+    height: auto;
+    margin-top: 0;
+    background-image: url(../img/back-5-new.jpg);
+    background-color: #f5f7f6;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center top;
+    z-index: 10;
+    overflow: hidden;
+  }
+  #cover {
+    margin: 110px 0;
+  }
+  #cover #links {
+    text-align: center;
+    margin-bottom: 33px;
+  }
+  #cover #links i {
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    text-align: center;
+    font-size: 2.500em;
+    width: 63px;
+    height: 63px;
+    padding-top: 12px;
+    margin: 0 5px 7px 0;
+    border: 3px solid #333333;
+    border-radius: 100%;
+    color: #333333;
+  }
+  #cover #links i:hover {
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    background-color: #333333;
+    color: #FFC492;
+  }
+  #profile-cover p {
+    margin-top: 0px;
+    margin-bottom: 33px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.480em;
+  }
+  #profile-cover p > a {
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    background-color: rgba(251, 251, 251, 0.5);
+    color: #333;
+    font-weight: lighter;
+    padding: 0 4px 3px 4px;
+    border-radius: 3px;
+  }
+  #profile-cover img {
+    margin-left: auto;
+    margin-top: 63px;
+    margin-bottom: 53px;
+    min-width: 100px;
+    position: relative;
+    opacity: 1;
+    -webkit-transition: all .8s ease-in-out;
+    -moz-transition: all .8s ease-in-out;
+    -o-transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out;
+  }
+  #cover #nav {
+    margin-top: 30px;
+    margin-bottom: 65px;
+    padding: 24px 20px 83px 58px;
+    background-image: url('../img/port-background.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  #cover #nav a {
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    padding: 30px 0 30px 50px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.500em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  /* --- PORTFOLIO --- */
+
+  #posters {
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-position: center;
+    height: auto;
+    background-color: #f5f7f6;
+    padding: 0;
+    text-align: center;
+  }
+  #posters h3 {
+    display: none;
+  }
+  #posters p {
+    font-family: 'Ubuntu', Sans-serif;
+    font-size: .8em;
+    text-align: left;
+    margin-left: 15px;
+  }
+  #posters a {
+    text-decoration: underline;
+    color: #333;
+  }
+  .thumbnail {
+    display: inline-block;
+    padding: 0;
+    width: 100%;
+    margin: 20px 0 10px 0;
+    background-color: rgba(0,0,0,0);
+    border: none;
+    border-radius: 3px;
+    transition: all 0.2s ease-in-out 0s;
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    -moz-transition: all 0.2s ease-in-out 0s;
+    -o-transition: all 0.2s ease-in-out 0s;
+    -webkit-box-shadow: 0 10px 6px -6px #888;;
+    -moz-box-shadow: 0 10px 6px -6px #888;;
+    box-shadow: 0 10px 6px -6px #888;
+  }
+  #posters #bottom-btn i {
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    width: 60px;
+    height: 60px;
+    border: 2px solid;
+    border-color: #333;
+    border-radius: 100%;
+    padding: 7px 9px 9px 10px;
+    margin-top: 33px;
+    margin-bottom: 33px;
+    color:#333;
+    font-size: 2.600em;
+  }
+}
+
+/* ---- MOBILE ---- */
+
+@media (min-width: 480px) and (max-width: 767px){
+  #home {
+    color: #333333;
+    height: auto;
+    margin-top: 0;
+    background-image: url(../img/back-5-new.jpg);
+    background-color: #f5f7f6;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center top;
+    background-size: contain;
+    z-index: 10;
+    overflow: hidden;
+  }
+  #cover {
+    margin: 30px 0;
+  }
+  #cover #links {
+    float: right;
+    margin-bottom: 33px;
+  }
+  #cover #links i {
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    text-align: center;
+    font-size: 1.500em;
+    width: 43px;
+    height: 43px;
+    padding-top: 9px;
+    margin: 0 5px 7px 0;
+    border: 2px solid #333333;
+    border-radius: 100%;
+    color: #333333;
+  }
+  #cover #links i:hover {
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    background-color: #333333;
+    color: #FFC492;
+  }
+  #profile-cover p {
+    margin-top: 13px;
+    margin-left: 230px;
+    margin-bottom: 13px;
+    text-align: left;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.000em;
+  }
+  #profile-cover p > a {
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    background-color: rgba(251, 251, 251, 0.5);
+    color: #333;
+    font-weight: lighter;
+    padding: 0 4px 3px 4px;
+    border-radius: 3px;
+  }
+  #profile-cover img {
+    max-width: 250px;
+    min-width: 100px;
+    position: relative;
+    opacity: 1;
+    -webkit-transition: all .8s ease-in-out;
+    -moz-transition: all .8s ease-in-out;
+    -o-transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out;
+  }
+  #cover #nav {
+    margin-top: 13px;
+    margin-left: 230px;
+    padding: 18px 20px 83px 54px;
+    background-image: url('../img/port-background.png');
+    background-size: 200px;
+    background-repeat: no-repeat;
+  }
+  #cover #nav a {
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    padding: 30px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.125em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  /* --- PORTFOLIO --- */
+
+  #posters {
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-position: center;
+    height: auto;
+    background-color: #f5f7f6;
+    padding: 0;
+    text-align: center;
+  }
+  #posters h3 {
+    display: none;
+  }
+  #posters p {
+    font-family: 'Ubuntu', Sans-serif;
+    font-size: .8em;
+    text-align: left;
+    margin-left: 215px;
+  }
+  #posters a {
+    text-decoration: underline;
+    color: #333;
+  }
+  .thumbnail {
+    max-width: 220px;
+    display: inline-block;
+    width: 90%;
+    padding: 0;
+    margin: 20px 0 10px 0;
+    background-color: rgba(0,0,0,0);
+    border: none;
+    border-radius: 3px;
+    transition: all 0.2s ease-in-out 0s;
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    -moz-transition: all 0.2s ease-in-out 0s;
+    -o-transition: all 0.2s ease-in-out 0s;
+    -webkit-box-shadow: 0 10px 6px -6px #888;;
+    -moz-box-shadow: 0 10px 6px -6px #888;;
+    box-shadow: 0 10px 6px -6px #888;
+  }
+  #posters #bottom-btn i {
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    width: 60px;
+    height: 60px;
+    border: 2px solid;
+    border-color: #333;
+    border-radius: 100%;
+    padding: 7px 9px 9px 10px;
+    margin-top: 33px;
+    margin-bottom: 33px;
+    color:#333;
+    font-size: 2.600em;
+  }
+  #icons i:hover {
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    padding: 14px;
+    margin: 10px;
+    border-color: rgba(90,90,90,0);
+  }
+}
+
+/* ---- SMALL MOBILE ---- */
+
+@media (max-width: 480px){
+  #home {
+    color: #333333;
+    height: auto;
+    margin-top: 0;
+    background-image: url(../img/back-5-new-mobile.jpg);
+    background-color: #f5f7f6;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center top;
+    background-size: contain;
+    z-index: 10;
+    overflow: hidden;
+  }
+  #cover {
+    margin: 60px 0;
+  }
+  #cover #links {
+    text-align: center;
+    margin-bottom: 13px;
+  }
+  #cover #links i {
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    text-align: center;
+    font-size: 2.068em;
+    width: 53px;
+    height: 53px;
+    padding-top: 10px;
+    margin: 0 5px 7px 0;
+    border: 3px solid #333333;
+    border-radius: 100%;
+    color: #333333;
+  }
+  #cover #links i:hover {
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    background-color: #333333;
+    color: #FFC492;
+  }
+  #profile-cover p {
+    margin-top: 0px;
+    margin-bottom: 13px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.125em;
+  }
+  #profile-cover p > a {
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    background-color: rgba(251, 251, 251, 0.5);
+    color: #333;
+    font-weight: lighter;
+    padding: 0 4px 3px 4px;
+    border-radius: 3px;
+  }
+  #profile-cover img {
+    margin-left: auto;
+    margin-top: 0;
+    margin-bottom: 21px;
+    max-width: 350px;
+    position: relative;
+    opacity: 1;
+    -webkit-transition: all .8s ease-in-out;
+    -moz-transition: all .8s ease-in-out;
+    -o-transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out;
+  }
+  #cover #nav {
+    margin-left: 41px;
+    margin-top: 0;
+    margin-bottom: 55px;
+    padding: 21px 20px 83px 64px;
+    background-image: url('../img/port-background.png');
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
+  #cover #nav a {
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    padding: 30px 0 30px 45px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.500em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  /* --- PORTFOLIO --- */
+
+  #posters {
+    margin-bottom: 33px;
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-position: center;
+    height: auto;
+    background-color: #f5f7f6;
+    padding: 0;
+    text-align: center;
+  }
+  #posters h3 {
+    display: none;
+  }
+  #posters p {
+    font-family: 'Ubuntu', Sans-serif;
+    font-size: 1em;
+    text-align: left;
+    margin-left: 25px;
+  }
+  #posters a {
+    text-decoration: underline;
+    color: #333;
+  }
+  .thumbnail {
+    display: inline-block;
+    padding: 0;
+    width: 90%;
+    margin: 20px 0 10px 0;
+    background-color: rgba(0,0,0,0);
+    border: none;
+    border-radius: 3px;
+    transition: all 0.2s ease-in-out 0s;
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    -moz-transition: all 0.2s ease-in-out 0s;
+    -o-transition: all 0.2s ease-in-out 0s;
+    -webkit-box-shadow: 0 10px 6px -6px #888;;
+    -moz-box-shadow: 0 10px 6px -6px #888;;
+    box-shadow: 0 10px 6px -6px #888;
+  }
+  #posters #bottom-btn i {
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    width: 60px;
+    height: 60px;
+    border: 2px solid;
+    border-color: #333;
+    border-radius: 100%;
+    padding: 7px 9px 9px 10px;
+    margin-top: 33px;
+    margin-bottom: 33px;
+    color:#333;
+    font-size: 2.600em;
+  }
+  #icons i:hover {
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    padding: 14px;
+    margin: 10px;
+    border-color: rgba(90,90,90,0);
   }
 }
 
@@ -463,104 +1011,4 @@ body {
     padding: 5px;
     margin: 5px 5px 0 5px;
   }
-}
-
-@media (min-width: 981px) {
-  #about {
-    background-attachment: fixed;
-    background-repeat: repeat;
-    background-image: url(../img/bg-2.png);
-    background-position: top center;
-    background-color: #000;
-    height: 700px;
-    font-family: 'Source Sans Pro', Sans-serif;
-    text-align: center;
-    overflow-y: auto;
-    position: relative;
-    z-index: 5;
-    margin-bottom: 0;
-  }
-
-  #profile {
-    margin-top: 100px;
-  }
-
-  #profile img {
-    max-width: 150px;
-    min-width: 100px;
-    position: relative;
-    opacity: 1;
-    -webkit-transition: all .8s ease-in-out;
-    -moz-transition: all .8s ease-in-out;
-    -o-transition: all .8s ease-in-out;
-    transition: all .8s ease-in-out;
-  }
-
-  #personal-profile {
-    font-family: 'Source Sans Pro', Sans-serif;
-    font-weight: 200;
-    color: #f5f7f6;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    font-size: 1.5em;
-    line-height: auto;
-  }
-
-  #phone {
-    display: none;
-  }
-
-  #icons {
-    margin-top: 0;
-    text-align: center;
-  }
-
-  #icons i {
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-    width: 60px;
-    height: 60px;
-    border: 2px solid;
-    border-color: #f5f7f6;
-    border-radius: 100%;
-    padding: 14px;
-    margin: 10px;
-    color:#fff;
-    font-size: 1.8em;
-
-  }
-
-  #icons i:hover {
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-    padding: 14px;
-    margin: 10px;
-    border-color: rgba(90,90,90,0);
-  }
-
-  #icons img {
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-    width: 60px;
-    border: 2px solid;
-    border-color: #f5f7f6;
-    padding: 5px;
-    margin: 0px 5px 0 5px;
-  }
-
-  #icons img:hover {
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-    padding: 0;
-    border-color: rgba(90,90,90,0);
-  }
-
 }
