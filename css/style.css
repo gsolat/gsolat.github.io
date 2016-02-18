@@ -3,6 +3,7 @@ body {
   position: relative;
   width: 100%;
   overflow: scroll;
+  font-size: 14px;
 }
 
 .container-fluid {
@@ -20,118 +21,192 @@ body {
 @media (min-width: 1200px) {
   #home {
     color: #333333;
-    height: auto;
+    height: 600px;
     margin-top: 0;
-    background-image: url(../img/back-5-new.jpg);
-    background-color: #f5f7f6;
+    background-color: none;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center top;
     z-index: 10;
     overflow: hidden;
   }
-  #cover {
-    margin: 90px 0;
+  #text-box {
+    margin: 200px 0;
   }
-  #cover #links {
-    float: right;
-    margin-bottom: 33px;
-  }
-  #cover #links i {
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-    text-align: center;
-    font-size: 1.500em;
-    width: 43px;
-    height: 43px;
-    padding-top: 9px;
-    margin: 0 5px 7px 0;
-    border: 2px solid #333333;
-    border-radius: 100%;
-    color: #333333;
-  }
-  #cover #links i:hover {
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-    background-color: #333333;
-    color: #FFC492;
-  }
-  #profile-cover p {
-    margin-top: 23px;
-    margin-bottom: 53px;
+  #logo-box p {
+    margin-top: 11px;
+    margin-bottom: 13px;
     text-align: left;
     font-family: 'Ubuntu', sans-serif;
-    font-size: 1.438em;
+    font-weight: 300;
+    font-size: 2.900em;
+    line-height: double;
   }
-  #profile-cover p > a {
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-    background-color: rgba(251, 251, 251, 0.5);
-    font-weight: bold;
-    color: #333;
-    padding: 0 4px 3px 4px;
-    border-radius: 3px;
+  #logo-box #more a {
+    color: #333333;
+    text-decoration: underline;
+    font-style: italic;
   }
-  #profile-cover p > a:hover, p > a:active  {
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-    background-color: rgba(250, 180, 162, .5);
-    color: #333;
-    text-decoration: none;
-    padding: 0 4px 3px 4px;
-    border-radius: 3px;
+  #logo-box #nav {
+    float: left;
+    margin-top: 21px;
   }
-  #profile-cover img {
-    max-width: 450px;
-    min-width: 100px;
-    position: relative;
-    opacity: 1;
-    -webkit-transition: all .8s ease-in-out;
-    -moz-transition: all .8s ease-in-out;
-    -o-transition: all .8s ease-in-out;
-    transition: all .8s ease-in-out;
-  }
-  #cover #nav {
-    padding: 25px 0px 43px 64px;
-    background-image: url('../img/port-background.png');
-    background-size: ;
-    background-repeat: no-repeat;
-  }
-  #cover #nav a {
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-    padding: 37px;
+  #logo-box #nav a {
     font-family: 'Ubuntu', sans-serif;
-    font-size: 1.313em;
-    text-transform: uppercase;
-    text-decoration: none;
+    font-weight: 500;
     color: #fff;
+    font-size: 1.350em;
     letter-spacing: 1px;
-  }
-  #cover #nav a:hover {
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-    padding: 37px;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 1.313em;
-    text-transform: uppercase;
     text-decoration: none;
-    color: rgba(250, 180, 162, 1);
+    background-color: #38BFBF;
+    margin-right: 7px;
+  }
+  #logo-box #nav a:hover {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    color: #fff;
+    font-size: 1.350em;
+    letter-spacing: 1px;
+    text-decoration: none;
+    background-color: #008F8F;
+    margin-right: 7px;
+  }
+
+  /* --- WHAT? --- */
+
+  #what {
+    color: #333333;
+    height: auto;
+    margin-top: 0;
+    background-color: none;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center top;
+  }
+  #what-about {
+    margin-top: 100px;
+  }
+  #what-about p {
+    font-size: 3.125em;
+    font-weight: 300;
+    line-height: double;
+    font-family: 'Ubuntu', sans-serif;
+    margin-right: 33px;
+    margin-bottom: 77px;
+  }
+  #what #services i {
+    color: #fff;
+    background-color: #8EE6E6;
+    width: 80px;
+    height: 80px;
+    padding-left: 23px;
+    padding-top: 19px;
+    border-radius: 100%;
+    margin-right: 55px;
+    margin-top: 11px;
+  }
+  #what #services ul {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.500em;
+    list-style: none;
+    margin-top: 5px;
+  }
+  #what #services li:before {
+    content: "•";
+    color: #38BFBF;
+    margin-right: 11px;
+  }
+
+  /* --- CONTACT --- */
+
+  #contact-info {
+    color: #333333;
+    height: 550px;
+    background-color: none;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center top;
+  }
+  #info-group {
+    margin-top: 150px;
+  }
+  #info-group img{
+    -ms-transform: rotate(-5deg); /* IE 9 */
+    -webkit-transform: rotate(-5deg); /* Chrome, Safari, Opera */
+    transform: rotate(-5deg);
+    padding-bottom: 21px;
+    padding-left: 33px;
+    padding-right: 33px;
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #info-group #mail-phone a {
+    margin-bottom: 11px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.250em;
+    text-align: center;
+    letter-spacing: 1px;
+    font-style: 600;
+    background-color: #38BFBF;
+    color: #fff;
+  }
+  #info-group #mail-phone a:hover {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #008F8F;
+    color: #fff;
+  }
+  #info-group #mail-phone i {
+    margin-right: 11px;
+  }
+  #info-group #networks a {
+    margin-right: 10px;
+    color: #333;
   }
 
   /* --- PORTFOLIO --- */
+
+  #main-menu {
+    background-color: #fff;
+    border-bottom: none;
+    font-family: 'Ubuntu', sans-serif;
+  }
+  #main-menu img {
+    max-width: 150px;
+  }
+  #portafolio {
+    height: auto;
+    padding-top: 100px;
+    font-family: 'Ubuntu', sans-serif;
+    color: #7f7f7f;
+    margin-bottom: 20px;
+  }
+  #portafolio-item {
+    margin-bottom:100px;
+  }
+  #portafolio-item a {
+    color:#38BFBF;
+  }
+  #portafolio-item a:hover {
+    color:#008F8F;
+    text-decoration: none;
+  }
+  #portafolio-item #item-pic img {
+    border-radius: 3px;
+  }
+  #portafolio-item #item-text h3 {
+    font-weight: lighter;
+  }
+  #portafolio-item #item-text h5 {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  #portafolio-item #item-text p {
+    font-size: 1.000em;
+    line-height: 1.4;
+  }
+
+
 
   #posters {
     background-attachment: fixed;
