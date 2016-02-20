@@ -16,8 +16,6 @@ body {
 
 /* ---- LARGE DEVICES --- */
 
-/* --- HOME --- */
-
 @media (min-width: 1200px) {
   #home {
     color: #333333;
@@ -93,6 +91,9 @@ body {
     font-family: 'Ubuntu', sans-serif;
     margin-right: 33px;
     margin-bottom: 77px;
+  }
+  #services-mobile {
+    display: none;
   }
   #what #services i {
     color: #fff;
@@ -205,1061 +206,971 @@ body {
     font-size: 1.000em;
     line-height: 1.4;
   }
-
-
-
-  #posters {
-    background-attachment: fixed;
-    background-repeat: repeat;
-    background-position: center;
-    height: auto;
-    background-color: #f5f7f6;
-    padding: 0;
-    text-align: center;
-  }
-  #posters h3 {
-    display: none;
-  }
-  #posters p {
-    font-family: 'Ubuntu', Sans-serif;
-    font-size: .8em;
-    text-align: left;
-    margin-left: 30px;
-  }
-  #posters a {
-    text-decoration: underline;
-    color: #333;
-  }
-  .thumbnail {
-    display: inline-block;
-    padding: 0;
-    width: 90%;
-    margin: 20px 0 10px 0;
-    background-color: rgba(0,0,0,0);
-    border: none;
-    border-radius: 3px;
-    transition: all 0.2s ease-in-out 0s;
-    -webkit-transition: all 0.2s ease-in-out 0s;
-    -moz-transition: all 0.2s ease-in-out 0s;
-    -o-transition: all 0.2s ease-in-out 0s;
-    -webkit-box-shadow: 0 10px 6px -6px #888;;
-    -moz-box-shadow: 0 10px 6px -6px #888;;
-    box-shadow: 0 10px 6px -6px #888;
-  }
-  #posters #bottom-btn i {
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-    width: 60px;
-    height: 60px;
-    border: 2px solid;
-    border-color: #333;
-    border-radius: 100%;
-    padding: 8px 9px 9px 12px;
-    margin-top: 33px;
-    margin-bottom: 33px;
-    color:#333;
-    font-size: 2.600em;
-  }
-  #icons i:hover {
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-    padding: 14px;
-    margin: 10px;
-    border-color: rgba(90,90,90,0);
-  }
 }
 
-/* ---- MEDIUM DEVICES ---- */
+
+/* ---- IPAD LANDSCAPE ---- */
 
 @media (min-width: 992px) and (max-width: 1200px) {
+
   #home {
     color: #333333;
-    height: auto;
+    height: 768px;
     margin-top: 0;
-    background-image: url(../img/back-5-new.jpg);
-    background-color: #f5f7f6;
+    background-color: none;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center top;
     z-index: 10;
     overflow: hidden;
   }
-  #cover {
-    margin: 120px 0;
+  #text-box {
+    margin: 230px 0;
   }
-  #cover #links {
-    float: right;
-    margin-bottom: 33px;
-  }
-  #cover #links i {
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-    text-align: center;
-    font-size: 1.500em;
-    width: 43px;
-    height: 43px;
-    padding-top: 9px;
-    margin: 0 5px 7px 0;
-    border: 2px solid #333333;
-    border-radius: 100%;
-    color: #333333;
-  }
-  /*  #cover #links i:hover {
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-    background-color: #333333;
-    color: #FFC492;
-  }*/
-  #profile-cover p {
-    margin-top: 33px;
-    margin-bottom: 33px;
+  #logo-box p {
+    margin-top: 11px;
+    margin-bottom: 13px;
     text-align: left;
     font-family: 'Ubuntu', sans-serif;
-    font-size: 1.313em;
+    font-weight: 300;
+    font-size: 2.300em;
+    line-height: double;
   }
-  #profile-cover p > a {
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-    background-color: rgba(251, 251, 251, 0.5);
-    font-weight: bold;
-    color: #333;
-    padding: 0 4px 3px 4px;
-    border-radius: 3px;
+  #logo-box #more a {
+    color: #333333;
+    text-decoration: underline;
+    font-style: italic;
   }
-  #profile-cover img {
-    max-width: 450px;
-    min-width: 100px;
-    position: relative;
-    opacity: 1;
-    -webkit-transition: all .8s ease-in-out;
-    -moz-transition: all .8s ease-in-out;
-    -o-transition: all .8s ease-in-out;
-    transition: all .8s ease-in-out;
+  #logo-box #nav {
+    margin-top: 21px;
   }
-  #cover #nav {
-    margin-top: 30px;
-    padding: 20px 20px 83px 54px;
-    background-image: url('../img/port-background.png');
-    background-size: contain;
+  #logo-box #nav a {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    color: #fff;
+    font-size: 1.350em;
+    letter-spacing: 1px;
+    text-decoration: none;
+    background-color: #38BFBF;
+    margin-right: 7px;
+  }
+  #logo-box #nav a:hover {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    color: #fff;
+    font-size: 1.350em;
+    letter-spacing: 1px;
+    text-decoration: none;
+    background-color: #008F8F;
+    margin-right: 7px;
+  }
+
+  /* --- WHAT? --- */
+
+  #what {
+    color: #333333;
+    height: auto;
+    margin-top: 0;
+    background-color: none;
     background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center top;
   }
-  #cover #nav a {
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-    padding: 30px;
-    font-family: 'Lato', sans-serif;
-    font-size: 1.125em;
-    text-transform: uppercase;
-    text-decoration: none;
+  #what-about {
+    margin-top: 100px;
+  }
+  #what-about p {
+    font-size: 3.000em;
+    font-weight: 300;
+    line-height: double;
+    font-family: 'Ubuntu', sans-serif;
+    margin-right: 33px;
+    margin-bottom: 77px;
+  }
+  #services-mobile {
+    display: none;
+  }
+  #what #services i {
+    color: #fff;
+    background-color: #8EE6E6;
+    width: 80px;
+    height: 80px;
+    padding-left: 23px;
+    padding-top: 19px;
+    border-radius: 100%;
+    margin-right: 55px;
+    margin-top: 11px;
+  }
+  #what #services ul {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.100em;
+    list-style: none;
+    margin-top: 15px;
+  }
+  #what #services li:before {
+    content: "•";
+    color: #38BFBF;
+    margin-right: 11px;
+  }
+
+  /* --- CONTACT --- */
+
+  #contact-info {
+    color: #333333;
+    height: 630px;
+    background-color: none;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center top;
+  }
+  #info-group {
+    margin-top: 150px;
+  }
+  #info-group img{
+    -ms-transform: rotate(-5deg); /* IE 9 */
+    -webkit-transform: rotate(-5deg); /* Chrome, Safari, Opera */
+    transform: rotate(-5deg);
+    padding-bottom: 21px;
+    padding-left: 33px;
+    padding-right: 33px;
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #info-group #mail-phone a {
+    margin-bottom: 11px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.250em;
+    text-align: center;
+    letter-spacing: 1px;
+    font-style: 600;
+    background-color: #38BFBF;
     color: #fff;
   }
-  /*  #cover #nav a:hover {
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-    padding: 30px;
-    font-family: 'Lato', sans-serif;
-    font-size: 1.313em;
-    text-transform: uppercase;
-    text-decoration: none;
+  #info-group #mail-phone a:hover {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #008F8F;
     color: #fff;
-    letter-spacing: 2px;
-  }*/
+  }
+  #info-group #mail-phone i {
+    margin-right: 11px;
+  }
+  #info-group #networks a {
+    margin-right: 10px;
+    color: #333;
+  }
 
   /* --- PORTFOLIO --- */
 
-  #posters {
-    background-attachment: fixed;
-    background-repeat: repeat;
-    background-position: center;
+  #main-menu {
+    background-color: #fff;
+    border-bottom: none;
+    font-family: 'Ubuntu', sans-serif;
+  }
+  #main-menu img {
+    max-width: 150px;
+  }
+  #portafolio {
     height: auto;
-    background-color: #f5f7f6;
-    padding: 0;
-    text-align: center;
+    padding-top: 100px;
+    font-family: 'Ubuntu', sans-serif;
+    color: #7f7f7f;
+    margin-bottom: 20px;
   }
-  #posters h3 {
-    display: none;
+  #portafolio-item {
+    margin-bottom:100px;
   }
-  #posters p {
-    font-family: 'Ubuntu', Sans-serif;
-    font-size: .8em;
-    text-align: left;
-    margin-left: 15px;
+  #portafolio-item a {
+    color:#38BFBF;
   }
-  #posters a {
-    text-decoration: underline;
-    color: #333;
+  #portafolio-item a:hover {
+    color:#008F8F;
+    text-decoration: none;
   }
-  .thumbnail {
-    display: inline-block;
-    padding: 0;
-    width: 100%;
-    margin: 20px 0 10px 0;
-    background-color: rgba(0,0,0,0);
-    border: none;
+  #portafolio-item #item-pic img {
     border-radius: 3px;
-    transition: all 0.2s ease-in-out 0s;
-    -webkit-transition: all 0.2s ease-in-out 0s;
-    -moz-transition: all 0.2s ease-in-out 0s;
-    -o-transition: all 0.2s ease-in-out 0s;
-    -webkit-box-shadow: 0 10px 6px -6px #888;;
-    -moz-box-shadow: 0 10px 6px -6px #888;;
-    box-shadow: 0 10px 6px -6px #888;
   }
-  #posters #bottom-btn i {
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-    width: 60px;
-    height: 60px;
-    border: 2px solid;
-    border-color: #333;
-    border-radius: 100%;
-    padding: 7px 9px 9px 10px;
-    margin-top: 33px;
-    margin-bottom: 33px;
-    color:#333;
-    font-size: 2.600em;
+  #portafolio-item #item-text h3 {
+    font-weight: lighter;
   }
-  /*  #icons i:hover {
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-    padding: 14px;
-    margin: 10px;
-    border-color: rgba(90,90,90,0);
-  }*/
+  #portafolio-item #item-text h5 {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  #portafolio-item #item-text p {
+    font-size: 1.000em;
+    line-height: 1.4;
+  }
 }
 
-/* ---- SMALL DEVICES ---- */
+
+/* ---- IPAD PORTRAIT ---- */
 
 @media (min-width: 768px) and (max-width: 992px) {
+
   #home {
     color: #333333;
-    height: auto;
+    height: 1000px;
     margin-top: 0;
-    background-image: url(../img/back-5-new.jpg);
-    background-color: #f5f7f6;
+    background-color: none;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center top;
     z-index: 10;
     overflow: hidden;
   }
-  #cover {
-    margin: 110px 0;
+  #text-box {
+    margin: 185px 0;
   }
-  #cover #links {
-    text-align: center;
-    margin-bottom: 33px;
-  }
-  #cover #links i {
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-    text-align: center;
-    font-size: 2.500em;
-    width: 63px;
-    height: 63px;
-    padding-top: 12px;
-    margin: 0 5px 7px 0;
-    border: 3px solid #333333;
-    border-radius: 100%;
-    color: #333333;
-  }
-  #cover #links i:hover {
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-    background-color: #333333;
-    color: #FFC492;
-  }
-  #profile-cover p {
-    margin-top: 0px;
-    margin-bottom: 33px;
+  #logo-box p {
+    margin-top: 11px;
+    margin-bottom: 13px;
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
-    font-size: 1.480em;
+    font-weight: 300;
+    font-size: 2.100em;
+    line-height: double;
   }
-  #profile-cover p > a {
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-    background-color: rgba(251, 251, 251, 0.5);
-    font-weight: bold;
-    color: #333;
-    padding: 0 4px 3px 4px;
-    border-radius: 3px;
+  #logo-box #more a {
+    color: #333333;
+    text-decoration: underline;
+    font-style: italic;
+    float: right;
   }
-  #profile-cover img {
-    margin-left: auto;
-    margin-top: 63px;
-    margin-bottom: 53px;
-    min-width: 100px;
-    position: relative;
-    opacity: 1;
-    -webkit-transition: all .8s ease-in-out;
-    -moz-transition: all .8s ease-in-out;
-    -o-transition: all .8s ease-in-out;
-    transition: all .8s ease-in-out;
+  #logo-box #nav {
+    margin-top: 21px;
   }
-  #cover #nav {
-    margin-top: 30px;
-    margin-bottom: 65px;
-    padding: 24px 20px 83px 58px;
-    background-image: url('../img/port-background.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-  #cover #nav a {
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-    padding: 30px 0 30px 50px;
-    font-family: 'Lato', sans-serif;
-    font-size: 1.500em;
-    text-transform: uppercase;
-    text-decoration: none;
+  #logo-box #nav a {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
     color: #fff;
+    font-size: 1.350em;
+    letter-spacing: 1px;
+    text-decoration: none;
+    background-color: #38BFBF;
+    margin-right: 7px;
+  }
+  #logo-box #nav a:hover {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    color: #fff;
+    font-size: 1.350em;
+    letter-spacing: 1px;
+    text-decoration: none;
+    background-color: #008F8F;
+    margin-right: 7px;
+  }
+
+  /* --- WHAT? --- */
+
+  #what {
+    color: #333333;
+    height: auto;
+    margin-top: 0;
+    background-color: none;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center top;
+  }
+  #what-about {
+    margin-top: 100px;
+  }
+  #what-about p {
+    font-size: 2.800em;
+    font-weight: 300;
+    line-height: double;
+    font-family: 'Ubuntu', sans-serif;
+    margin-right: 33px;
+    margin-bottom: 77px;
+  }
+  #services {
+    display: none;
+  }
+  #what #services-mobile i {
+    color: #fff;
+    background-color: #8EE6E6;
+    width: 80px;
+    height: 80px;
+    padding-left: 23px;
+    padding-top: 19px;
+    border-radius: 100%;
+    margin-right: auto;
+    margin-top: 11px;
+  }
+  #what #services-mobile ul {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.800em;
+    list-style: none;
+    margin-top: 15px;
+  }
+  #what #services-mobile li:before {
+    content: "•";
+    color: #38BFBF;
+    margin-right: 11px;
+  }
+
+  /* --- CONTACT --- */
+
+  #contact-info {
+    color: #333333;
+    height: auto;
+    background-color: none;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center top;
+  }
+  #info-group {
+    margin-top: 88px;
+    margin-bottom: 88px;
+  }
+  #info-group img{
+    -ms-transform: rotate(-5deg); /* IE 9 */
+    -webkit-transform: rotate(-5deg); /* Chrome, Safari, Opera */
+    transform: rotate(-5deg);
+    padding-bottom: 21px;
+    padding-left: 33px;
+    padding-right: 33px;
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #info-group #mail-phone a {
+    margin-bottom: 11px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.250em;
+    text-align: center;
+    letter-spacing: 1px;
+    font-style: 600;
+    background-color: #38BFBF;
+    color: #fff;
+  }
+  #info-group #mail-phone a:hover {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #008F8F;
+    color: #fff;
+  }
+  #info-group #mail-phone i {
+    margin-right: 11px;
+  }
+  #info-group #networks a {
+    margin-right: 10px;
+    color: #333;
   }
 
   /* --- PORTFOLIO --- */
 
-  #posters {
-    background-attachment: fixed;
-    background-repeat: repeat;
-    background-position: center;
+  #main-menu {
+    background-color: #fff;
+    border-bottom: none;
+    font-family: 'Ubuntu', sans-serif;
+  }
+  #main-menu img {
+    max-width: 150px;
+  }
+  #portafolio {
     height: auto;
-    background-color: #f5f7f6;
-    padding: 0;
-    text-align: center;
+    padding-top: 100px;
+    font-family: 'Ubuntu', sans-serif;
+    color: #7f7f7f;
+    margin-bottom: 20px;
   }
-  #posters h3 {
-    display: none;
+  #portafolio-item {
+    margin-bottom:100px;
   }
-  #posters p {
-    font-family: 'Ubuntu', Sans-serif;
-    font-size: .8em;
-    text-align: left;
-    margin-left: 15px;
+  #portafolio-item a {
+    color:#38BFBF;
   }
-  #posters a {
-    text-decoration: underline;
-    color: #333;
+  #portafolio-item a:hover {
+    color:#008F8F;
+    text-decoration: none;
   }
-  .thumbnail {
-    display: inline-block;
-    padding: 0;
-    width: 100%;
-    margin: 20px 0 10px 0;
-    background-color: rgba(0,0,0,0);
-    border: none;
+  #portafolio-item #item-pic img {
     border-radius: 3px;
-    transition: all 0.2s ease-in-out 0s;
-    -webkit-transition: all 0.2s ease-in-out 0s;
-    -moz-transition: all 0.2s ease-in-out 0s;
-    -o-transition: all 0.2s ease-in-out 0s;
-    -webkit-box-shadow: 0 10px 6px -6px #888;;
-    -moz-box-shadow: 0 10px 6px -6px #888;;
-    box-shadow: 0 10px 6px -6px #888;
   }
-  #posters #bottom-btn i {
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-    width: 60px;
-    height: 60px;
-    border: 2px solid;
-    border-color: #333;
-    border-radius: 100%;
-    padding: 7px 9px 9px 10px;
-    margin-top: 33px;
-    margin-bottom: 33px;
-    color:#333;
-    font-size: 2.600em;
+  #portafolio-item #item-text h3 {
+    font-weight: lighter;
+  }
+  #portafolio-item #item-text h5 {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  #portafolio-item #item-text p {
+    font-size: 1.000em;
+    line-height: 1.4;
   }
 }
 
-/* ---- MOBILE ---- */
+
+/* ---- IPHONE LANDSCAPE ---- */
 
 @media (min-width: 480px) and (max-width: 767px){
+
   #home {
     color: #333333;
-    height: auto;
+    height: 375px;
     margin-top: 0;
-    background-image: url(../img/back-5-new.jpg);
-    background-color: #f5f7f6;
+    background-color: none;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center top;
-    background-size: contain;
     z-index: 10;
     overflow: hidden;
   }
-  #cover {
-    margin: 30px 0;
+  #text-box {
+    margin: 55px 0;
   }
-  #cover #links {
-    float: right;
-    margin-bottom: 33px;
+  #text-box img {
+    max-width: 180px;
   }
-  #cover #links i {
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-    text-align: center;
-    font-size: 1.500em;
-    width: 43px;
-    height: 43px;
-    padding-top: 9px;
-    margin: 0 5px 7px 0;
-    border: 2px solid #333333;
-    border-radius: 100%;
-    color: #333333;
-  }
-  #cover #links i:hover {
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-    background-color: #333333;
-    color: #FFC492;
-  }
-  #profile-cover p {
-    padding-top: 90px;
-    margin-top: 13px;
-    margin-left: 230px;
+  #logo-box p {
+    width: 350px;
+    margin-top: -121px;
     margin-bottom: 13px;
+    margin-left: 220px;
     text-align: left;
     font-family: 'Ubuntu', sans-serif;
-    font-size: 1.000em;
+    font-weight: 300;
+    font-size: 1.800em;
+    line-height: double;
   }
-  #profile-cover p > a {
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-    background-color: rgba(251, 251, 251, 0.5);
-    font-weight: bold;
-    color: #333;
-    padding: 0 4px 3px 4px;
-    border-radius: 3px;
+  #logo-box #more a {
+    color: #333333;
+    text-decoration: underline;
+    font-style: italic;
+    float: right;
   }
-  #profile-cover img {
-    max-width: 250px;
-    min-width: 100px;
-    position: relative;
-    opacity: 1;
-    -webkit-transition: all .8s ease-in-out;
-    -moz-transition: all .8s ease-in-out;
-    -o-transition: all .8s ease-in-out;
-    transition: all .8s ease-in-out;
+  #logo-box #nav {
+    margin-top: 21px;
+    margin-left: -50px;
+    text-align: right;
   }
-  #cover #nav {
-    margin-top: 13px;
-    margin-left: 230px;
-    padding: 18px 20px 83px 54px;
-    background-image: url('../img/port-background.png');
-    background-size: 200px;
-    background-repeat: no-repeat;
-  }
-  #cover #nav a {
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-    padding: 30px;
-    font-family: 'Lato', sans-serif;
-    font-size: 1.125em;
-    text-transform: uppercase;
-    text-decoration: none;
+  #logo-box #nav a {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
     color: #fff;
+    font-size: 1.350em;
+    letter-spacing: 1px;
+    text-decoration: none;
+    background-color: #38BFBF;
+    margin-right: 7px;
+  }
+  #logo-box #nav a:hover {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    color: #fff;
+    font-size: 1.350em;
+    letter-spacing: 1px;
+    text-decoration: none;
+    background-color: #008F8F;
+    margin-right: 7px;
+  }
+
+  /* --- WHAT? --- */
+
+  #what {
+    color: #333333;
+    height: auto;
+    margin-top: 0;
+    background-color: none;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center top;
+  }
+  #what-about {
+    margin-top: 30px;
+  }
+  #what-about p {
+    font-size: 1.800em;
+    font-weight: 300;
+    line-height: double;
+    font-family: 'Ubuntu', sans-serif;
+    margin-right: 33px;
+    margin-bottom: 33px;
+    margin-left: 55px;
+  }
+  #services {
+    display: none;
+  }
+  #what #services-mobile {
+    margin-left: 100px;
+  }
+  #what #services-mobile i {
+    font-size: 5.000em;
+    color: #fff;
+    background-color: #8EE6E6;
+    width: 110px;
+    height: 110px;
+    padding-left: 26px;
+    padding-top: 19px;
+    border-radius: 100%;
+    margin-right: 35px;
+    margin-top: 11px;
+  }
+  #what #services-mobile ul {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.400em;
+    list-style: none;
+    margin-top: -110px;
+    margin-left: 130px;
+  }
+  #what #services-mobile li:before {
+    content: "•";
+    color: #38BFBF;
+    margin-right: 11px;
+  }
+
+  /* --- CONTACT --- */
+
+  #contact-info {
+    color: #333333;
+    height: auto;
+    background-color: none;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center top;
+  }
+  #info-group {
+    margin-top: 88px;
+    margin-bottom: 80px;
+  }
+  #info-group img{
+    -ms-transform: rotate(-5deg); /* IE 9 */
+    -webkit-transform: rotate(-5deg); /* Chrome, Safari, Opera */
+    transform: rotate(-5deg);
+    padding-bottom: 21px;
+    padding-left: 33px;
+    padding-right: 33px;
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #info-group #mail-phone a {
+    margin-bottom: 11px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.250em;
+    text-align: center;
+    letter-spacing: 1px;
+    font-style: 600;
+    background-color: #38BFBF;
+    color: #fff;
+  }
+  #info-group #mail-phone a:hover {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #008F8F;
+    color: #fff;
+  }
+  #info-group #mail-phone i {
+    margin-right: 11px;
+  }
+  #info-group #networks a {
+    margin-right: 10px;
+    color: #333;
   }
 
   /* --- PORTFOLIO --- */
 
-  #posters {
-    background-attachment: fixed;
-    background-repeat: repeat;
-    background-position: center;
+  #main-menu {
+    background-color: #fff;
+    border-bottom: none;
+    font-family: 'Ubuntu', sans-serif;
+  }
+  #main-menu img {
+    max-width: 150px;
+  }
+  #portafolio {
     height: auto;
-    background-color: #f5f7f6;
-    padding: 0;
-    text-align: center;
+    padding-top: 100px;
+    font-family: 'Ubuntu', sans-serif;
+    color: #7f7f7f;
+    margin-bottom: 20px;
   }
-  #posters h3 {
-    display: none;
+  #portafolio-item {
+    margin-bottom:100px;
   }
-  #posters p {
-    font-family: 'Ubuntu', Sans-serif;
-    font-size: .8em;
-    text-align: left;
-    margin-left: 215px;
+  #portafolio-item a {
+    color:#38BFBF;
   }
-  @media (min-width: 567px) and (max-width: 569px){
-    #posters p {
-      font-family: 'Ubuntu', Sans-serif;
-      font-size: .8em;
-      text-align: left;
-      margin-left: 175px;
-    }
+  #portafolio-item a:hover {
+    color:#008F8F;
+    text-decoration: none;
   }
-  #posters a {
-    text-decoration: underline;
-    color: #333;
-  }
-  .thumbnail {
-    max-width: 220px;
-    display: inline-block;
-    width: 90%;
-    padding: 0;
-    margin: 20px 0 10px 0;
-    background-color: rgba(0,0,0,0);
-    border: none;
+  #portafolio-item #item-pic img {
     border-radius: 3px;
-    transition: all 0.2s ease-in-out 0s;
-    -webkit-transition: all 0.2s ease-in-out 0s;
-    -moz-transition: all 0.2s ease-in-out 0s;
-    -o-transition: all 0.2s ease-in-out 0s;
-    -webkit-box-shadow: 0 10px 6px -6px #888;;
-    -moz-box-shadow: 0 10px 6px -6px #888;;
-    box-shadow: 0 10px 6px -6px #888;
   }
-  #posters #bottom-btn i {
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-    width: 60px;
-    height: 60px;
-    border: 2px solid;
-    border-color: #333;
-    border-radius: 100%;
-    padding: 7px 9px 9px 10px;
-    margin-top: 33px;
-    margin-bottom: 33px;
-    color:#333;
-    font-size: 2.600em;
+  #portafolio-item #item-text h3 {
+    font-weight: lighter;
   }
-  #icons i:hover {
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-    padding: 14px;
-    margin: 10px;
-    border-color: rgba(90,90,90,0);
+  #portafolio-item #item-text h5 {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  #portafolio-item #item-text p {
+    font-size: 1.000em;
+    line-height: 1.4;
   }
 }
 
-/* ---- SMALL MOBILE ---- */
+
+/* ---- IPHONE PORTRAIT ---- */
 
 @media (min-width: 375px) and (max-width: 480px){
+
   #home {
     color: #333333;
-    height: auto;
+    height: 627px;
     margin-top: 0;
-    background-image: url(../img/back-5-new-mobile.jpg);
-    background-color: #f5f7f6;
+    background-color: none;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center top;
-    background-size: contain;
     z-index: 10;
     overflow: hidden;
   }
-  #cover {
-    margin: 60px 0;
+  #text-box {
+    margin: 66px 0;
   }
-  #cover #links {
-    text-align: center;
-    margin-bottom: 13px;
-  }
-  #cover #links i {
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-    text-align: center;
-    font-size: 2.068em;
-    width: 53px;
-    height: 53px;
-    padding-top: 10px;
-    margin: 0 5px 7px 0;
-    border: 3px solid #333333;
-    border-radius: 100%;
-    color: #333333;
-  }
-  #cover #links i:hover {
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-    background-color: #333333;
-    color: #FFC492;
-  }
-  #profile-cover p {
-    margin-top: 0px;
+  #logo-box p {
+    margin-top: 11px;
     margin-bottom: 13px;
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
-    font-size: 1.125em;
+    font-weight: 300;
+    font-size: 1.300em;
+    line-height: double;
   }
-  #profile-cover p > a {
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-    background-color: rgba(251, 251, 251, 0.5);
-    font-weight: bold;
-    color: #333;
-    padding: 0 4px 3px 4px;
-    border-radius: 3px;
+  #logo-box #more a {
+    color: #333333;
+    text-decoration: underline;
+    font-style: italic;
+    float: right;
   }
-  #profile-cover img {
-    margin-left: auto;
-    margin-top: 0;
-    margin-bottom: 21px;
-    max-width: 350px;
-    position: relative;
-    opacity: 1;
-    -webkit-transition: all .8s ease-in-out;
-    -moz-transition: all .8s ease-in-out;
-    -o-transition: all .8s ease-in-out;
-    transition: all .8s ease-in-out;
+  #logo-box #nav {
+    margin-top: 21px;
+    text-align: center;
   }
-  #cover #nav {
-    margin-left: 41px;
-    margin-top: 0;
-    margin-bottom: 55px;
-    padding: 21px 20px 83px 64px;
-    background-image: url('../img/port-background.png');
-    background-size: auto;
-    background-repeat: no-repeat;
-  }
-  #cover #nav a {
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-    padding: 30px 0 30px 45px;
-    font-family: 'Lato', sans-serif;
-    font-size: 1.500em;
-    text-transform: uppercase;
-    text-decoration: none;
+  #logo-box #nav a {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
     color: #fff;
+    font-size: 1.050em;
+    letter-spacing: 1px;
+    text-decoration: none;
+    background-color: #38BFBF;
+    margin-right: 7px;
+  }
+
+  /* --- WHAT? --- */
+
+  #what {
+    color: #333333;
+    height: auto;
+    margin-top: 0;
+    background-color: none;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center top;
+  }
+  #what-about {
+    margin-top: 20px;
+  }
+  #what-about p {
+    font-size: 2.000em;
+    font-weight: 300;
+    line-height: double;
+    font-family: 'Ubuntu', sans-serif;
+    margin-right: 33px;
+    margin-bottom: 11px;
+  }
+  #services {
+    display: none;
+  }
+  #what #services-mobile i {
+    display: none;
+  }
+  #what #services-mobile ul {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.200em;
+    list-style: none;
+    margin-top: 11px;
+  }
+  #what #services-mobile li:before {
+    content: "•";
+    color: #38BFBF;
+    margin-right: 11px;
+  }
+
+  /* --- CONTACT --- */
+
+  #contact-info {
+    color: #333333;
+    height: auto;
+    background-color: none;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center top;
+  }
+  #info-group {
+    margin-top: 33px;
+    margin-bottom: 11px;
+  }
+  #info-group img{
+    -ms-transform: rotate(-5deg); /* IE 9 */
+    -webkit-transform: rotate(-5deg); /* Chrome, Safari, Opera */
+    transform: rotate(-5deg);
+    padding-bottom: 21px;
+    padding-left: 33px;
+    padding-right: 33px;
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #info-group #mail-phone a {
+    margin-bottom: 11px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.250em;
+    text-align: center;
+    letter-spacing: 1px;
+    font-style: 600;
+    background-color: #38BFBF;
+    color: #fff;
+  }
+  #info-group #mail-phone a:hover {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #008F8F;
+    color: #fff;
+  }
+  #info-group #mail-phone i {
+    margin-right: 11px;
+  }
+  #info-group #networks a {
+    margin-right: 10px;
+    color: #333;
   }
 
   /* --- PORTFOLIO --- */
 
-  #posters {
-    margin-bottom: 33px;
-    background-attachment: fixed;
-    background-repeat: repeat;
-    background-position: center;
+  #main-menu {
+    background-color: #fff;
+    border-bottom: none;
+    font-family: 'Ubuntu', sans-serif;
+  }
+  #main-menu img {
+    max-width: 150px;
+  }
+  #portafolio {
     height: auto;
-    background-color: #f5f7f6;
-    padding: 0;
-    text-align: center;
+    padding-top: 100px;
+    font-family: 'Ubuntu', sans-serif;
+    color: #7f7f7f;
+    margin-bottom: 20px;
   }
-  #posters h3 {
-    display: none;
+  #portafolio-item {
+    margin-bottom:100px;
   }
-  #posters p {
-    font-family: 'Ubuntu', Sans-serif;
-    font-size: 1em;
-    text-align: left;
-    margin-left: 25px;
+  #portafolio-item a {
+    color:#38BFBF;
   }
-  #posters a {
-    text-decoration: underline;
-    color: #333;
+  #portafolio-item a:hover {
+    color:#008F8F;
+    text-decoration: none;
   }
-  .thumbnail {
-    display: inline-block;
-    padding: 0;
-    width: 90%;
-    margin: 20px 0 10px 0;
-    background-color: rgba(0,0,0,0);
-    border: none;
+  #portafolio-item #item-pic img {
     border-radius: 3px;
-    transition: all 0.2s ease-in-out 0s;
-    -webkit-transition: all 0.2s ease-in-out 0s;
-    -moz-transition: all 0.2s ease-in-out 0s;
-    -o-transition: all 0.2s ease-in-out 0s;
-    -webkit-box-shadow: 0 10px 6px -6px #888;;
-    -moz-box-shadow: 0 10px 6px -6px #888;;
-    box-shadow: 0 10px 6px -6px #888;
   }
-  #posters #bottom-btn i {
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-    width: 60px;
-    height: 60px;
-    border: 2px solid;
-    border-color: #333;
-    border-radius: 100%;
-    padding: 7px 9px 9px 10px;
-    margin-top: 33px;
-    margin-bottom: 33px;
-    color:#333;
-    font-size: 2.600em;
+  #portafolio-item #item-text h3 {
+    font-weight: lighter;
   }
-  #icons i:hover {
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-    padding: 14px;
-    margin: 10px;
-    border-color: rgba(90,90,90,0);
+  #portafolio-item #item-text h5 {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  #portafolio-item #item-text p {
+    font-size: 1.000em;
+    line-height: 1.4;
   }
 }
 
-/* ---- XSMALL MOBILE ---- */
+
+/* ---- IPHONE 5 PORTRAIT ---- */
 
 @media (max-width: 374px){
 
-  #home {
-    color: #333333;
-    height: auto;
-    margin-top: 0;
-    background-image: url(../img/back-5-new-mobile.jpg);
-    background-color: #f5f7f6;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: center top;
-    background-size: contain;
-    z-index: 10;
-    overflow: hidden;
-  }
-  #cover {
-    margin: 40px 0;
-  }
-  #cover #links {
-    text-align: center;
-    margin-bottom: 13px;
-  }
-  #cover #links i {
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-    text-align: center;
-    font-size: 1.750em;
-    width: 43px;
-    height: 43px;
-    padding-top: 6px;
-    margin: 0 5px 7px 0;
-    border: 3px solid #333333;
-    border-radius: 100%;
-    color: #333333;
-  }
-  #cover #links i:hover {
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-    background-color: #333333;
-    color: #FFC492;
-  }
-  #profile-cover p {
-    margin-top: 0px;
-    margin-bottom: 13px;
-    text-align: center;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 1.000em;
-  }
-  #profile-cover p > a {
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-    background-color: rgba(251, 251, 251, 0.5);
-    font-weight: bold;
-    color: #333;
-    padding: 0 4px 3px 4px;
-    border-radius: 3px;
-  }
-  #profile-cover img {
-    margin-left: auto;
-    margin-top: 0;
-    margin-bottom: 21px;
-    position: relative;
-    opacity: 1;
-    -webkit-transition: all .8s ease-in-out;
-    -moz-transition: all .8s ease-in-out;
-    -o-transition: all .8s ease-in-out;
-    transition: all .8s ease-in-out;
-  }
-  #cover #nav {
-    margin-left: 12px;
-    margin-top: 0;
-    margin-bottom: 55px;
-    padding: 21px 20px 83px 64px;
-    background-image: url('../img/port-background.png');
-    background-size: auto;
-    background-repeat: no-repeat;
-  }
-  #cover #nav a {
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-    padding: 30px 0 30px 45px;
-    font-family: 'Lato', sans-serif;
-    font-size: 1.500em;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #fff;
+
+    #home {
+      color: #333333;
+      height: 627px;
+      margin-top: 0;
+      background-color: none;
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      background-position: center top;
+      z-index: 10;
+      overflow: hidden;
+    }
+    #text-box {
+      margin: 33px 0;
+    }
+    #logo-box p {
+      margin-top: 11px;
+      margin-bottom: 13px;
+      text-align: center;
+      font-family: 'Ubuntu', sans-serif;
+      font-weight: 300;
+      font-size: 1.300em;
+      line-height: double;
+    }
+    #logo-box #more a {
+      color: #333333;
+      text-decoration: underline;
+      font-style: italic;
+      float: right;
+    }
+    #logo-box #nav {
+      margin-top: 21px;
+      text-align: center;
+    }
+    #logo-box #nav a {
+      font-family: 'Ubuntu', sans-serif;
+      font-weight: 500;
+      color: #fff;
+      font-size: 1.050em;
+      letter-spacing: 1px;
+      text-decoration: none;
+      background-color: #38BFBF;
+      margin-right: 7px;
+      margin-bottom: 11px;
+    }
+
+    /* --- WHAT? --- */
+
+    #what {
+      color: #333333;
+      height: auto;
+      margin-top: 0;
+      background-color: none;
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      background-position: center top;
+    }
+    #what-about {
+      margin-top: 20px;
+    }
+    #what-about p {
+      font-size: 2.000em;
+      font-weight: 300;
+      line-height: double;
+      font-family: 'Ubuntu', sans-serif;
+      margin-right: 33px;
+      margin-bottom: 11px;
+    }
+    #services {
+      display: none;
+    }
+    #what #services-mobile i {
+      display: none;
+    }
+    #what #services-mobile ul {
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 1.100em;
+      list-style: none;
+      margin-top: 11px;
+    }
+    #what #services-mobile li:before {
+      content: "•";
+      color: #38BFBF;
+      margin-right: 11px;
+    }
+
+    /* --- CONTACT --- */
+
+    #contact-info {
+      color: #333333;
+      height: auto;
+      background-color: none;
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      background-position: center top;
+    }
+    #info-group {
+      margin-top: 33px;
+      margin-bottom: 11px;
+      margin-left: 0;
+    }
+    #info-group img{
+      -ms-transform: rotate(-5deg); /* IE 9 */
+      -webkit-transform: rotate(-5deg); /* Chrome, Safari, Opera */
+      transform: rotate(-5deg);
+      padding-bottom: 21px;
+      padding-left: 33px;
+      padding-right: 33px;
+      max-width: 200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    #info-group #mail-phone a {
+      margin-bottom: 11px;
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 1.250em;
+      text-align: center;
+      letter-spacing: 1px;
+      font-style: 600;
+      background-color: #38BFBF;
+      color: #fff;
+    }
+    #info-group #mail-phone a:hover {
+      font-family: 'Ubuntu', sans-serif;
+      background-color: #008F8F;
+      color: #fff;
+    }
+    #info-group #mail-phone i {
+      margin-right: 11px;
+    }
+    #info-group #networks a {
+      margin-right: 10px;
+      color: #333;
+    }
+
+    /* --- PORTFOLIO --- */
+
+    #main-menu {
+      background-color: #fff;
+      border-bottom: none;
+      font-family: 'Ubuntu', sans-serif;
+    }
+    #main-menu img {
+      max-width: 150px;
+    }
+    #portafolio {
+      height: auto;
+      padding-top: 100px;
+      font-family: 'Ubuntu', sans-serif;
+      color: #7f7f7f;
+      margin-bottom: 20px;
+    }
+    #portafolio-item {
+      margin-bottom:100px;
+    }
+    #portafolio-item a {
+      color:#38BFBF;
+    }
+    #portafolio-item a:hover {
+      color:#008F8F;
+      text-decoration: none;
+    }
+    #portafolio-item #item-pic img {
+      border-radius: 3px;
+    }
+    #portafolio-item #item-text h3 {
+      font-weight: lighter;
+    }
+    #portafolio-item #item-text h5 {
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+    #portafolio-item #item-text p {
+      font-size: 1.000em;
+      line-height: 1.4;
+    }
   }
 
-  /* --- PORTFOLIO --- */
-
-  #posters {
-    margin-bottom: 33px;
-    background-attachment: fixed;
-    background-repeat: repeat;
-    background-position: center;
-    height: auto;
-    background-color: #f5f7f6;
-    padding: 0;
-    text-align: center;
-  }
-  #posters h3 {
-    display: none;
-  }
-  #posters p {
-    font-family: 'Ubuntu', Sans-serif;
-    font-size: 0.750em;
-    text-align: left;
-    margin-left: 25px;
-  }
-  #posters a {
-    text-decoration: underline;
-    color: #333;
-  }
-  .thumbnail {
-    display: inline-block;
-    padding: 0;
-    width: 90%;
-    margin: 20px 0 10px 0;
-    background-color: rgba(0,0,0,0);
-    border: none;
-    border-radius: 3px;
-    transition: all 0.2s ease-in-out 0s;
-    -webkit-transition: all 0.2s ease-in-out 0s;
-    -moz-transition: all 0.2s ease-in-out 0s;
-    -o-transition: all 0.2s ease-in-out 0s;
-    -webkit-box-shadow: 0 10px 6px -6px #888;;
-    -moz-box-shadow: 0 10px 6px -6px #888;;
-    box-shadow: 0 10px 6px -6px #888;
-  }
-  #posters #bottom-btn i {
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-    width: 60px;
-    height: 60px;
-    border: 2px solid;
-    border-color: #333;
-    border-radius: 100%;
-    padding: 7px 9px 9px 10px;
-    margin-top: 33px;
-    margin-bottom: 0px;
-    color:#333;
-    font-size: 2.600em;
-  }
-  #icons i:hover {
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-    padding: 14px;
-    margin: 10px;
-    border-color: rgba(90,90,90,0);
-  }
-}
-
-/* ABOUT
---------------------------------- */
-
-#about {
-  background-attachment: fixed;
-  background-repeat: repeat;
-  background-image: url(../img/bg-2.png);
-  background-position: top center;
-  background-color: #000;
-  height: 650px;
-  font-family: 'Source Sans Pro', Sans-serif;
-  text-align: center;
-  overflow-y: auto;
-  position: relative;
-  z-index: 5;
-  margin-bottom: 0;
-}
-
-#profile {
-  margin-top: 30px;
-}
-
-#profile img {
-  max-width: 100px;
-  min-width: 100px;
-  position: relative;
-  opacity: 1;
-  -webkit-transition: all .8s ease-in-out;
-  -moz-transition: all .8s ease-in-out;
-  -o-transition: all .8s ease-in-out;
-  transition: all .8s ease-in-out;
-}
-
-#personal-profile {
-  font-family: 'Source Sans Pro', Sans-serif;
-  font-weight: 400;
-  color: #f5f7f6;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  font-size: 1em;
-  line-height: auto;
-}
-
-#phone {
-  display: visible;
-}
-
-#icons {
-  margin-top: 0;
-  text-align: center;
-}
-
-#icons i {
-  -webkit-transition: all 0.4s ease;
-  -moz-transition: all 0.4s ease;
-  -o-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-  width: 50px;
-  height: 50px;
-  border: 1px solid;
-  border-color: #f5f7f6;
-  border-radius: 100%;
-  padding: 11px;
-  margin: 5px;
-  color:#fff;
-  font-size: 1.8em;
-}
-
-#icons img {
-  -webkit-transition: all 0.4s ease;
-  -moz-transition: all 0.4s ease;
-  -o-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-  width: 50px;
-  border: 1px solid;
-  border-color: #f5f7f6;
-  padding: 5px;
-  margin: 5px 2px 0 2px;
-}
-
-@media (min-width: 481px) {
-  #about {
-    background-attachment: fixed;
-    background-repeat: repeat;
-    background-image: url(../img/bg-2.png);
-    background-position: top center;
-    background-color: #000;
-    height: 700px;
-    font-family: 'Source Sans Pro', Sans-serif;
-    text-align: center;
-    overflow-y: auto;
-    position: relative;
-    z-index: 5;
-    margin-bottom: 0;
-  }
-
-  #profile {
-    margin-top: 100px;
-  }
-
-  #profile img {
-    max-width: 150px;
-    min-width: 100px;
-    position: relative;
-    opacity: 1;
-    -webkit-transition: all .8s ease-in-out;
-    -moz-transition: all .8s ease-in-out;
-    -o-transition: all .8s ease-in-out;
-    transition: all .8s ease-in-out;
-  }
-
-  #personal-profile {
-    font-family: 'Source Sans Pro', Sans-serif;
-    font-weight: 200;
-    color: #f5f7f6;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    font-size: 1.2em;
-    line-height: auto;
-  }
-
-  #phone {
-  display: none;
-}
-
-  #icons {
-    margin-top: 0;
-    text-align: center;
-  }
-
-  #icons i {
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-    width: 60px;
-    height: 60px;
-    border: 2px solid;
-    border-color: #f5f7f6;
-    border-radius: 100%;
-    padding: 14px;
-    margin: 10px;
-    color:#fff;
-    font-size: 1.8em;
-  }
-
-  #icons img {
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-    width: 60px;
-    border: 1px solid;
-    border-color: #f5f7f6;
-    padding: 5px;
-    margin: 5px 5px 0 5px;
-  }
-}
+  /* END */
