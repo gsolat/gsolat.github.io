@@ -18,7 +18,7 @@ body {
 @media (min-width: 1200px) {
   #home {
     color: #333333;
-    height: 600px;
+    height: 800px;
     margin-top: 0;
     background-color: none;
     background-repeat: no-repeat;
@@ -94,7 +94,7 @@ body {
   /* --- CONTACT --- */
   #contact-info {
     color: #333333;
-    height: 700px;
+    height: 800px;
     background-color: none;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -120,7 +120,8 @@ body {
     margin-bottom: 33px;
   }
   #mail-phone {
-    padding: 12px 0;
+    padding: 12px;
+    vertical-align: middle;
   }
   #info-group #mail-phone a {
     margin-bottom: 21px;
@@ -141,7 +142,7 @@ body {
   }
   #info-group #mail-phone i {
     margin-right: 18px;
-    font-size: 1.500em;
+    padding: 5px;
   }
 
   /* --- PORTFOLIO --- */
@@ -297,7 +298,6 @@ body {
   }
   #info-group #mail-phone i {
     margin-right: 18px;
-    font-size: 1.500em;
   }
 
   /* --- PORTFOLIO --- */
@@ -445,7 +445,6 @@ body {
   }
   #info-group #mail-phone i {
     margin-right: 18px;
-    font-size: 1.500em;
   }
 
   /* --- PORTFOLIO --- */
@@ -602,7 +601,6 @@ body {
   }
   #info-group #mail-phone i {
     margin-right: 18px;
-    font-size: 1.500em;
   }
 
   /* --- PORTFOLIO --- */
@@ -755,7 +753,6 @@ body {
   }
   #info-group #mail-phone i {
     margin-right: 18px;
-    font-size: 1.500em;
   }
 
   /* --- PORTFOLIO --- */
@@ -907,7 +904,6 @@ body {
   }
   #info-group #mail-phone i {
     margin-right: 18px;
-    font-size: 1.500em;
   }
 
   /* --- PORTFOLIO --- */
@@ -1060,7 +1056,6 @@ body {
   }
   #info-group #mail-phone i {
     margin-right: 18px;
-    font-size: 1.500em;
   }
 
   /* --- PORTFOLIO --- */
@@ -1212,7 +1207,6 @@ body {
   }
   #info-group #mail-phone i {
     margin-right: 12px;
-    font-size: 1.500em;
   }
 
   /* --- PORTFOLIO --- */
@@ -1364,7 +1358,6 @@ body {
   }
   #info-group #mail-phone i {
     margin-right: 12px;
-    font-size: 1.500em;
   }
 
   /* --- PORTFOLIO --- */
@@ -1516,7 +1509,6 @@ body {
   }
   #info-group #mail-phone i {
     margin-right: 10px;
-    font-size: 1.500em;
   }
 
   /* --- PORTFOLIO --- */
