@@ -2,20 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>GS &middot; Diseño</title>
+    <title>portafolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Comunicación visual táctica para iniciativas tecnológicas y culturales.">
     <meta name="author" content="Guillermo Solano">
 
-<!-- Styles -->
+<!-- CSS -->
 
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/lightbox.css" rel="stylesheet"/>
     <link href="css/owl.transitions.css" rel="stylesheet">
     <link href="css/animate.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="shortcut icon" href="img/gs-icon.ico">
+    <link rel="stylesheet" type="text/css" href="build/styles.min.css">
+    <link rel="shortcut icon" href="img/gs.ico">
     <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700,400italic' rel='stylesheet' type='text/css'>
   </head>
 
@@ -24,16 +24,15 @@
 
 <!-- NAV -->
 
-<nav class="navbar ">
+<nav class="navbar">
     <div class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
                <a class="navbar-brand" href="#"><h3>Guillermo Solano</h3><p>DISEÑO / COMUNICACIÓN VISUAL</p></a>
             </div>
             <ul class="nav navbar-nav navbar-right">
+                <li><a class="navbar-link" href="inner/about.html" title="acerca de"><i class="fa fa-id-badge" aria-hidden="true"></i></a></li>
                 <li><a class="navbar-link" href="#" target="_blank"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
-                <li><a class="navbar-link" href="https://www.behance.net/gsolat" target="_blank"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
-                <li><a class="navbar-link" href="https://www.instagram.com/gsolat/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                 <!-- <li><a class="navbar-link" href="#" target="_blank"><i class="fa fa-tumblr" aria-hidden="true"></i></a></li> -->
                 <!-- <li><a class="navbar-link" href="#" target="_blank"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li> -->
                 <li><a class="navbar-link" href="#" target="_blank"><i class="fa fa-phone" aria-hidden="true"></i></a></li>
@@ -42,108 +41,54 @@
     </div>
 </nav>
 
-<!-- HOME -->
-
-<section id="home" class="container-fluid">
-    <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 wow fadeInLeft animated" id="text-box">
-            <div id="logo-box" class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-6 col-xs-offset-4">
-                <img src="img/gs-icon.png" class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-6 col-xs-offset-3" alt="guillermo_solano_logo"></img>
-                <h4 class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Diseño para resolver necesidades<br>desde la comunicación visual</h4>
-                <div id="nav" class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-12 col-xs-12 col-xs-offset-0">
-                    <a href="#logotype" class="smoothScroll"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
 <!-- PORTAFOLIO -->
 
-<section id="logotype">
+<section id="portfolio">
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-2 wow fadeInleft">
-                <div class="catalog col-lg-4 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1">
-                    <div class="project-1 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <!-- trigger modal -->
-                        <div class="trigger-link">
-                            <figure>
-                                <a data-toggle="modal" data-target="#modal-data-science">
-                                <img src="img//logo/logo-01.png" class="img-responsive"></img></a>
-                            </figure>
-                            <span><h3>Data Science<h3></span>
-                        </div>
-                        <!-- modal content -->
-                        <div class="modal fade" id="modal-data-science" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> -->
-                                        <h1 class="modal-title col-lg-12 col-md-12 col-sm-12 col-xs-12" id="modal-data-science-Label">(BOP) Billion Object Platform</h1>
-                                    </div>
-                                    <div class="modal-body">
-                                        <div class="col-lg-5 col-md-5 col-sm-7">
-                                            <p class="intro">BOP provided a Dataverse platform with an API-accessible big data exploration tool which can support streaming data.</p>
-                                            <p>The more general goal is to lower barriers for scholars who wish to access large, streaming, spatio-temporal datasets by addressing a basic limitation of geospatial platforms when it comes to interactive visualization of more than a couple million features.</p>
-                                            <p>The first instance of the BOP is loaded with the latest billion geo-tweets, and is fed a real-time stream of about 1 million tweets per day. The geo-tweets are enriched with sentiment and census/admin boundary codes on their way into the system.</p>
-                                        </div>
-                                        <div class="col-lg-7 col-md-7 col-sm-5 img-section">
-                                            <img src="img/heatmap.png" class="img-responsive"></img>
-                                            <a href="http://bop.worldmap.harvard.edu/bop/#!/search?time=%5B2017-04-13T00:00:00%20TO%202017-07-13T00:00:00%5D&geo=%5B-57.76427508342331,-164.54485%20TO%2063.15716866095022,59.752024999999996%5D" type="button" target="_blank" class="btn btn-xs">view project</a>
-                                        </div>
-                                    </div>
-                                    <!-- <div class="modal-footer">
-                                        <button type="button" class="btn btn-xs">view full article</button>
-                                    </div> -->
-                                </div>
-                            </div>
+                <div class="catalog col-lg-3 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+                    <div class="preview">
+                        <div class="link">
+                            <a href="inner/dmc.html"><img src="img/logo/logo-01.svg" class="img-responsive"></img></a>
                         </div>
                     </div>
                 </div>
-
-
-                <img src="img/logo/logo-01.png" class="img-responsive col-lg-4 col-md-4 col-sm-4 col-xs-6">
-                <img src="img/logo/logo-02.png" class="img-responsive col-lg-4 col-md-4 col-sm-4 col-xs-6">
-                <img src="img/logo/logo-03.png" class="img-responsive col-lg-4 col-md-4 col-sm-4 col-xs-6">
-                <img src="img/logo/logo-04.png" class="img-responsive col-lg-4 col-md-4 col-sm-4 col-xs-6">
-                <img src="img/logo/logo-05.png" class="img-responsive col-lg-4 col-md-4 col-sm-4 col-xs-6">
-                <img src="img/logo/logo-06.png" class="img-responsive col-lg-4 col-md-4 col-sm-4 col-xs-6">
-                <img src="img/logo/logo-07.png" class="img-responsive col-lg-4 col-md-4 col-sm-4 col-xs-6">
-                <img src="img/logo/logo-08.png" class="img-responsive col-lg-4 col-md-4 col-sm-4 col-xs-6">
-                <img src="img/logo/logo-09.png" class="img-responsive col-lg-4 col-md-4 col-sm-4 col-xs-6">
-                <img src="img/logo/logo-10.png" class="img-responsive col-lg-4 col-md-4 col-sm-4 col-xs-6">
-                <img src="img/logo/logo-11.png" class="img-responsive col-lg-4 col-md-4 col-sm-4 col-xs-6">
-                <img src="img/logo/logo-12.png" class="img-responsive col-lg-4 col-md-4 col-sm-4 col-xs-6">
-                <div id="title" class="col-lg-12">
-                        <h4>Logo & Visual ID</h4>
+                <div class="catalog col-lg-3 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+                    <div class="preview">
+                        <div class="link">
+                            <a href="inner/piensa.html"><img src="img/logo/logo-02.svg" class="img-responsive"></img></a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- <section id="print" class="container-fluid">
-          <div id="poster" class="row">
-           <div id="item-pic" class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-2 wow fadeInleft">
-              <img src="img/print/corazon.png" class="img-responsive col-lg-6 col-md-6 col-sm-6 col-xs-6">
-              <img src="img/print/prodim.png" class="img-responsive col-lg-6 col-md-6 col-sm-6 col-xs-6">
-              <img src="img/print/alteraciones.png" class="img-responsive col-lg-6 col-md-6 col-sm-6 col-xs-6">
-              <img src="img/print/age-friendly.png" class="img-responsive col-lg-6 col-md-6 col-sm-6 col-xs-6">
-              <div id="title" class="col-lg-12">
-                    <h4>Poster</h4>
-              </div>
-           </div>
-          </div>
-</section> -->
-
-<section id="music" class="container-fluid">
-    <div id="disc" class="row">
-        <div id="item-pic" class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-2 wow fadeInleft">
-            <img src="img/music/music-01.png" class="img-responsive col-lg-12">
-                <img src="img/music/music-02.png" class="img-responsive col-lg-12">
-            <div id="title" class="col-lg-12">
-                <h4>Album Cover</h4>
+                <div class="catalog col-lg-3 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+                    <div class="preview">
+                        <div class="link">
+                            <a href="inner/autti.html"><img src="img/logo/logo-04.svg" class="img-responsive"></img></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog col-lg-3 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+                    <div class="preview">
+                        <div class="link">
+                            <a href="inner/vokaribe.html"><img src="img/logo/logo-12.svg" class="img-responsive"></img></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog col-lg-3 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+                    <div class="preview">
+                        <div class="link">
+                            <a href="inner/rc.html"><img src="img/logo/logo-03.svg" class="img-responsive"></img></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog col-lg-3 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+                    <div class="preview">
+                        <div class="link">
+                            <a href="inner/gs.html"><img src="img/logo/logo-09.svg" class="img-responsive"></img></a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -154,21 +99,19 @@
 <section id="contact" class="container-fluid">
     <div id="contact-info" class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-2">
-            <img src="img/gs.jpg" class="col-lg-2 col-lg-offset-5 col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4 col-xs-2 col-xs-offset-5 img-responsive"></img>
-            <p class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-8 col-xs-offset-2">Contar algo acerca de mi, implica decir que me considero una persona ampliamente comprensiva; con el privilegio de tener mucha atención al detalle <del>(para otros puede parecer una incómoda fijación)</del>, y algunas habilidades para la plástica y la comunicación que he aprendido a usar a lo largo de varios años.
-                Acostumbro ser muy estructurado en todo lo que hago, pero disfruto mucho extender la imaginación para encontrar las soluciones adecuadas para el caso indicado.</p>
              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <p>email: gsolat@gmail.com <br> tel: 301 544 9122</p>
-             </div>
-             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <h3>Gracias por pasar a mirar :)</h3>
+                <a href="inner/about.html" title="acerca de"><i class="fa fa-id-badge" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-tumblr" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="mailto:forjamente@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+                <a href="callto:+573015449122"><i class="fa fa-phone" aria-hidden="true"></i></a>
+                <p>todos los derechos reservados &#169;</p>
              </div>
         </div>
     </div>
 </section>
 
-<!-- Le javascript-->
-<!-- Placed at the end of the document so the pages load faster -->
+<!-- JAVASCRIPT -->
 
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
