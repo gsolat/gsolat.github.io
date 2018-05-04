@@ -391,7 +391,7 @@ ul.nostyle i {
         color: #424242;
         margin-top: 17px;
         position: relative;
-        top:-36px;
+        top:-35px;
         left: 30px;
     }
     .navbar.navbar-default .navbar-header br {
@@ -400,7 +400,7 @@ ul.nostyle i {
     .navbar.navbar-default .navbar-header p {
         font-size: 0.65em;
         margin: 14px 10px;
-        line-height: normal;
+        line-height: 1.87;
         color: #424242;
     }
 }
