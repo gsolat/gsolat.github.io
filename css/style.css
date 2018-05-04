@@ -210,6 +210,58 @@ ul.nostyle i {
     }
 }
 
+@media (min-width: 370px) and (max-width: 425px) {
+    .navbar-default {
+        text-align: left;
+    }
+    .navbar.navbar-default .navbar-header {
+        background-color: #fff;
+    }
+    .navbar {
+        min-height: 0;
+        margin-bottom: 0;
+        border: 1px solid transparent;
+    }
+    .navbar .navbar-default {
+        border: 0;
+        border-radius: 0;
+        margin-bottom: 0;
+        background-color: transparent;
+    }
+    .navbar.navbar-default .navbar-brand {
+        height: 30px;
+        width: 180px;
+        padding: 10px;
+        margin-bottom: 0px;
+    }
+    .navbar.navbar-default .navbar-brand img {
+        height: 25px;
+    }
+    .navbar-default .navbar-collapse, .navbar-default .navbar-form  {
+        border: 0;
+    }
+    .navbar-nav {
+        display: none;
+    }
+    .navbar.navbar-default .navbar-brand h3 {
+        font-size: 0.850em;
+        color: #424242;
+        margin-top: 15px;
+        position: relative;
+        top:-37px;
+        left: 37px;
+    }
+    .navbar.navbar-default .navbar-header br {
+        display: none;
+    }
+    .navbar.navbar-default .navbar-header p {
+        font-size: 0.8em;
+        margin: 15px 10px;
+        line-height: normal;
+        color: #424242;
+    }
+}
+
 @media only screen and (min-width: 768px) {
     .navbar.navbar-default {
         border: 0;
