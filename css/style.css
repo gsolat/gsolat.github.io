@@ -1022,7 +1022,7 @@ hr {
 
     /* -- PORTAFOLIO -- */
     #portfolio {
-        height: auto;
+        min-height: 500px;
         padding-top: 56px;
         padding-bottom: 50px;
         color: #333;
