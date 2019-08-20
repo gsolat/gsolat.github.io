@@ -9,15 +9,10 @@
 
 <!-- CSS -->
 
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/lightbox.css" rel="stylesheet"/>
-    <link href="css/owl.transitions.css" rel="stylesheet">
-    <link href="css/animate.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <link rel="shortcut icon" href="img/gs.ico">
-    <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700,400italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700,400italic' rel='stylesheet' type='text/css'>
   </head>
 
 <body>
@@ -25,137 +20,42 @@
 
 <!-- NAV -->
 
-<nav class="navbar">
-    <div class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-               <a class="navbar-brand" href="#portfolio">
-                   <img src="img/gs-logo.svg"/><h3>Guillermo Solano</h3>
-               </a>
-               <p>DISEÑO /<br> COMUNICACIÓN VISUAL</p>
-            </div>
-            <ul class="nav navbar-nav">
-                <li><a class="navbar-link" href="#project" title="acerca de">Bio</a></li>
-                <li><a class="navbar-link" href="mailto:forjamente@gmail.com" target="_blank">Correo-e</a></li>
-                <li><a class="navbar-link" href="callto:+573015449122" target="_blank">Teléfono</i></a></li>
+<nav class="container navbar navbar-expand-lg fixed-top navbar-light bg-light">
+      <a class="navbar-brand" href="#"><img src="img/gs-logo.svg"/>Guillo Solano</a>
+          <span class="navbar-text">
+              Diseñador gráfico
+          </span>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarText">
+            <ul class="nav justify-content-end">
+                  <li class="nav-item active">
+                      <a class="nav-link" href="bio.html" title="acerca de">Perfil</a>
+                  </li>
+                  <!-- <li class="nav-item active">
+                      <a class="nav-link" href="#" title="blog">Blog</a>
+                  </li> -->
             </ul>
-        </div>
-    </div>
+      </div>
 </nav>
 
 <!-- PORTAFOLIO -->
 
 <section id="portfolio">
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
-            <div id="carousel-portfolio" class="carousel slide col-lg-8 col-lg-offset-2" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carousel-portfolio" data-slide-to="0" class="active"></li>
-                    <li data-target="#carousel-portfolio" data-slide-to="1"></li>
-                    <li data-target="#carousel-portfolio" data-slide-to="2"></li>
-                    <li data-target="#carousel-portfolio" data-slide-to="3"></li>
-                    <li data-target="#carousel-portfolio" data-slide-to="4"></li>
-                    <li data-target="#carousel-portfolio" data-slide-to="5"></li>
-                    <li data-target="#carousel-portfolio" data-slide-to="6"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="item active">
-                      <img src="img/large/rc-01.svg">
-                    </div>
-                    <div class="item">
-                      <img src="img/large/dmc-02.svg">
-                    </div>
-                    <div class="item">
-                      <img src="img/large/pi-02.svg">
-                    </div>
-                    <div class="item">
-                      <img src="img/large/autti-01.svg">
-                    </div>
-                    <div class="item">
-                      <img src="img/large/vk-02.svg">
-                    </div>
-                    <div class="item">
-                      <img src="img/large/gs-01.svg">
-                    </div>
-                    <div class="item">
-                      <img src="img/large/aprodefa-01.svg">
-                    </div>
-                </div>
-                  <!-- Left and right controls -->
-                  <a class="left carousel-control" href="#carousel-portfolio" data-slide="prev" >
-                    <i class="fa fa-chevron-left"></i>
-                    <span class="sr-only">Previous</span>
-                  </a>
-                  <a class="right carousel-control" href="#carousel-portfolio" data-slide="next">
-                    <i class="fa fa-chevron-right"></i>
-                    <span class="sr-only">Next</span>
-                  </a>
-            </div>
-
-<!-- POSTERS -->
-            <!-- <div class="posters">
-                <div class="col-lg-4 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-2 wow fadeInleft">
-                    <div class="preview">
-                        <div class="link">
-                            <img src="img/poster/amanta.png" class="img-responsive"></img>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 wow fadeInleft">
-                    <div class="preview">
-                        <div class="link">
-                            <img src="img/poster/memoria-en-paz.png" class="img-responsive"></img>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-        </div>
-    </div>
-</section>
-
-<!-- PORTFOLIO MOBILE -->
-
-<section id="portfolio-mobile">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="portfolio-gallery">
-                <div>
-                  <img src="img/small/rc-01.svg">
-                </div>
-                <div>
-                  <img src="img/small/dmc-02.svg">
-                </div>
-                <div>
-                  <img src="img/small/pi-02.svg">
-                </div>
-                <div>
-                  <img src="img/small/autti-01.svg">
-                </div>
-                <div>
-                  <img src="img/small/vk-02.svg">
-                </div>
-                <div>
-                  <img src="img/small/gs-01.svg">
-                </div>
-                <div>
-                  <img src="img/small/aprodefa-01.svg">
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ABOUT -->
-<section id="project">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-6 col-lg-offset-3 col-md-6 col-xs-12 col-sm-6 col-md-offset-3 col-sm-offset-3 col-xs-0">
-                <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-xs-12 col-xs-0 shortbio">
-                    <div class="photo">
-                    </div>
-                    <p>Diseño como excusa para generar soluciones en contexto, algunas veces desde lo gráfico y lo visual otras veces desde lo metodológico.
-Hace mas de 10 años participo en proyectos comunicativos de aplicación gráfica y digital. Considero el diseño como la suma de procesos que llevan a entender y resolver problemas específicos que regularmente giran alrededor de nuestra interacción con los objetos y ficciones que creamos.</p>
-                </div>
+            <div class="col-12 project">
+                  <div class="row">
+                      <img src="img/arrecife/arrecife-portada-behance-01.png" class="img-fluid">
+                  </div>
+                  <div class="row justify-content-end">
+                      <div class="pre-body col-xl-2 col-lg-3 col-md-3 col-sm-3 col-12">
+                            <h5 class="pre-title">Título Proyecto</h5>
+                            <p class="pre-text">Pellentesque pharetra fringilla venenatis. Duis in auctor quam. Nulla rutrum diam vitae eros pellentesque.</p>
+                            <a href="portafolio-arrecife.html" class="btn btn-xs">Ampliar</a>
+                      </div>
+                  </div>
             </div>
         </div>
     </div>
@@ -165,13 +65,11 @@ Hace mas de 10 años participo en proyectos comunicativos de aplicación gráfic
 
 <section id="contact" class="container-fluid">
     <div id="contact-info" class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12">
+        <div class="col-xl-4 offset-xl-4 col-lg-4 offset-lg-4 col-md-4 offset-md-4 col-sm-4 offset-sm-4 col-10 offset-1">
              <div >
-                 <!-- class="col-lg-12 col-md-12 col-sm-12 col-xs-12" -->
-                <a href="http://forjamente.tumblr.com/"><i class="fa fa-tumblr" aria-hidden="true"></i></a>
-                <a href="https://www.instagram.com/guillo.solano/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                <a href="mailto:forjamente@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
-                <a href="callto:+573015449122"><i class="fa fa-phone" aria-hidden="true"></i></a>
+                 <a href="mailto:forjamente@gmail.com"><i class="far fa-envelope"></i></a>
+                 <a href="callto:+573015449122"><i class="fas fa-mobile-alt"></i></a>
+                 <a href="https://www.instagram.com/guillo.solano/"><i class="fab fa-instagram"></i></a>
                 <p>todos los derechos reservados &#169;</p>
              </div>
         </div>
@@ -182,8 +80,5 @@ Hace mas de 10 años participo en proyectos comunicativos de aplicación gráfic
 
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/wow.min.js"></script>
-    <script type="text/javascript" src="js/smoothscroll.js"></script>
-    <script src="js/lightbox.min.js"></script>
   </body>
 </html>
