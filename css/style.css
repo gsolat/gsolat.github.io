@@ -171,6 +171,13 @@ hr {
 
     /* arrecife */
 
+    .project #arrecife {
+        height: 640px;
+        background-image: url('../img/arrecife/arrecife-portada-behance-01.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #FE6F5E;
+    }
     .project-arrecife {
         height: auto;
         color: #333;
@@ -285,7 +292,7 @@ hr {
         background-color: #f2efe3;
     }
     #shortbio #photo {
-        height: 640px;
+        /* height: 640px; */
         background-image: url('../img/guillosolano.png');
         background-size: cover;
         background-repeat: no-repeat;
@@ -346,6 +353,13 @@ hr {
 
     /* arrecife */
 
+    .project #arrecife {
+        height: 640px;
+        background-image: url('../img/arrecife/arrecife-portada-behance-01.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #FE6F5E;
+    }
     .project-arrecife {
         height: auto;
         color: #333;
@@ -460,7 +474,7 @@ hr {
         background-color: #f2efe3;
     }
     #shortbio #photo {
-        height: 640px;
+        /* height: 640px; */
         background-image: url('../img/guillosolano.png');
         background-size: cover;
         background-repeat: no-repeat;
@@ -521,6 +535,13 @@ hr {
 
     /* arrecife */
 
+    .project #arrecife {
+        height: 540px;
+        background-image: url('../img/arrecife/arrecife-portada-behance-01.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #FE6F5E;
+    }
     .project-arrecife {
         height: auto;
         color: #333;
@@ -635,11 +656,11 @@ hr {
         background-color: #f2efe3;
     }
     #shortbio #photo {
-        height: 540px;
+        /* height: 540px; */
         background-image: url('../img/guillosolano.png');
         background-size: cover;
         background-repeat: no-repeat;
-        background-color: #FE6F5E;
+        /* background-color: #FE6F5E; */
     }
     #shortbio #photo img {
         margin-top: 120px;
@@ -696,6 +717,13 @@ hr {
 
     /* arrecife */
 
+    .project #arrecife {
+        height: 406px;
+        background-image: url('../img/arrecife/arrecife-portada-behance-01.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #FE6F5E;
+    }
     .project-arrecife {
         height: auto;
         color: #333;
@@ -810,7 +838,7 @@ hr {
         background-color: #f2efe3;
     }
     #shortbio #photo {
-        height: 406px;
+        /* height: 406px; */
         background-image: url('../img/guillosolano.png');
         background-size: cover;
         background-repeat: no-repeat;
@@ -846,14 +874,10 @@ hr {
         color: #333;
         background-color: #f2efe3;
     }
-    .project {
-        height: auto;
-        background-color: #FE6F5E;
-        margin-bottom: 300px;
-    }
     .pre-body {
         height: auto;
         padding: 10px;
+        margin-bottom: 300px;
         background-color: #f2efe3;
         font-weight: 100;
     }
@@ -877,6 +901,14 @@ hr {
 
     /* arrecife */
 
+    .project #arrecife {
+        /* height: 350px; */
+        background-image: url('../img/arrecife/arrecife-portada-behance-01.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #FE6F5E;
+    }
     .project-arrecife {
         height: auto;
         color: #333;
@@ -1012,7 +1044,7 @@ hr {
         margin: 0;
     }
     #bio {
-        margin-top: 50px;
+        margin-top: 150px;
         padding-top: 10px;
         background-color: #f2efe3;
     }
@@ -1059,6 +1091,14 @@ hr {
 
     /* arrecife */
 
+    .project #arrecife {
+        height: 203px;
+        background-image: url('../img/arrecife/arrecife-portada-behance-01.png');
+        background-size: cover;
+        position: center center;
+        background-repeat: no-repeat;
+        background-color: #FE6F5E;
+    }
     .project-arrecife {
         height: auto;
         color: #333;
@@ -1173,7 +1213,7 @@ hr {
         background-color: #f2efe3;
     }
     #shortbio #photo {
-        height: 350px;
+        /* height: 350px; */
         background-image: url('../img/guillosolano.png');
         background-size: 140%;
         background-position: top left;
