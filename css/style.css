@@ -662,8 +662,9 @@ hr {
         background-repeat: no-repeat;
         /* background-color: #FE6F5E; */
     }
-    #shortbio #photo img {
+    #shortbio #photo #experience img {
         margin-top: 120px;
+        max-width: 220px;
     }
     #shortbio p {
         margin-bottom: 10px;
@@ -846,6 +847,9 @@ hr {
     }
     #shortbio #photo img {
         margin-top: 30px;
+    }
+    #shortbio #photo #experience img {
+        max-width: 200px;
     }
     #shortbio p {
         margin-bottom: 10px;
