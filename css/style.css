@@ -318,7 +318,7 @@ hr {
     }
 }
 
-@media (min-width: 1200px) and (max-width: 1400px) {
+@media (min-width: 1200px) and (max-width: 1399px) {
 
     /* -- PORTAFOLIO -- */
     #portfolio {
@@ -500,7 +500,7 @@ hr {
     }
 }
 
-@media (min-width: 992px) and (max-width: 1200px) {
+@media (min-width: 993px) and (max-width: 1199px) {
 
     /* -- PORTAFOLIO -- */
     #portfolio {
@@ -1050,7 +1050,7 @@ hr {
     }
 }
 
-@media (max-width: 420px){
+@media (max-width: 419px){
 
     /* -- PORTAFOLIO -- */
     #portfolio {
