@@ -7,6 +7,7 @@ body {
     width: 100%;
     font-size: 14px;
     font-family: 'Ubuntu', sans-serif;
+    background-color: #f2efe3;
 }
 
 h1,
@@ -646,7 +647,7 @@ hr {
 
     #about {
         background-color: #f2efe3;
-        height: 920px;
+        height: 700px;
     }
     #shortbio {
         height: auto;
@@ -829,7 +830,7 @@ hr {
 
     #about {
         background-color: #f2efe3;
-        height: 920px;
+        height: 600px;
     }
     #shortbio {
         height: auto;
@@ -1017,7 +1018,7 @@ hr {
 
     #about {
         background-color: #f2efe3;
-        height: 920px;
+        height: 600px;
     }
     #shortbio {
         height: auto;
