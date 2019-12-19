@@ -44,17 +44,21 @@ hr {
     font-size: 0.875em;
     color: #fff;
     border-width: 0;
+    border: 1px solid #FE3119;
     border-radius: 3px;
-    background-color: #FE6F5E;
+    background-color: transparent;
 }
 .btn-xs {
     font-family: 'Ubuntu', sans-serif;
     font-weight: 200;
-    color: #fff;
+    font-size: .7em;
+    color: #FE6F5E;
+    text-transform: uppercase;
     padding: 3px 8px;
     border-width: 0;
+    border: 2px solid #FE6F5E;
     border-radius: 1px;
-    background-color: #FE6F5E;
+    background-color: transparent;
 }
 .btn-primary {
     font-family: 'Ubuntu', sans-serif;
@@ -71,6 +75,7 @@ hr {
 .btn:focus,
 .btn:active {
     background: #FE3119;
+    border: 2px solid #FE3119;
     color: #fff;
 }
 .btn-primary:hover,
@@ -140,17 +145,18 @@ hr {
 @media (min-width: 1400px) {
 
     /* -- PORTAFOLIO -- */
+
     #portfolio {
         height: auto;
         padding-top: 58px;
-        padding-bottom: 150px;
+        padding-bottom: 0px;
         color: #333;
         background-color: #f2efe3;
     }
     .project {
         height: auto;
         background-color: #FE6F5E;
-        margin-bottom: 300px;
+        margin-bottom: 150px;
     }
     .pre-body {
         height: 130px;
@@ -164,10 +170,44 @@ hr {
     }
     .pre-text {
         font-size: 0.8em;
-        margin-bottom: 5px;
+        margin-bottom: 15px;
     }
     .pre-body a {
         float: right;
+    }
+
+    /* imago */
+
+    .project #imago {
+        height: 640px;
+        background-image: url('../img/imago/imago-portada-behance-01.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #FE6F5E;
+    }
+
+    .project-imago {
+        height: auto;
+        color: #333;
+    }
+    #imago-icon {
+        height: 650px;
+        text-align: center;
+    }
+    #imago-icon img {
+        margin-top: 240px;
+        max-width: 150px;
+        border-radius: 0;
+    }
+    #imago-text {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    #imago-text p {
+        font-size: 1em;
+        line-height: 2;
+        font-weight: 100;
+        margin-top: 20px;
     }
 
     /* arrecife */
@@ -379,7 +419,7 @@ hr {
     #shortbio #photo {
         /* height: 640px; */
         background-image: url('../img/guillosolano.png');
-        background-size: cover;
+        background-size: 140%;
         background-repeat: no-repeat;
         background-color: #FE6F5E;
     }
@@ -436,6 +476,40 @@ hr {
         float: right;
     }
 
+    /* imago */
+
+    .project #imago {
+        height: 640px;
+        background-image: url('../img/imago/imago-portada-behance-01.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #FE6F5E;
+    }
+
+    .project-imago {
+        height: auto;
+        color: #333;
+    }
+    #imago-icon {
+        height: 650px;
+        text-align: center;
+    }
+    #imago-icon img {
+        margin-top: 240px;
+        max-width: 150px;
+        border-radius: 0;
+    }
+    #imago-text {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    #imago-text p {
+        font-size: 1em;
+        line-height: 2;
+        font-weight: 100;
+        margin-top: 20px;
+    }
+
     /* arrecife */
 
     .project #arrecife {
@@ -645,7 +719,7 @@ hr {
     #shortbio #photo {
         /* height: 640px; */
         background-image: url('../img/guillosolano.png');
-        background-size: cover;
+        background-size: auto;
         background-repeat: no-repeat;
         background-color: #FE6F5E;
     }
@@ -700,6 +774,40 @@ hr {
     }
     .pre-body a {
         float: right;
+    }
+
+    /* imago */
+
+    .project #imago {
+        height: 540px;
+        background-image: url('../img/imago/imago-portada-behance-01.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #FE6F5E;
+    }
+
+    .project-imago {
+        height: auto;
+        color: #333;
+    }
+    #imago-icon {
+        height: 650px;
+        text-align: center;
+    }
+    #imago-icon img {
+        margin-top: 240px;
+        max-width: 150px;
+        border-radius: 0;
+    }
+    #imago-text {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    #imago-text p {
+        font-size: 1em;
+        line-height: 2;
+        font-weight: 100;
+        margin-top: 20px;
     }
 
     /* arrecife */
@@ -911,7 +1019,7 @@ hr {
     #shortbio #photo {
         /* height: 540px; */
         background-image: url('../img/guillosolano.png');
-        background-size: cover;
+        background-size: 130%;
         background-repeat: no-repeat;
         /* background-color: #FE6F5E; */
     }
@@ -967,6 +1075,40 @@ hr {
     }
     .pre-body a {
         float: right;
+    }
+
+    /* imago */
+
+    .project #imago {
+        height: 406px;
+        background-image: url('../img/imago/imago-portada-behance-01.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #FE6F5E;
+    }
+
+    .project-imago {
+        height: auto;
+        color: #333;
+    }
+    #imago-icon {
+        height: 650px;
+        text-align: center;
+    }
+    #imago-icon img {
+        margin-top: 240px;
+        max-width: 150px;
+        border-radius: 0;
+    }
+    #imago-text {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    #imago-text p {
+        font-size: 1em;
+        line-height: 2;
+        font-weight: 100;
+        margin-top: 20px;
     }
 
     /* arrecife */
@@ -1240,6 +1382,41 @@ hr {
         float: right;
     }
 
+    /* imago */
+
+    .project #imago {
+        height: 406px;
+        background-image: url('../img/imago/imago-portada-behance-01.png');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-color: #FE6F5E;
+    }
+
+    .project-imago {
+        height: auto;
+        color: #333;
+    }
+    #imago-icon {
+        height: 650px;
+        text-align: center;
+    }
+    #imago-icon img {
+        margin-top: 240px;
+        max-width: 150px;
+        border-radius: 0;
+    }
+    #imago-text {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    #imago-text p {
+        font-size: 1em;
+        line-height: 2;
+        font-weight: 100;
+        margin-top: 20px;
+    }
+
     /* arrecife */
 
     .project #arrecife {
@@ -1451,7 +1628,8 @@ hr {
     #shortbio #photo {
         height: 350px;
         background-image: url('../img/guillosolano.png');
-        background-size: cover;
+        background-size: 190%;
+        background-position: left top;
         background-repeat: no-repeat;
         background-color: #FE6F5E;
     }
@@ -1514,6 +1692,41 @@ hr {
     }
     .pre-body a {
         float: right;
+    }
+
+    /* imago */
+
+    .project #imago {
+        height: 203px;
+        background-image: url('../img/imago/imago-portada-behance-01.png');
+        background-size: cover;
+        position: center center;
+        background-repeat: no-repeat;
+        background-color: #FE6F5E;
+    }
+
+    .project-imago {
+        height: auto;
+        color: #333;
+    }
+    #imago-icon {
+        height: 650px;
+        text-align: center;
+    }
+    #imago-icon img {
+        margin-top: 240px;
+        max-width: 150px;
+        border-radius: 0;
+    }
+    #imago-text {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    #imago-text p {
+        font-size: 1em;
+        line-height: 2;
+        font-weight: 100;
+        margin-top: 20px;
     }
 
     /* arrecife */
@@ -1726,7 +1939,7 @@ hr {
     #shortbio #photo {
         /* height: 350px; */
         background-image: url('../img/guillosolano.png');
-        background-size: 140%;
+        background-size: 190%;
         background-position: top left;
         background-repeat: no-repeat;
         background-color: #FE6F5E;
