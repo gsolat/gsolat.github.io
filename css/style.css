@@ -56,7 +56,7 @@ hr {
     text-transform: uppercase;
     padding: 3px 8px;
     border-width: 0;
-    border: 2px solid #FE6F5E;
+    border: 1px solid #FE6F5E;
     border-radius: 1px;
     background-color: transparent;
 }
@@ -75,7 +75,7 @@ hr {
 .btn:focus,
 .btn:active {
     background: #FE3119;
-    border: 2px solid #FE3119;
+    border: 1px solid #FE3119;
     color: #fff;
 }
 .btn-primary:hover,
