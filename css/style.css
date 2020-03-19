@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700');
+@font-face {
+    font-family: Akrobat;
+       src: url(../fonts/WEB/Akrobat-Regular.woff);
+    }
 
 body {
     margin-top: 0;
@@ -365,6 +369,127 @@ hr {
         background-color: #CE4143;
     }
 
+    /* contexto */
+
+    .project #contexto {
+        height: 640px;
+        background-image: url('../img/contexto/umit-aslan-v-Js84xYlRI-unsplash.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: #ff6347;
+    }
+    .project-contexto {
+        height: auto;
+        color: #333;
+    }
+    .project-contexto p{
+        font-size: 1em;
+        line-height: 2;
+        font-weight: 100;
+    }
+    #contexto-abstract {
+        margin-top: 350px;
+        margin-bottom: 200px;
+        font-style: italic;
+        text-align: center;
+    }
+    #contexto-icon {
+        height: auto;
+        text-align: center;
+        background-image: url('../img/contexto/umit-aslan-v-Js84xYlRI-unsplash.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #contexto-icon img {
+        max-width: 110px;
+        margin-top: 200px;
+    }
+    #contexto-text h2 {
+        font-family: 'Akrobat', sans-serif;
+        font-weight: bold;
+        color: #fff;
+    }
+    #contexto-text {
+        text-align: left;
+        font-size: .9em;
+        margin-top: 100px;
+        margin-bottom: 200px;
+        color: #fff;
+    }
+    #contexto-desc {
+        margin-top: 250px;
+        margin-bottom: 150px;
+        text-align: left;
+    }
+    #contexto-desc img {
+        margin-bottom: 100px;
+    }
+    #contexto-link {
+        text-align: center;
+        margin-bottom: 100px;
+    }
+    #contexto-link .btn {
+        font-weight: 100;
+        letter-spacing: 1px;
+        color: #000;
+        background-color: #ffcba4;
+        border: 0px solid #000;
+        border-radius: 3px;
+    }
+    #contexto-caption figcaption {
+        margin-top: -50px;
+        padding-top: 10px;
+        background-color: #f2efe3;
+        margin-bottom: 80px;
+        text-align: center;
+        font-weight: 100;
+    }
+    #contexto-link .btn:hover {
+        color: #000;
+        background-color: #fff;
+    }
+    #contexto-art-insp {
+        margin-top: 20px;
+        margin-bottom: 200px;
+    }
+    #contexto-art-insp img {
+        margin-bottom: 10px;
+        max-height: 240px;
+    }
+    #contexto-palette {
+        margin-top: 200px;
+        margin-bottom: 20px;
+    }
+    #contexto-colors {
+        margin-top: 10px;
+    }
+    #contexto-font {
+        background-size: contain;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        margin-top: 200px;
+        margin-bottom: 0px;
+    }
+    #contexto-font #font-weight {
+        margin-top: 100px;
+        margin-bottom: 300px;
+    }
+    #contexto-font #font-weight img:first-child {
+        margin-bottom: 50px;
+    }
+    #contexto-logo-end {
+        padding: 200px 100px;
+        margin-bottom: 150px;
+        text-align: center;
+        background-color: #ff6347;
+        background-image: url('../img/contexto/umit-aslan-v-Js84xYlRI-unsplash.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
+
     /* --- CONTACTO --- */
 
     #contact {
@@ -663,6 +788,126 @@ hr {
     #meneonupcial-palette #color-4 {
         height: 100px;
         background-color: #CE4143;
+    }
+
+    /* contexto */
+
+    .project #contexto {
+        height: 640px;
+        background-image: url('../img/contexto/umit-aslan-v-Js84xYlRI-unsplash.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: #ff6347;
+    }
+    .project-contexto {
+        height: auto;
+        color: #333;
+    }
+    .project-contexto p{
+        font-size: 1em;
+        line-height: 2;
+        font-weight: 100;
+    }
+    #contexto-abstract {
+        margin-top: 350px;
+        margin-bottom: 200px;
+        font-style: italic;
+        text-align: center;
+    }
+    #contexto-icon {
+        height: auto;
+        text-align: center;
+        background-image: url('../img/contexto/umit-aslan-v-Js84xYlRI-unsplash.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #contexto-icon img {
+        max-width: 110px;
+        margin-top: 200px;
+    }
+    #contexto-text h2 {
+        font-family: 'Akrobat', sans-serif;
+        font-weight: bold;
+        color: #fff;
+    }
+    #contexto-text {
+        text-align: left;
+        font-size: .9em;
+        margin-top: 100px;
+        margin-bottom: 200px;
+        color: #fff;
+    }
+    #contexto-desc {
+        margin-top: 250px;
+        margin-bottom: 150px;
+        text-align: left;
+    }
+    #contexto-desc img {
+        margin-bottom: 100px;
+    }
+    #contexto-link {
+        text-align: center;
+        margin-bottom: 100px;
+    }
+    #contexto-link .btn {
+        font-weight: 100;
+        letter-spacing: 1px;
+        color: #000;
+        background-color: #ffcba4;
+        border: 0px solid #000;
+        border-radius: 3px;
+    }
+    #contexto-caption figcaption {
+        margin-top: -50px;
+        padding-top: 10px;
+        background-color: #f2efe3;
+        margin-bottom: 80px;
+        text-align: center;
+        font-weight: 100;
+    }
+    #contexto-link .btn:hover {
+        color: #000;
+        background-color: #fff;
+    }
+    #contexto-art-insp {
+        margin-top: 20px;
+        margin-bottom: 200px;
+    }
+    #contexto-art-insp img {
+        margin-bottom: 10px;
+        max-height: 240px;
+    }
+    #contexto-palette {
+        margin-top: 200px;
+        margin-bottom: 20px;
+    }
+    #contexto-colors {
+        margin-top: 10px;
+    }
+    #contexto-font {
+        background-size: contain;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        margin-top: 200px;
+        margin-bottom: 0px;
+    }
+    #contexto-font #font-weight {
+        margin-top: 100px;
+        margin-bottom: 300px;
+    }
+    #contexto-font #font-weight img:first-child {
+        margin-bottom: 50px;
+    }
+    #contexto-logo-end {
+        padding: 200px 100px;
+        margin-bottom: 0px;
+        text-align: center;
+        background-color: #ff6347;
+        background-image: url('../img/contexto/umit-aslan-v-Js84xYlRI-unsplash.jpg');
+        background-size: cover;
+        background-position: center;
     }
 
     /* --- CONTACTO --- */
@@ -965,6 +1210,126 @@ hr {
         background-color: #CE4143;
     }
 
+    /* contexto */
+
+    .project #contexto {
+        height: 640px;
+        background-image: url('../img/contexto/umit-aslan-v-Js84xYlRI-unsplash.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: #ff6347;
+    }
+    .project-contexto {
+        height: auto;
+        color: #333;
+    }
+    .project-contexto p{
+        font-size: 1em;
+        line-height: 2;
+        font-weight: 100;
+    }
+    #contexto-abstract {
+        margin-top: 350px;
+        margin-bottom: 200px;
+        font-style: italic;
+        text-align: center;
+    }
+    #contexto-icon {
+        height: auto;
+        text-align: center;
+        background-image: url('../img/contexto/umit-aslan-v-Js84xYlRI-unsplash.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #contexto-icon img {
+        max-width: 110px;
+        margin-top: 150px;
+    }
+    #contexto-text h2 {
+        font-family: 'Akrobat', sans-serif;
+        font-weight: bold;
+        color: #fff;
+    }
+    #contexto-text {
+        text-align: left;
+        font-size: .9em;
+        margin-top: 100px;
+        margin-bottom: 150px;
+        color: #fff;
+    }
+    #contexto-desc {
+        margin-top: 250px;
+        margin-bottom: 200px;
+        text-align: left;
+    }
+    #contexto-desc img {
+        margin-bottom: 100px;
+    }
+    #contexto-link {
+        text-align: center;
+        margin-bottom: 0px;
+    }
+    #contexto-link .btn {
+        font-weight: 100;
+        letter-spacing: 1px;
+        color: #000;
+        background-color: #ffcba4;
+        border: 0px solid #000;
+        border-radius: 3px;
+    }
+    #contexto-caption figcaption {
+        margin-top: -50px;
+        padding-top: 10px;
+        background-color: #f2efe3;
+        margin-bottom: 80px;
+        text-align: center;
+        font-weight: 100;
+    }
+    #contexto-link .btn:hover {
+        color: #000;
+        background-color: #fff;
+    }
+    #contexto-art-insp {
+        margin-top: 20px;
+        margin-bottom: 200px;
+    }
+    #contexto-art-insp img {
+        margin-bottom: 10px;
+        max-height: 240px;
+    }
+    #contexto-palette {
+        margin-top: 250px;
+        margin-bottom: 20px;
+    }
+    #contexto-colors {
+        margin-top: 10px;
+    }
+    #contexto-font {
+        background-size: contain;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        margin-top: 200px;
+        margin-bottom: 0px;
+    }
+    #contexto-font #font-weight {
+        margin-top: 100px;
+        margin-bottom: 300px;
+    }
+    #contexto-font #font-weight img:first-child {
+        margin-bottom: 50px;
+    }
+    #contexto-logo-end {
+        padding: 200px 100px;
+        margin-bottom: 0px;
+        text-align: center;
+        background-color: #ff6347;
+        background-image: url('../img/contexto/umit-aslan-v-Js84xYlRI-unsplash.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
     /* --- CONTACTO --- */
 
     #contact {
@@ -1264,6 +1629,126 @@ hr {
     #meneonupcial-palette #color-4 {
         height: 100px;
         background-color: #CE4143;
+    }
+
+    /* contexto */
+
+    .project #contexto {
+        height: 640px;
+        background-image: url('../img/contexto/umit-aslan-v-Js84xYlRI-unsplash.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: #ff6347;
+    }
+    .project-contexto {
+        height: auto;
+        color: #333;
+    }
+    .project-contexto p{
+        font-size: 1em;
+        line-height: 2;
+        font-weight: 100;
+    }
+    #contexto-abstract {
+        margin-top: 350px;
+        margin-bottom: 200px;
+        font-style: italic;
+        text-align: center;
+    }
+    #contexto-icon {
+        height: auto;
+        text-align: center;
+        background-image: url('../img/contexto/umit-aslan-v-Js84xYlRI-unsplash.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #contexto-icon img {
+        max-width: 110px;
+        margin-top: 150px;
+    }
+    #contexto-text h2 {
+        font-family: 'Akrobat', sans-serif;
+        font-weight: bold;
+        color: #fff;
+    }
+    #contexto-text {
+        text-align: left;
+        font-size: .9em;
+        margin-top: 100px;
+        margin-bottom: 150px;
+        color: #fff;
+    }
+    #contexto-desc {
+        margin-top: 250px;
+        margin-bottom: 200px;
+        text-align: left;
+    }
+    #contexto-desc img {
+        margin-bottom: 100px;
+    }
+    #contexto-link {
+        text-align: center;
+        margin-bottom: 0px;
+    }
+    #contexto-link .btn {
+        font-weight: 100;
+        letter-spacing: 1px;
+        color: #000;
+        background-color: #ffcba4;
+        border: 0px solid #000;
+        border-radius: 3px;
+    }
+    #contexto-caption figcaption {
+        margin-top: -50px;
+        padding-top: 10px;
+        background-color: #f2efe3;
+        margin-bottom: 80px;
+        text-align: center;
+        font-weight: 100;
+    }
+    #contexto-link .btn:hover {
+        color: #000;
+        background-color: #fff;
+    }
+    #contexto-art-insp {
+        margin-top: 20px;
+        margin-bottom: 200px;
+    }
+    #contexto-art-insp img {
+        margin-bottom: 10px;
+        max-height: 240px;
+    }
+    #contexto-palette {
+        margin-top: 250px;
+        margin-bottom: 20px;
+    }
+    #contexto-colors {
+        margin-top: 10px;
+    }
+    #contexto-font {
+        background-size: contain;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        margin-top: 200px;
+        margin-bottom: 0px;
+    }
+    #contexto-font #font-weight {
+        margin-top: 100px;
+        margin-bottom: 300px;
+    }
+    #contexto-font #font-weight img:first-child {
+        margin-bottom: 50px;
+    }
+    #contexto-logo-end {
+        padding: 200px 100px;
+        margin-bottom: 100px;
+        text-align: center;
+        background-color: #ff6347;
+        background-image: url('../img/contexto/umit-aslan-v-Js84xYlRI-unsplash.jpg');
+        background-size: cover;
+        background-position: center;
     }
 
     /* --- CONTACTO --- */
@@ -1572,6 +2057,126 @@ hr {
     #meneonupcial-palette #color-4 {
         height: 100px;
         background-color: #CE4143;
+    }
+
+    /* contexto */
+
+    .project #contexto {
+        height: 640px;
+        background-image: url('../img/contexto/umit-aslan-v-Js84xYlRI-unsplash.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: #ff6347;
+    }
+    .project-contexto {
+        height: auto;
+        color: #333;
+    }
+    .project-contexto p{
+        font-size: 1em;
+        line-height: 2;
+        font-weight: 100;
+    }
+    #contexto-abstract {
+        margin-top: 350px;
+        margin-bottom: 200px;
+        font-style: italic;
+        text-align: center;
+    }
+    #contexto-icon {
+        height: auto;
+        text-align: center;
+        background-image: url('../img/contexto/umit-aslan-v-Js84xYlRI-unsplash.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #contexto-icon img {
+        max-width: 110px;
+        margin-top: 150px;
+    }
+    #contexto-text h2 {
+        font-family: 'Akrobat', sans-serif;
+        font-weight: bold;
+        color: #fff;
+    }
+    #contexto-text {
+        text-align: left;
+        font-size: .9em;
+        margin-top: 100px;
+        margin-bottom: 150px;
+        color: #fff;
+    }
+    #contexto-desc {
+        margin-top: 250px;
+        margin-bottom: 200px;
+        text-align: left;
+    }
+    #contexto-desc img {
+        margin-bottom: 100px;
+    }
+    #contexto-link {
+        text-align: center;
+        margin-bottom: 0px;
+    }
+    #contexto-link .btn {
+        font-weight: 100;
+        letter-spacing: 1px;
+        color: #000;
+        background-color: #ffcba4;
+        border: 0px solid #000;
+        border-radius: 3px;
+    }
+    #contexto-caption figcaption {
+        margin-top: -50px;
+        padding-top: 10px;
+        background-color: #f2efe3;
+        margin-bottom: 80px;
+        text-align: center;
+        font-weight: 100;
+    }
+    #contexto-link .btn:hover {
+        color: #000;
+        background-color: #fff;
+    }
+    #contexto-art-insp {
+        margin-top: 20px;
+        margin-bottom: 200px;
+    }
+    #contexto-art-insp img {
+        margin-bottom: 10px;
+        max-height: 240px;
+    }
+    #contexto-palette {
+        margin-top: 250px;
+        margin-bottom: 20px;
+    }
+    #contexto-colors {
+        margin-top: 10px;
+    }
+    #contexto-font {
+        background-size: contain;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        margin-top: 200px;
+        margin-bottom: 0px;
+    }
+    #contexto-font #font-weight {
+        margin-top: 100px;
+        margin-bottom: 300px;
+    }
+    #contexto-font #font-weight img:first-child {
+        margin-bottom: 50px;
+    }
+    #contexto-logo-end {
+        padding: 200px 100px;
+        margin-bottom: 100px;
+        text-align: center;
+        background-color: #ff6347;
+        background-image: url('../img/contexto/umit-aslan-v-Js84xYlRI-unsplash.jpg');
+        background-size: cover;
+        background-position: center;
     }
 
     /* --- CONTACTO --- */
@@ -1883,6 +2488,126 @@ hr {
     #meneonupcial-palette #color-4 {
         height: 100px;
         background-color: #CE4143;
+    }
+
+    /* contexto */
+
+    .project #contexto {
+        height: 640px;
+        background-image: url('../img/contexto/umit-aslan-v-Js84xYlRI-unsplash.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: #ff6347;
+    }
+    .project-contexto {
+        height: auto;
+        color: #333;
+    }
+    .project-contexto p{
+        font-size: 1em;
+        line-height: 2;
+        font-weight: 100;
+    }
+    #contexto-abstract {
+        margin-top: 350px;
+        margin-bottom: 200px;
+        font-style: italic;
+        text-align: center;
+    }
+    #contexto-icon {
+        height: auto;
+        text-align: center;
+        background-image: url('../img/contexto/umit-aslan-v-Js84xYlRI-unsplash.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #contexto-icon img {
+        max-width: 110px;
+        margin-top: 150px;
+    }
+    #contexto-text h2 {
+        font-family: 'Akrobat', sans-serif;
+        font-weight: bold;
+        color: #fff;
+    }
+    #contexto-text {
+        text-align: left;
+        font-size: .9em;
+        margin-top: 100px;
+        margin-bottom: 150px;
+        color: #fff;
+    }
+    #contexto-desc {
+        margin-top: 250px;
+        margin-bottom: 200px;
+        text-align: left;
+    }
+    #contexto-desc img {
+        margin-bottom: 100px;
+    }
+    #contexto-link {
+        text-align: center;
+        margin-bottom: 0px;
+    }
+    #contexto-link .btn {
+        font-weight: 100;
+        letter-spacing: 1px;
+        color: #000;
+        background-color: #ffcba4;
+        border: 0px solid #000;
+        border-radius: 3px;
+    }
+    #contexto-caption figcaption {
+        margin-top: -50px;
+        padding-top: 10px;
+        background-color: #f2efe3;
+        margin-bottom: 80px;
+        text-align: center;
+        font-weight: 100;
+    }
+    #contexto-link .btn:hover {
+        color: #000;
+        background-color: #fff;
+    }
+    #contexto-art-insp {
+        margin-top: 20px;
+        margin-bottom: 200px;
+    }
+    #contexto-art-insp img {
+        margin-bottom: 10px;
+        max-height: 240px;
+    }
+    #contexto-palette {
+        margin-top: 250px;
+        margin-bottom: 20px;
+    }
+    #contexto-colors {
+        margin-top: 10px;
+    }
+    #contexto-font {
+        background-size: contain;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        margin-top: 200px;
+        margin-bottom: 0px;
+    }
+    #contexto-font #font-weight {
+        margin-top: 30px;
+        margin-bottom: 300px;
+    }
+    #contexto-font #font-weight img:first-child {
+        margin-bottom: auto;
+    }
+    #contexto-logo-end {
+        padding: 200px 100px;
+        margin-bottom: 100px;
+        text-align: center;
+        background-color: #ff6347;
+        background-image: url('../img/contexto/umit-aslan-v-Js84xYlRI-unsplash.jpg');
+        background-size: cover;
+        background-position: center;
     }
 
     /* --- CONTACTO --- */
