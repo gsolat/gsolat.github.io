@@ -2644,7 +2644,12 @@ hr {
         border-radius: 5px;
     }
     #arrecife-text {
+        text-align: center;
         font-weight: 100;
+    }
+    #arrecife-text p {
+        margin-top: 100px;
+        margin-bottom: 100px;
     }
     #arrecife-link {
         text-align: center;
@@ -2665,6 +2670,7 @@ hr {
     }
     #arrecife-title {
         text-align: center;
+        margin-bottom: 40px;
     }
     #arrecife-postal img {
         border-radius: 3px;
