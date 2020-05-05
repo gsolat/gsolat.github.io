@@ -489,6 +489,58 @@ hr {
         background-position: center;
     }
 
+    /* manual de coaching político  */
+
+    .project #mcp {
+        height: 640px;
+        background-image: url('../img/mcp/cover-book.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #FE6F5E;
+    }
+    .project-mcp {
+        height: auto;
+        color: #333;
+    }
+    .project-mcp p {
+        font-size: 1em;
+        line-height: 2;
+        font-weight: 100;
+        margin-top: 20px;
+    }
+    .blockquote-footer {
+        color:#333;
+        text-align: right;
+    }
+    #img-presentation{
+        height: 560px;
+        background-image: url('../img/mcp/MCP-libro-portada.png');
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 40px;
+    }
+    #mcp-icon {
+        height: 650px;
+        text-align: center;
+    }
+    #mcp-icon img {
+        margin-top: 220px;
+        max-width: 250px;
+    }
+    #mcp-text {
+        font-weight: 100;
+        margin-bottom: 120px;
+    }
+    #mcp-title {
+        text-align: center;
+    }
+    #mcp-postal hr {
+        margin-bottom: 8rem !important;
+    }
+    #mcp-postal img {
+        border-radius: 3px;
+        margin-bottom: 80px;
+    }
 
     /* --- CONTACTO --- */
 
@@ -908,6 +960,58 @@ hr {
         background-image: url('../img/contexto/umit-aslan-v-Js84xYlRI-unsplash.jpg');
         background-size: cover;
         background-position: center;
+    }
+
+    /* manual de coaching político  */
+
+    .project #mcp {
+        height: 640px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #FE6F5E;
+    }
+    .project-mcp {
+        height: auto;
+        color: #333;
+    }
+    .project-mcp p {
+        font-size: 1em;
+        line-height: 2;
+        font-weight: 100;
+        margin-top: 20px;
+    }
+    .blockquote-footer {
+        color:#333;
+        text-align: right;
+    }
+    #img-presentation{
+        height: 560px;
+        background-image: url('../img/mcp/MCP-libro-portada.png');
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 40px;
+    }
+    #mcp-icon {
+        height: 650px;
+        text-align: center;
+    }
+    #mcp-icon img {
+        margin-top: 220px;
+        max-width: 250px;
+    }
+    #mcp-text {
+        font-weight: 100;
+        margin-bottom: 120px;
+    }
+    #mcp-title {
+        text-align: center;
+    }
+    #mcp-postal hr {
+        margin-bottom: 8rem !important;
+    }
+    #mcp-postal img {
+        border-radius: 3px;
+        margin-bottom: 80px;
     }
 
     /* --- CONTACTO --- */
@@ -1330,6 +1434,58 @@ hr {
         background-position: center;
     }
 
+    /* manual de coaching político  */
+
+    .project #mcp {
+        height: 640px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #FE6F5E;
+    }
+    .project-mcp {
+        height: auto;
+        color: #333;
+    }
+    .project-mcp p {
+        font-size: 1em;
+        line-height: 2;
+        font-weight: 100;
+        margin-top: 20px;
+    }
+    .blockquote-footer {
+        color:#333;
+        text-align: right;
+    }
+    #img-presentation{
+        height: 450px;
+        background-image: url('../img/mcp/MCP-libro-portada.png');
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 40px;
+    }
+    #mcp-icon {
+        height: 650px;
+        text-align: center;
+    }
+    #mcp-icon img {
+        margin-top: 220px;
+        max-width: 250px;
+    }
+    #mcp-text {
+        font-weight: 100;
+        margin-bottom: 120px;
+    }
+    #mcp-title {
+        text-align: center;
+    }
+    #mcp-postal hr {
+        margin-bottom: 8rem !important;
+    }
+    #mcp-postal img {
+        border-radius: 3px;
+        margin-bottom: 80px;
+    }
+
     /* --- CONTACTO --- */
 
     #contact {
@@ -1749,6 +1905,58 @@ hr {
         background-image: url('../img/contexto/umit-aslan-v-Js84xYlRI-unsplash.jpg');
         background-size: cover;
         background-position: center;
+    }
+
+    /* manual de coaching político  */
+
+    .project #mcp {
+        height: 203px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #FE6F5E;
+    }
+    .project-mcp {
+        height: auto;
+        color: #333;
+    }
+    .project-mcp p {
+        font-size: 1em;
+        line-height: 2;
+        font-weight: 100;
+        margin-top: 20px;
+    }
+    .blockquote-footer {
+        color:#333;
+        text-align: right;
+    }
+    #img-presentation{
+        height: 450px;
+        background-image: url('../img/mcp/MCP-libro-portada.png');
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 40px;
+    }
+    #mcp-icon {
+        height: 650px;
+        text-align: center;
+    }
+    #mcp-icon img {
+        margin-top: 220px;
+        max-width: 250px;
+    }
+    #mcp-text {
+        font-weight: 100;
+        margin-bottom: 120px;
+    }
+    #mcp-title {
+        text-align: center;
+    }
+    #mcp-postal hr {
+        margin-bottom: 8rem !important;
+    }
+    #mcp-postal img {
+        border-radius: 3px;
+        margin-bottom: 80px;
     }
 
     /* --- CONTACTO --- */
@@ -2177,6 +2385,58 @@ hr {
         background-image: url('../img/contexto/umit-aslan-v-Js84xYlRI-unsplash.jpg');
         background-size: cover;
         background-position: center;
+    }
+
+    /* manual de coaching político  */
+
+    .project #mcp {
+        height: 203px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #FE6F5E;
+    }
+    .project-mcp {
+        height: auto;
+        color: #333;
+    }
+    .project-mcp p {
+        font-size: 1em;
+        line-height: 2;
+        font-weight: 100;
+        margin-top: 20px;
+    }
+    .blockquote-footer {
+        color:#333;
+        text-align: right;
+    }
+    #img-presentation{
+        height: 340px;
+        background-image: url('../img/mcp/MCP-libro-portada.png');
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 40px;
+    }
+    #mcp-icon {
+        height: 650px;
+        text-align: center;
+    }
+    #mcp-icon img {
+        margin-top: 180px;
+        max-width: 200px;
+    }
+    #mcp-text {
+        font-weight: 100;
+        margin-bottom: 120px;
+    }
+    #mcp-title {
+        text-align: center;
+    }
+    #mcp-postal hr {
+        margin-bottom: 4rem !important;
+    }
+    #mcp-postal img {
+        border-radius: 3px;
+        margin-bottom: 80px;
     }
 
     /* --- CONTACTO --- */
@@ -2608,6 +2868,58 @@ hr {
         background-image: url('../img/contexto/umit-aslan-v-Js84xYlRI-unsplash.jpg');
         background-size: cover;
         background-position: center;
+    }
+
+    /* manual de coaching político  */
+
+    .project #mcp {
+        height: 203px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #FE6F5E;
+    }
+    .project-mcp {
+        height: auto;
+        color: #333;
+    }
+    .project-mcp p {
+        font-size: 1em;
+        line-height: 2;
+        font-weight: 100;
+        margin-top: 20px;
+    }
+    .blockquote-footer {
+        color:#333;
+        text-align: right;
+    }
+    #img-presentation{
+        height: 340px;
+        background-image: url('../img/mcp/MCP-libro-portada.png');
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 40px;
+    }
+    #mcp-icon {
+        height: 400px;
+        text-align: center;
+    }
+    #mcp-icon img {
+        margin-top: 120px;
+        max-width: 120px;
+    }
+    #mcp-text {
+        font-weight: 100;
+        margin-bottom: 120px;
+    }
+    #mcp-title {
+        text-align: center;
+    }
+    #mcp-postal hr {
+        margin-bottom: 4rem !important;
+    }
+    #mcp-postal img {
+        border-radius: 3px;
+        margin-bottom: 60px;
     }
 
     /* --- CONTACTO --- */
