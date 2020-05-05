@@ -2590,6 +2590,15 @@ hr {
         text-align: center;
         margin-bottom: 240px;
     }
+    #imago-icon-end {
+        height: 650px;
+        text-align: center;
+    }
+    #imago-icon-end img {
+        margin-top: 240px;
+        max-width: 150px;
+        border-radius: 0;
+    }
     #imago-text p {
         font-size: 1em;
         line-height: 2;
