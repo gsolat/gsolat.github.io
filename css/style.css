@@ -1912,7 +1912,7 @@ hr {
     /* manual de coaching político  */
 
     .project #mcp {
-        height: 330px;
+        height: 406px;
         background-image: url('../img/mcp/cover-book.jpg');
         background-size: cover;
         background-repeat: no-repeat;
@@ -2565,7 +2565,7 @@ hr {
     /* imago */
 
     .project #imago {
-        height: 203px;
+        height: 330px;
         background-image: url('../img/imago/imago-portada-behance-01.png');
         background-size: cover;
         position: center center;
@@ -2877,7 +2877,7 @@ hr {
 
     .project #mcp {
         height: 330px;
-
+        background-image: url('../img/mcp/cover-book.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         background-color: #FE6F5E;
