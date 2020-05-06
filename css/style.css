@@ -195,17 +195,27 @@ hr {
         color: #333;
     }
     #imago-icon {
-        height: 650px;
+        height: 100vh;
         text-align: center;
     }
     #imago-icon img {
-        margin-top: 240px;
+        margin-top: 30vh;
         max-width: 150px;
         border-radius: 0;
     }
     #imago-text {
         text-align: center;
+        margin-top: 100px;
         margin-bottom: 40px;
+    }
+    #imago-icon-end {
+        height: 80vh;
+        text-align: center;
+    }
+    #imago-icon-end img {
+        margin-top: 30vh;
+        max-width: 150px;
+        border-radius: 0;
     }
     #imago-text p {
         font-size: 1em;
@@ -788,17 +798,27 @@ hr {
         color: #333;
     }
     #imago-icon {
-        height: 650px;
+        height: 100vh;
         text-align: center;
     }
     #imago-icon img {
-        margin-top: 240px;
+        margin-top: 30vh;
         max-width: 150px;
         border-radius: 0;
     }
     #imago-text {
         text-align: center;
+        margin-top: 100px;
         margin-bottom: 40px;
+    }
+    #imago-icon-end {
+        height: 80vh;
+        text-align: center;
+    }
+    #imago-icon-end img {
+        margin-top: 45vh;
+        max-width: 150px;
+        border-radius: 0;
     }
     #imago-text p {
         font-size: 1em;
@@ -827,7 +847,7 @@ hr {
         margin-top: 20px;
     }
     #arrecife-icon {
-        padding-top: calc(30vh);
+        padding-top: 30vh;
         height: 100vh;
         text-align: center;
     }
@@ -1327,17 +1347,27 @@ hr {
         color: #333;
     }
     #imago-icon {
-        height: 650px;
+        height: 100vh;
         text-align: center;
     }
     #imago-icon img {
-        margin-top: 240px;
+        margin-top: 20vh;
         max-width: 150px;
         border-radius: 0;
     }
     #imago-text {
         text-align: center;
+        margin-top: 100px;
         margin-bottom: 40px;
+    }
+    #imago-icon-end {
+        height: 80vh;
+        text-align: center;
+    }
+    #imago-icon-end img {
+        margin-top: 45vh;
+        max-width: 150px;
+        border-radius: 0;
     }
     #imago-text p {
         font-size: 1em;
@@ -1867,17 +1897,27 @@ hr {
         color: #333;
     }
     #imago-icon {
-        height: 650px;
+        height: 100vh;
         text-align: center;
     }
     #imago-icon img {
-        margin-top: 240px;
+        margin-top: 20vh;
         max-width: 150px;
         border-radius: 0;
     }
     #imago-text {
         text-align: center;
+        margin-top: 100px;
         margin-bottom: 40px;
+    }
+    #imago-icon-end {
+        height: 90vh;
+        text-align: center;
+    }
+    #imago-icon-end img {
+        margin-top: calc(40vh - 10px);
+        max-width: 150px;
+        border-radius: 0;
     }
     #imago-text p {
         font-size: 1em;
@@ -2411,17 +2451,27 @@ hr {
         color: #333;
     }
     #imago-icon {
-        height: 650px;
+        height: 100vh;
         text-align: center;
     }
     #imago-icon img {
-        margin-top: 240px;
+        margin-top: 20vh;
         max-width: 150px;
         border-radius: 0;
     }
     #imago-text {
         text-align: center;
-        margin-bottom: 40px;
+        margin-top: 100px;
+        margin-bottom: 240px;
+    }
+    #imago-icon-end {
+        height: 90vh;
+        text-align: center;
+    }
+    #imago-icon-end img {
+        margin-top: calc(40vh - 10px);
+        max-width: 150px;
+        border-radius: 0;
     }
     #imago-text p {
         font-size: 1em;
@@ -2960,24 +3010,25 @@ hr {
         color: #333;
     }
     #imago-icon {
-        height: 450px;
+        height: 100vh;
         text-align: center;
     }
     #imago-icon img {
-        margin-top: 240px;
+        margin-top: 20vh;
         max-width: 150px;
         border-radius: 0;
     }
     #imago-text {
         text-align: center;
+        margin-top: 100px;
         margin-bottom: 240px;
     }
     #imago-icon-end {
-        height: 650px;
+        height: 90vh;
         text-align: center;
     }
     #imago-icon-end img {
-        margin-top: 250px;
+        margin-top: calc(40vh - 10px);
         max-width: 150px;
         border-radius: 0;
     }
@@ -3018,7 +3069,7 @@ hr {
         border-radius: 100%;
     }
     #arrecife-icon-2 {
-        height: 100vh;
+        height: 90vh;
     }
     #arrecife-icon-2 img {
         margin-top: calc(50vh - 10px);
