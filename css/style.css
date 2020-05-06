@@ -234,6 +234,126 @@ hr {
         margin-top: 20px;
     }
     #arrecife-icon {
+        padding-top: calc(30vh);
+        height: 100vh;
+        text-align: center;
+    }
+    #arrecife-icon img {
+        min-width: 100%;
+        border-radius: 100%;
+        text-align: center;
+    }
+    #arrecife-icon-2 {
+        height: 100vh;
+        padding-top: calc(50vh - 10px);
+    }
+    #arrecife-icon-2 img {
+        max-width: 150px;
+        border-radius: 100%;
+    }
+    #arrecife-gif {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    #arrecife-gif img {
+        width: auto;
+        border-radius: 5px;
+    }
+    #arrecife-text {
+        text-align: center;
+        font-weight: 100;
+    }
+    #arrecife-text p:first-child {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    #arrecife-text p {
+        margin-top: 10px;
+        margin-bottom: 100px;
+    }
+    #arrecife-link {
+        text-align: center;
+        margin-bottom: 100px;
+    }
+    #arrecife-link .btn {
+        font-weight: 100;
+        letter-spacing: 1px;
+        color: #fdf202;
+        background-color: #000;
+        border: 1px solid #000;
+        border-radius: 3px;
+    }
+    #arrecife-link .btn:hover {
+        color: #000;
+        background-color: transparent;
+        border: 1px solid #000;
+    }
+    .img-item {
+        margin-bottom: 30px;
+        border-radius: 3px;
+    }
+    #postal-image-1 {
+        height: 600px;
+        background-image: url('../img/arrecife/postales-arrecife-01.png');
+        background-position: center;
+        background-size: cover  ;
+        background-repeat: no-repeat;
+    }
+    #postal-image-2 {
+        height: 600px;
+        background-image: url('../img/arrecife/postales-arrecife-02.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #postal-image-3 {
+        height: 600px;
+        background-image: url('../img/arrecife/postales-arrecife-03.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #postal-image-4 {
+        height: 600px;
+        background-image: url('../img/arrecife/postales-arrecife-04.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #postal-image-5 {
+        height: 600px;
+        background-image: url('../img/arrecife/postales-arrecife-05.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #postal-image-6 {
+        height: 600px;
+        background-image: url('../img/arrecife/postales-arrecife-06.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #postal-image-7 {
+        height: 600px;
+        background-image: url('../img/arrecife/postales-arrecife-07.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #arrecife-postal figcaption {
+        margin-top: 0px;
+        padding-top: 10px;
+        background-color: #f2efe3;
+        margin-bottom: 30px;
+        text-align: center;
+        font-size: .7em;
+        font-weight: 100;
+    }
+
+
+    /* pasado
+    #arrecife-icon {
         height: 650px;
         text-align: center;
     }
@@ -283,7 +403,7 @@ hr {
         margin-bottom: 80px;
         text-align: center;
         font-weight: 100;
-    }
+    } */
 
     /* meneonupcial */
 
@@ -707,11 +827,20 @@ hr {
         margin-top: 20px;
     }
     #arrecife-icon {
-        height: 650px;
+        padding-top: calc(30vh);
+        height: 100vh;
         text-align: center;
     }
     #arrecife-icon img {
-        margin-top: 240px;
+        min-width: 100%;
+        border-radius: 100%;
+        text-align: center;
+    }
+    #arrecife-icon-2 {
+        height: 80vh;
+        padding-top: calc(45vh);
+    }
+    #arrecife-icon-2 img {
         max-width: 150px;
         border-radius: 100%;
     }
@@ -724,7 +853,16 @@ hr {
         border-radius: 5px;
     }
     #arrecife-text {
+        text-align: center;
         font-weight: 100;
+    }
+    #arrecife-text p:first-child {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    #arrecife-text p {
+        margin-top: 10px;
+        margin-bottom: 100px;
     }
     #arrecife-link {
         text-align: center;
@@ -743,18 +881,66 @@ hr {
         background-color: transparent;
         border: 1px solid #000;
     }
-    #arrecife-title {
-        text-align: center;
-    }
-    #arrecife-postal img {
+    .img-item {
+        margin-bottom: 30px;
         border-radius: 3px;
     }
+    #postal-image-1 {
+        height: 600px;
+        background-image: url('../img/arrecife/postales-arrecife-01.png');
+        background-position: center;
+        background-size: cover  ;
+        background-repeat: no-repeat;
+    }
+    #postal-image-2 {
+        height: 600px;
+        background-image: url('../img/arrecife/postales-arrecife-02.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #postal-image-3 {
+        height: 600px;
+        background-image: url('../img/arrecife/postales-arrecife-03.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #postal-image-4 {
+        height: 600px;
+        background-image: url('../img/arrecife/postales-arrecife-04.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #postal-image-5 {
+        height: 600px;
+        background-image: url('../img/arrecife/postales-arrecife-05.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #postal-image-6 {
+        height: 600px;
+        background-image: url('../img/arrecife/postales-arrecife-06.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #postal-image-7 {
+        height: 600px;
+        background-image: url('../img/arrecife/postales-arrecife-07.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
     #arrecife-postal figcaption {
-        margin-top: -50px;
+        margin-top: 0px;
         padding-top: 10px;
         background-color: #f2efe3;
-        margin-bottom: 80px;
+        margin-bottom: 30px;
         text-align: center;
+        font-size: .7em;
         font-weight: 100;
     }
 
@@ -1180,11 +1366,20 @@ hr {
         margin-top: 20px;
     }
     #arrecife-icon {
-        height: 650px;
+        padding-top: calc(30vh);
+        height: 100vh;
         text-align: center;
     }
     #arrecife-icon img {
-        margin-top: 240px;
+        min-width: 100%;
+        border-radius: 100%;
+        text-align: center;
+    }
+    #arrecife-icon-2 {
+        height: 80vh;
+        padding-top: calc(45vh);
+    }
+    #arrecife-icon-2 img {
         max-width: 150px;
         border-radius: 100%;
     }
@@ -1197,7 +1392,16 @@ hr {
         border-radius: 5px;
     }
     #arrecife-text {
+        text-align: center;
         font-weight: 100;
+    }
+    #arrecife-text p:first-child {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    #arrecife-text p {
+        margin-top: 10px;
+        margin-bottom: 100px;
     }
     #arrecife-link {
         text-align: center;
@@ -1216,18 +1420,66 @@ hr {
         background-color: transparent;
         border: 1px solid #000;
     }
-    #arrecife-title {
-        text-align: center;
-    }
-    #arrecife-postal img {
+    .img-item {
+        margin-bottom: 30px;
         border-radius: 3px;
     }
+    #postal-image-1 {
+        height: 600px;
+        background-image: url('../img/arrecife/postales-arrecife-01.png');
+        background-position: center;
+        background-size: cover  ;
+        background-repeat: no-repeat;
+    }
+    #postal-image-2 {
+        height: 600px;
+        background-image: url('../img/arrecife/postales-arrecife-02.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #postal-image-3 {
+        height: 600px;
+        background-image: url('../img/arrecife/postales-arrecife-03.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #postal-image-4 {
+        height: 600px;
+        background-image: url('../img/arrecife/postales-arrecife-04.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #postal-image-5 {
+        height: 600px;
+        background-image: url('../img/arrecife/postales-arrecife-05.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #postal-image-6 {
+        height: 600px;
+        background-image: url('../img/arrecife/postales-arrecife-06.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #postal-image-7 {
+        height: 600px;
+        background-image: url('../img/arrecife/postales-arrecife-07.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
     #arrecife-postal figcaption {
-        margin-top: -50px;
+        margin-top: 0px;
         padding-top: 10px;
         background-color: #f2efe3;
-        margin-bottom: 80px;
+        margin-bottom: 30px;
         text-align: center;
+        font-size: .7em;
         font-weight: 100;
     }
 
@@ -1654,12 +1906,21 @@ hr {
         margin-top: 20px;
     }
     #arrecife-icon {
-        height: 650px;
+        padding-top: calc(30vh);
+        height: 100vh;
         text-align: center;
     }
     #arrecife-icon img {
-        margin-top: 240px;
-        max-width: 150px;
+        min-width: 100%;
+        border-radius: 100%;
+        text-align: center;
+    }
+    #arrecife-icon-2 {
+        height: 80vh;
+        padding-top: calc(25vh);
+    }
+    #arrecife-icon-2 img {
+        max-width: 100%;
         border-radius: 100%;
     }
     #arrecife-gif {
@@ -1671,7 +1932,16 @@ hr {
         border-radius: 5px;
     }
     #arrecife-text {
+        text-align: center;
         font-weight: 100;
+    }
+    #arrecife-text p:first-child {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    #arrecife-text p {
+        margin-top: 10px;
+        margin-bottom: 100px;
     }
     #arrecife-link {
         text-align: center;
@@ -1690,19 +1960,66 @@ hr {
         background-color: transparent;
         border: 1px solid #000;
     }
-    #arrecife-title {
-        text-align: center;
-    }
-    #arrecife-postal img {
+    .img-item {
+        margin-bottom: 30px;
         border-radius: 3px;
     }
+    #postal-image-1 {
+        height: 600px;
+        background-image: url('../img/arrecife/postales-arrecife-01.png');
+        background-position: center;
+        background-size: cover  ;
+        background-repeat: no-repeat;
+    }
+    #postal-image-2 {
+        height: 600px;
+        background-image: url('../img/arrecife/postales-arrecife-02.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #postal-image-3 {
+        height: 600px;
+        background-image: url('../img/arrecife/postales-arrecife-03.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #postal-image-4 {
+        height: 600px;
+        background-image: url('../img/arrecife/postales-arrecife-04.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #postal-image-5 {
+        height: 600px;
+        background-image: url('../img/arrecife/postales-arrecife-05.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #postal-image-6 {
+        height: 600px;
+        background-image: url('../img/arrecife/postales-arrecife-06.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #postal-image-7 {
+        height: 600px;
+        background-image: url('../img/arrecife/postales-arrecife-07.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
     #arrecife-postal figcaption {
-        margin-top: -40px;
+        margin-top: 0px;
         padding-top: 10px;
         background-color: #f2efe3;
-        margin-bottom: 80px;
+        margin-bottom: 30px;
         text-align: center;
-        font-size: .8em;
+        font-size: .7em;
         font-weight: 100;
     }
 
@@ -2134,12 +2451,21 @@ hr {
         margin-top: 20px;
     }
     #arrecife-icon {
-        height: 450px;
+        padding-top: calc(30vh);
+        height: 100vh;
         text-align: center;
     }
     #arrecife-icon img {
-        margin-top: 140px;
-        max-width: 150px;
+        min-width: 100%;
+        border-radius: 100%;
+        text-align: center;
+    }
+    #arrecife-icon-2 {
+        height: 80vh;
+        padding-top: calc(25vh);
+    }
+    #arrecife-icon-2 img {
+        max-width: 100%;
         border-radius: 100%;
     }
     #arrecife-gif {
@@ -2151,7 +2477,16 @@ hr {
         border-radius: 5px;
     }
     #arrecife-text {
+        text-align: center;
         font-weight: 100;
+    }
+    #arrecife-text p:first-child {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    #arrecife-text p {
+        margin-top: 10px;
+        margin-bottom: 100px;
     }
     #arrecife-link {
         text-align: center;
@@ -2170,17 +2505,64 @@ hr {
         background-color: transparent;
         border: 1px solid #000;
     }
-    #arrecife-title {
-        text-align: center;
-    }
-    #arrecife-postal img {
+    .img-item {
+        margin-bottom: 30px;
         border-radius: 3px;
     }
+    #postal-image-1 {
+        height: 600px;
+        background-image: url('../img/arrecife/postales-arrecife-01.png');
+        background-position: center;
+        background-size: cover  ;
+        background-repeat: no-repeat;
+    }
+    #postal-image-2 {
+        height: 600px;
+        background-image: url('../img/arrecife/postales-arrecife-02.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #postal-image-3 {
+        height: 600px;
+        background-image: url('../img/arrecife/postales-arrecife-03.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #postal-image-4 {
+        height: 600px;
+        background-image: url('../img/arrecife/postales-arrecife-04.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #postal-image-5 {
+        height: 600px;
+        background-image: url('../img/arrecife/postales-arrecife-05.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #postal-image-6 {
+        height: 600px;
+        background-image: url('../img/arrecife/postales-arrecife-06.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #postal-image-7 {
+        height: 600px;
+        background-image: url('../img/arrecife/postales-arrecife-07.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
     #arrecife-postal figcaption {
-        margin-top: -32px;
+        margin-top: 0px;
         padding-top: 10px;
         background-color: #f2efe3;
-        margin-bottom: 40px;
+        margin-bottom: 30px;
         text-align: center;
         font-size: .7em;
         font-weight: 100;
@@ -2627,11 +3009,19 @@ hr {
         margin-top: 20px;
     }
     #arrecife-icon {
-        height: 400px;
+        height: 100vh;
         text-align: center;
     }
     #arrecife-icon img {
-        margin-top: 140px;
+        margin-top: 20vh;
+        max-width: 150px;
+        border-radius: 100%;
+    }
+    #arrecife-icon-2 {
+        height: 100vh;
+    }
+    #arrecife-icon-2 img {
+        margin-top: calc(50vh - 10px);
         max-width: 150px;
         border-radius: 100%;
     }
@@ -2647,8 +3037,12 @@ hr {
         text-align: center;
         font-weight: 100;
     }
-    #arrecife-text p {
+    #arrecife-text p:first-child {
         margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    #arrecife-text p {
+        margin-top: 10px;
         margin-bottom: 100px;
     }
     #arrecife-link {
@@ -2668,12 +3062,58 @@ hr {
         background-color: transparent;
         border: 1px solid #000;
     }
-    #arrecife-title {
-        text-align: center;
-        margin-bottom: 40px;
+    .img-item {
+        margin-bottom: 30px;
+        /* border-radius: 3px; */
     }
-    #arrecife-postal img {
-        border-radius: 3px;
+    #postal-image-1 {
+        height: 330px;
+        background-image: url('../img/arrecife/postales-arrecife-01.png');
+        background-position: center;
+        background-size: cover  ;
+        background-repeat: no-repeat;
+    }
+    #postal-image-2 {
+        height: 330px;
+        background-image: url('../img/arrecife/postales-arrecife-02.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #postal-image-3 {
+        height: 330px;
+        background-image: url('../img/arrecife/postales-arrecife-03.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #postal-image-4 {
+        height: 330px;
+        background-image: url('../img/arrecife/postales-arrecife-04.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #postal-image-5 {
+        height: 330px;
+        background-image: url('../img/arrecife/postales-arrecife-05.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #postal-image-6 {
+        height: 330px;
+        background-image: url('../img/arrecife/postales-arrecife-06.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #postal-image-7 {
+        height: 330px;
+        background-image: url('../img/arrecife/postales-arrecife-07.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
     #arrecife-postal figcaption {
         margin-top: 0px;
