@@ -110,6 +110,7 @@ hr {
     }
     .nav-link {
         font-weight: 100;
+        padding: .5rem 1.13rem;
     }
     .bg-light {
         background-color: #f2efe3 !important;
@@ -117,6 +118,37 @@ hr {
     .navbar-light .navbar-toggler {
         border-color: transparent;
         color: #FE6F5E;
+    }
+    .dropdown-menu {
+        /* position: relative; */
+        top: 90%;
+        left: 0;
+        z-index: 1000;
+        display: none;
+        float: left;
+        min-width: 190px;
+        padding: .6rem 0;
+        margin: 0.3rem 0 0;
+        font-size: .7rem;
+        color: #212529;
+        text-align: left;
+        list-style: none;
+        background-color: #f2efe3;
+        background-clip: padding-box;
+        border: 0;
+        border-radius: 0;
+    }
+    .dropdown-item {
+        display: block;
+        width: 100%;
+        padding: .25rem 1.1rem;
+        clear: both;
+        font-weight: 400;
+        color: #212529;
+        text-align: inherit;
+        white-space: nowrap;
+        background-color: transparent;
+        border: 0;
     }
 }
 
@@ -142,6 +174,36 @@ hr {
     .navbar .nav-link {
         font-size: .8em;
     }
+    .nav {
+        display: block;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        padding-left: 6vw;
+        margin-bottom: 0;
+        list-style: none;
+    }
+    .navbar-collapse {
+        padding: 0;
+    }
+    .dropdown-menu {
+        position: relative;
+        top: 90%;
+        left: 0;
+        z-index: 1000;
+        display: none;
+        float: left;
+        min-width: 90vw;
+        padding: 0 0 .5rem 0;
+        margin: .125rem 0 0;
+        font-size: .7rem;
+        color: #212529;
+        text-align: left;
+        list-style: none;
+        background-color: transparent;
+        background-clip: padding-box;
+        border: 0;
+        border-radius: 0;
+    }
 }
 
 /* -- STUFF -- */
@@ -160,7 +222,7 @@ hr {
     .project {
         height: auto;
         background-color: #FE6F5E;
-        margin-bottom: 150px;
+        margin-bottom: 156px;
     }
     .pre-body {
         height: 130px;
@@ -649,12 +711,29 @@ hr {
         background-position: center;
         margin-bottom: 40px;
     }
+    #mcp-link {
+        margin-bottom: 150px;
+        text-align: center;
+    }
+    #mcp-link .btn {
+        font-weight: 100;
+        letter-spacing: 1px;
+        color: #000;
+        background-color: #fff;
+        border: 1px solid #fff;
+        border-radius: 3px;
+    }
+    #mcp-link .btn:hover {
+        color: #000;
+        background-color: transparent;
+        border: 1px solid #000;
+    }
     #mcp-icon {
-        height: 650px;
+        height: 100vh;
         text-align: center;
     }
     #mcp-icon img {
-        margin-top: 220px;
+        margin-top: 50vh;
         max-width: 250px;
     }
     #mcp-text {
@@ -1198,12 +1277,29 @@ hr {
         background-position: center;
         margin-bottom: 40px;
     }
+    #mcp-link {
+        margin-bottom: 150px;
+        text-align: center;
+    }
+    #mcp-link .btn {
+        font-weight: 100;
+        letter-spacing: 1px;
+        color: #000;
+        background-color: #fff;
+        border: 1px solid #fff;
+        border-radius: 3px;
+    }
+    #mcp-link .btn:hover {
+        color: #000;
+        background-color: transparent;
+        border: 1px solid #000;
+    }
     #mcp-icon {
-        height: 650px;
+        height: 70vh;
         text-align: center;
     }
     #mcp-icon img {
-        margin-top: 220px;
+        margin-top: 35vh;
         max-width: 250px;
     }
     #mcp-text {
@@ -1747,12 +1843,29 @@ hr {
         background-position: center;
         margin-bottom: 40px;
     }
+    #mcp-link {
+        margin-bottom: 150px;
+        text-align: center;
+    }
+    #mcp-link .btn {
+        font-weight: 100;
+        letter-spacing: 1px;
+        color: #000;
+        background-color: #fff;
+        border: 1px solid #fff;
+        border-radius: 3px;
+    }
+    #mcp-link .btn:hover {
+        color: #000;
+        background-color: transparent;
+        border: 1px solid #000;
+    }
     #mcp-icon {
-        height: 650px;
+        height: 70vh;
         text-align: center;
     }
     #mcp-icon img {
-        margin-top: 220px;
+        margin-top: 35vh;
         max-width: 250px;
     }
     #mcp-text {
@@ -2296,20 +2409,34 @@ hr {
         background-position: center;
         margin-bottom: 40px;
     }
+    #mcp-link {
+        margin-bottom: 150px;
+        text-align: center;
+    }
+    #mcp-link .btn {
+        font-weight: 100;
+        letter-spacing: 1px;
+        color: #000;
+        background-color: #fff;
+        border: 1px solid #fff;
+        border-radius: 3px;
+    }
+    #mcp-link .btn:hover {
+        color: #000;
+        background-color: transparent;
+        border: 1px solid #000;
+    }
     #mcp-icon {
-        height: 650px;
+        height: 90vh;
         text-align: center;
     }
     #mcp-icon img {
-        margin-top: 220px;
+        margin-top: 40vh;
         max-width: 250px;
     }
     #mcp-text {
         font-weight: 100;
         margin-bottom: 120px;
-    }
-    #mcp-title {
-        text-align: center;
     }
     #mcp-postal hr {
         margin-bottom: 8rem !important;
@@ -2851,13 +2978,30 @@ hr {
         background-position: center;
         margin-bottom: 40px;
     }
+    #mcp-link {
+        margin-bottom: 150px;
+        text-align: center;
+    }
+    #mcp-link .btn {
+        font-weight: 100;
+        letter-spacing: 1px;
+        color: #000;
+        background-color: #fff;
+        border: 1px solid #fff;
+        border-radius: 3px;
+    }
+    #mcp-link .btn:hover {
+        color: #000;
+        background-color: transparent;
+        border: 1px solid #000;
+    }
     #mcp-icon {
-        height: 650px;
+        height: 90vh;
         text-align: center;
     }
     #mcp-icon img {
-        margin-top: 180px;
-        max-width: 200px;
+        margin-top: 40vh;
+        max-width: 120px;
     }
     #mcp-text {
         font-weight: 100;
@@ -3405,23 +3549,40 @@ hr {
         text-align: right;
     }
     #img-presentation{
-        height: 340px;
+        height: 60vh;
         background-image: url('../img/mcp/MCP-libro-portada.png');
         background-size: cover;
         background-position: center;
         margin-bottom: 40px;
     }
+    #mcp-link {
+        margin-bottom: 150px;
+        text-align: center;
+    }
+    #mcp-link .btn {
+        font-weight: 100;
+        letter-spacing: 1px;
+        color: #000;
+        background-color: #fff;
+        border: 1px solid #fff;
+        border-radius: 3px;
+    }
+    #mcp-link .btn:hover {
+        color: #000;
+        background-color: transparent;
+        border: 1px solid #000;
+    }
     #mcp-icon {
-        height: 400px;
+        height: 90vh;
         text-align: center;
     }
     #mcp-icon img {
-        margin-top: 120px;
+        margin-top: 40vh;
         max-width: 120px;
     }
     #mcp-text {
         font-weight: 100;
-        margin-bottom: 120px;
+        margin-bottom: 110px;
     }
     #mcp-title {
         text-align: center;
@@ -3430,7 +3591,7 @@ hr {
         margin-bottom: 4rem !important;
     }
     #mcp-postal img {
-        border-radius: 3px;
+        border-radius: 0;
         margin-bottom: 60px;
     }
 
