@@ -110,7 +110,7 @@ hr {
     }
     .nav-link {
         font-weight: 100;
-        padding: .5rem 1.13rem;
+        padding: .5rem 1.05rem .5rem 1.13rem;
     }
     .bg-light {
         background-color: #f2efe3 !important;
@@ -126,7 +126,7 @@ hr {
         z-index: 1000;
         display: none;
         float: left;
-        min-width: 190px;
+        min-width: 192px;
         padding: .6rem 0;
         margin: 0.3rem 0 0;
         font-size: .7rem;
@@ -793,19 +793,20 @@ hr {
 
     #about {
         background-color: #f2efe3;
-        height: 920px;
+        height: 90vh;
     }
     #shortbio {
-        height: auto;
-        padding-top: 58px;
+        height: 90vh;
+        padding-top: 56px;
         padding-bottom: 0px;
         color: #505050;
         background-color: #f2efe3;
     }
-    #shortbio #photo {
-        /* height: 640px; */
+    #shortbio #photo #experience {
+        height: 80vh;
         background-image: url('../img/guillosolano.png');
-        background-size: 140%;
+        background-size: 190%;
+        background-position: top left;
         background-repeat: no-repeat;
         background-color: #FE6F5E;
     }
@@ -824,7 +825,9 @@ hr {
         margin: 0;
     }
     #bio {
+        margin-top: 25vh;
         padding-top: 10px;
+        padding-bottom: 5px;
         background-color: #f2efe3;
     }
 }
@@ -1359,19 +1362,20 @@ hr {
 
     #about {
         background-color: #f2efe3;
-        height: 920px;
+        height: 90vh;
     }
     #shortbio {
-        height: auto;
-        padding-top: 58px;
+        height: 90vh;
+        padding-top: 56px;
         padding-bottom: 0px;
         color: #505050;
         background-color: #f2efe3;
     }
-    #shortbio #photo {
-        /* height: 640px; */
+    #shortbio #photo #experience {
+        height: 80vh;
         background-image: url('../img/guillosolano.png');
-        background-size: auto;
+        background-size: 150%;
+        background-position: top left;
         background-repeat: no-repeat;
         background-color: #FE6F5E;
     }
@@ -1390,7 +1394,9 @@ hr {
         margin: 0;
     }
     #bio {
+        margin-top: 20vh;
         padding-top: 10px;
+        padding-bottom: 5px;
         background-color: #f2efe3;
     }
 }
@@ -1925,21 +1931,22 @@ hr {
 
     #about {
         background-color: #f2efe3;
-        height: 700px;
+        height: 90vh;
     }
     #shortbio {
-        height: auto;
-        padding-top: 58px;
+        height: 90vh;
+        padding-top: 56px;
         padding-bottom: 0px;
         color: #505050;
         background-color: #f2efe3;
     }
-    #shortbio #photo {
-        /* height: 540px; */
+    #shortbio #photo #experience {
+        height: 80vh;
         background-image: url('../img/guillosolano.png');
-        background-size: 130%;
+        background-size: 190%;
+        background-position: top left;
         background-repeat: no-repeat;
-        /* background-color: #FE6F5E; */
+        background-color: #FE6F5E;
     }
     #shortbio #photo #experience img {
         margin-top: 120px;
@@ -1957,7 +1964,9 @@ hr {
         margin: 0;
     }
     #bio {
+        margin-top: 22vh;
         padding-top: 10px;
+        padding-bottom: 5px;
         background-color: #f2efe3;
     }
 }
@@ -2488,19 +2497,20 @@ hr {
 
     #about {
         background-color: #f2efe3;
-        height: 600px;
+        height: 90vh;
     }
     #shortbio {
-        height: auto;
-        padding-top: 58px;
+        height: 90vh;
+        padding-top: 56px;
         padding-bottom: 0px;
         color: #505050;
         background-color: #f2efe3;
     }
-    #shortbio #photo {
-        /* height: 406px; */
+    #shortbio #photo #experience {
+        height: 80vh;
         background-image: url('../img/guillosolano.png');
-        background-size: cover;
+        background-size: 190%;
+        background-position: top left;
         background-repeat: no-repeat;
         background-color: #FE6F5E;
     }
@@ -2514,6 +2524,7 @@ hr {
         margin-bottom: 10px;
         font-size: 0.8em;
         font-weight: 100;
+        z-index: 10;
     }
     #shortbio a {
         font-family: 'Ubuntu', sans-serif;
@@ -2522,7 +2533,9 @@ hr {
         margin: 0;
     }
     #bio {
-        padding-top: 100px;
+        margin-top: 20vh;
+        padding-top: 10px;
+        padding-bottom: 5px;
         background-color: #f2efe3;
     }
 }
@@ -3060,20 +3073,20 @@ hr {
 
     #about {
         background-color: #f2efe3;
-        height: 600px;
+        height: 90vh;
     }
     #shortbio {
-        height: auto;
+        height: 90vh;
         padding-top: 56px;
         padding-bottom: 0px;
         color: #505050;
         background-color: #f2efe3;
     }
-    #shortbio #photo {
-        height: 350px;
+    #shortbio #photo #experience {
+        height: 50vh;
         background-image: url('../img/guillosolano.png');
-        background-size: 190%;
-        background-position: left top;
+        background-size: cover;
+        background-position: top left;
         background-repeat: no-repeat;
         background-color: #FE6F5E;
     }
@@ -3092,7 +3105,8 @@ hr {
         margin: 0;
     }
     #bio {
-        margin-top: 150px;
+        margin-top: 50vh;
+        padding-bottom: 5px;
         padding-top: 10px;
         background-color: #f2efe3;
     }
@@ -3637,17 +3651,17 @@ hr {
 
     #about {
         background-color: #f2efe3;
-        height: 500px;
+        height: 90vh;
     }
     #shortbio {
-        height: auto;
+        height: 90vh;
         padding-top: 56px;
         padding-bottom: 0px;
         color: #505050;
         background-color: #f2efe3;
     }
-    #shortbio #photo {
-        /* height: 350px; */
+    #shortbio #photo #experience {
+        height: 40vh;
         background-image: url('../img/guillosolano.png');
         background-size: 190%;
         background-position: top left;
@@ -3655,7 +3669,7 @@ hr {
         background-color: #FE6F5E;
     }
     #shortbio #photo img {
-        margin-top: 30px;
+        margin-top: 300px;
     }
     #shortbio p {
         margin-bottom: 10px;
@@ -3669,7 +3683,7 @@ hr {
         margin: 0;
     }
     #bio {
-        margin-top: 43px;
+        margin-top: 40vh;
         padding-top: 10px;
         background-color: #f2efe3;
     }
