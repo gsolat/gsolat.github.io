@@ -3445,13 +3445,13 @@ hr {
         font-weight: 100;
     }
     #contexto-abstract {
-        margin-top: 350px;
-        margin-bottom: 200px;
+        margin-top: 30vh;
+        margin-bottom: 15vh;
         font-style: italic;
         text-align: center;
     }
     #contexto-icon {
-        height: auto;
+        height: 85vh;
         text-align: center;
         background-image: url('../img/contexto/umit-aslan-v-Js84xYlRI-unsplash.jpg');
         background-size: cover;
@@ -3460,7 +3460,7 @@ hr {
     }
     #contexto-icon img {
         max-width: 110px;
-        margin-top: 150px;
+        margin-top: 10vh;
     }
     #contexto-text h2 {
         font-family: 'Akrobat', sans-serif;
@@ -3470,17 +3470,17 @@ hr {
     #contexto-text {
         text-align: left;
         font-size: .9em;
-        margin-top: 100px;
+        margin-top: 12vh;
         margin-bottom: 150px;
         color: #fff;
     }
     #contexto-desc {
-        margin-top: 250px;
-        margin-bottom: 200px;
+        margin-top: 15vh;
+        margin-bottom: 15vh;
         text-align: left;
     }
     #contexto-desc img {
-        margin-bottom: 100px;
+        margin-bottom: 50px;
     }
     #contexto-link {
         text-align: center;
@@ -3507,15 +3507,15 @@ hr {
         background-color: #fff;
     }
     #contexto-art-insp {
-        margin-top: 20px;
-        margin-bottom: 200px;
+        margin-top: 0;
+        margin-bottom: 15vh;
     }
     #contexto-art-insp img {
         margin-bottom: 10px;
         max-height: 240px;
     }
     #contexto-palette {
-        margin-top: 250px;
+        margin-top: 15vh;
         margin-bottom: 20px;
     }
     #contexto-colors {
@@ -3525,19 +3525,19 @@ hr {
         background-size: contain;
         background-position: bottom;
         background-repeat: no-repeat;
-        margin-top: 200px;
+        margin-top: 15vh;
         margin-bottom: 0px;
     }
     #contexto-font #font-weight {
         margin-top: 30px;
-        margin-bottom: 300px;
+        margin-bottom: 30vh;
     }
     #contexto-font #font-weight img:first-child {
         margin-bottom: auto;
     }
     #contexto-logo-end {
         padding: 200px 100px;
-        margin-bottom: 100px;
+        margin-bottom: 20vh;
         text-align: center;
         background-color: #ff6347;
         background-image: url('../img/contexto/umit-aslan-v-Js84xYlRI-unsplash.jpg');
