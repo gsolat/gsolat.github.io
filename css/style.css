@@ -248,8 +248,8 @@ hr {
     }
 
     #contact .navbar {
-        padding-top: 15px;
-        padding-bottom: 10px;
+        padding-top: 12px;
+        padding-bottom: 15px;
         height: 8vh;
         background-color: #f2efe3;
     }
@@ -3132,7 +3132,7 @@ hr {
     .project {
         height: auto;
         background-color: #FE6F5E;
-        margin-bottom: 50px;
+        margin-bottom: 10vh;
     }
     .pre-body {
         height: auto;
