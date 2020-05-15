@@ -3162,7 +3162,7 @@ hr {
     /* imago */
 
     .project #imago {
-        height: 330px;
+        height: 70vh;
         background-image: url('../img/imago/imago-portada-behance-01.png');
         background-size: cover;
         background-position: center;
@@ -3207,7 +3207,7 @@ hr {
     /* arrecife */
 
     .project #arrecife {
-        height: 330px;
+        height: 70vh;
         background-image: url('../img/arrecife/arrecife-portada-behance-01.png');
         background-position: center;
         background-size: cover;
@@ -3344,7 +3344,7 @@ hr {
     /* meneonupcial */
 
     .project #meneonupcial {
-        height: 330px;
+        height: 70vh;
         background-image: url('../img/meneonupcial/portada-meneo.png');
         background-position: center;
         background-size: cover;
@@ -3428,7 +3428,7 @@ hr {
     /* contexto */
 
     .project #contexto {
-        height: 330px;
+        height: 70vh;
         background-image: url('../img/contexto/umit-aslan-v-Js84xYlRI-unsplash.png');
         background-size: cover;
         background-position: center;
@@ -3548,9 +3548,9 @@ hr {
     /* manual de coaching político  */
 
     .project #mcp {
-        height: 330px;
+        height: 70vh;
         background-image: url('../img/mcp/cover-book.jpg');
-        background-position: left;
+        background-position: 25%;
         background-size: cover;
         background-repeat: no-repeat;
         background-color: #FE6F5E;
