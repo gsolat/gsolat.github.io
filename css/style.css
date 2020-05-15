@@ -5,6 +5,10 @@
        src: url(../fonts/WEB/Akrobat-Regular.woff);
     }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin-top: 0;
     position: relative;
