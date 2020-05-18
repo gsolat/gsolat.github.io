@@ -102,7 +102,9 @@ hr {
         color: #FE6F5E;
     }
     .navbar .navbar-brand {
-        width: 160px;
+        width: auto;
+        font-weight: lighter;
+        font-size: 1em;
     }
     .navbar .navbar-brand img {
         max-width: 30px;
@@ -114,6 +116,7 @@ hr {
     }
     .nav-link {
         font-weight: 100;
+        font-size: .9em;
         padding: .5rem 1.05rem .5rem 1.13rem;
     }
     .bg-light {
@@ -153,6 +156,11 @@ hr {
         white-space: nowrap;
         background-color: transparent;
         border: 0;
+    }
+    .dropdown-item.active, .dropdown-item:active {
+        color: #fff;
+        text-decoration: none;
+        background-color: #FE6F5E;
     }
 
     /* --- CONTACTO --- */
@@ -198,6 +206,10 @@ hr {
 
     .navbar .navbar-text {
         display: none;
+        font-size: .8em;
+    }
+    .navbar-collapse {
+
     }
 }
 
@@ -205,6 +217,10 @@ hr {
 
     .navbar .navbar-brand {
         font-size: .9rem;
+    }
+    .navbar .navbar-text {
+        display: visible;
+        font-size: .8em;
     }
     .navbar .navbar-brand img {
         max-width: 30px;
@@ -214,7 +230,7 @@ hr {
         font-size: 1rem;
     }
     .navbar .nav-link {
-        font-size: .8em;
+        font-size: .9em;
     }
     .nav {
         display: block;
@@ -337,6 +353,15 @@ hr {
         line-height: 2;
         font-weight: 100;
         margin-top: 20px;
+    }
+    #imago-postal figcaption {
+        margin-top: 0px;
+        padding-top: 10px;
+        background-color: #f2efe3;
+        margin-bottom: 30px;
+        text-align: center;
+        font-size: .7em;
+        font-weight: 100;
     }
 
     /* arrecife */
@@ -845,14 +870,17 @@ hr {
     #portfolio {
         height: auto;
         padding-top: 58px;
-        padding-bottom: 150px;
+        padding-bottom: 0px;
         color: #333;
         background-color: #f2efe3;
     }
     .project {
         height: auto;
         background-color: #FE6F5E;
-        margin-bottom: 300px;
+        margin-bottom: 20vh;
+    }
+    .project:last-child {
+        margin-bottom: 5vh;
     }
     .pre-body {
         height: 130px;
@@ -881,7 +909,6 @@ hr {
         background-repeat: no-repeat;
         background-color: #FE6F5E;
     }
-
     .project-imago {
         height: auto;
         color: #333;
@@ -946,8 +973,8 @@ hr {
         text-align: center;
     }
     #arrecife-icon-2 {
-        height: 80vh;
-        padding-top: calc(45vh);
+        height: 90vh;
+        padding-top: 30vh;
     }
     #arrecife-icon-2 img {
         max-width: 150px;
@@ -1151,7 +1178,7 @@ hr {
         height: auto;
         color: #333;
     }
-    .project-contexto p{
+    .project-contexto p {
         font-size: 1em;
         line-height: 2;
         font-weight: 100;
@@ -1332,7 +1359,6 @@ hr {
     #contact {
         padding-top: 15px;
         padding-bottom: 10px;
-        height: 100px;
         background-color: #f2efe3;
     }
     #contact-info {
@@ -3193,7 +3219,7 @@ hr {
         text-align: center;
     }
     #imago-icon-end img {
-        margin-top: calc(40vh - 10px);
+        margin-top: calc(35vh - 10px);
         max-width: 150px;
         border-radius: 0;
     }
@@ -3202,6 +3228,15 @@ hr {
         line-height: 2;
         font-weight: 100;
         margin-top: 20px;
+    }
+    #imago-postal figcaption {
+        margin-top: 0px;
+        padding-top: 10px;
+        background-color: #f2efe3;
+        margin-bottom: 30px;
+        text-align: center;
+        font-size: .7em;
+        font-weight: 100;
     }
 
     /* arrecife */
@@ -3237,7 +3272,7 @@ hr {
         height: 90vh;
     }
     #arrecife-icon-2 img {
-        margin-top: calc(50vh - 10px);
+        margin-top: calc(35vh - 10px);
         max-width: 150px;
         border-radius: 100%;
     }
