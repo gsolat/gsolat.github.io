@@ -3827,7 +3827,7 @@ hr {
     /* imago */
 
     .project #imago {
-        height: 70vh;
+        height: 60vh;
         background-image: url('../img/imago/imago-portada-behance-01.png');
         background-size: cover;
         background-position: center;
@@ -3865,7 +3865,7 @@ hr {
     /* Imagen periodísticas */
 
     .project #periodistica {
-        height: 70vh;
+        height: 60vh;
         background-image: url('../img/imagen-cxt/15 pluma-del-horizonte-16-9.jpg');
         background-position: center;
         background-size: cover;
@@ -3918,7 +3918,7 @@ hr {
     /* arrecife */
 
     .project #arrecife {
-        height: 70vh;
+        height: 60vh;
         background-image: url('../img/arrecife/arrecife-portada-behance-01.png');
         background-position: center;
         background-size: cover;
@@ -4141,7 +4141,7 @@ hr {
     /* contexto */
 
     .project #contexto {
-        height: 40vh;
+        height: 60vh;
         background-image: url('../img/contexto/umit-aslan-v-Js84xYlRI-unsplash.png');
         background-size: cover;
         background-position: center;
@@ -4459,7 +4459,7 @@ hr {
     /* --- ABOUT --- */
 
     #about {
-        height: 90vh;
+        height: 80vh;
     }
     #shortbio {
         background-image: url('../img/guillosolano.png');
