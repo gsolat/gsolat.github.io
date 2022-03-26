@@ -9,7 +9,8 @@
 
 <!-- CSS -->
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-grid.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <link rel="shortcut icon" href="img/gs.ico">
@@ -21,29 +22,28 @@
 <!-- NAV -->
 
 <nav class="container navbar navbar-expand-lg fixed-top navbar-light bg-light">
-      <a class="navbar-brand" href="index.html"><img src="img/gs-logo.svg"/>Guillermo Solano / Diseñador gráfico</a>
-
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="index.html"><img src="img/gs-logo.svg"/>Diseño gráfico & Comunicación Visual</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span><i class="fas fa-bars"></i></span>
       </button>
+
       <div class="collapse navbar-collapse justify-content-end" id="navbarText">
             <ul class="nav justify-content-end">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Proyectos </a>
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Proyectos </a>
                     <div class="dropdown-menu">
+                        <a class="dropdown-item" href="imagen-periodismo.html">Ilustraciones</a>
+                        <a class="dropdown-item" href="imago.html">Logotipo</a>
                         <a class="dropdown-item" href="contextomedia.html">Contexto</a>
-                        <a class="dropdown-item" href="imago.html">Imago</a>
-                        <!-- <a class="dropdown-item" href="tropical-abstracto.html">Tropical Abstracto</a>
-                        <a class="dropdown-item" href="manualpolitico.html">Manual de Coaching Político</a> -->
                         <a class="dropdown-item" href="arrecife.html">Arrecife</a>
                     </div>
                 </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="bio.html" title="acerca de">Perfil</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://gsolat.github.io/blog/" title="blog">Blog</a>
-                </li>
+                  <li class="nav-item active">
+                      <a class="nav-link" href="#" title="acerca de">Perfil</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="https://gsolat.github.io/blog/" title="blog">Blog</a>
+                  </li>
             </ul>
       </div>
 </nav>
@@ -56,40 +56,68 @@
             <div class="col-12 project-imago">
                   <div class="row">
                       <div class="col-12" id="imago-icon">
-                          <div class="col-4 offset-4">
-                              <img src="img/gs-logo.svg" class="img-fluid">
-                          </div>
-                          <div class="col-xl-4 offset-xl-4 col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-8 offset-sm-2 col-10 offset-1" id="imago-text">
-                                <p>Formas básicas agrupadas en conjuntos y transformadas en imágenes, bajo la estricta exigencia de formar parte de un sistema visual identitario.
+                          <div class="col-xl-3 offset-xl-4 col-lg-4 offset-xl-4 col-md-4 col-sm-8 col-6" id="imago-text">
+                                <h4>Logotipos
+                                </h4>
+                                <p>
+                                     Formas básicas agrupadas en íconos y sistemas de identidad visual para organizaciones sociales y emprendimientos.
                                 </p>
                           </div>
                       </div>
 
-                      <div id="imago-postal">
-                            <img src="img/imago/artboard_1.png" class="img-fluid">
-                            <figcaption>Fundación Cultural Cazadores de Auroras</figcaption>
-                            <img src="img/imago/artboard_2.png" class="img-fluid">
-                            <figcaption>Wiqonn Technologies</figcaption>
-                            <img src="img/imago/artboard_3.png" class="img-fluid">
-                            <figcaption></figcaption>
-                            <img src="img/imago/artboard_4.png" class="img-fluid">
-                            <figcaption>Red de Radios Comunitarias del Caribe</figcaption>
-                            <img src="img/imago/artboard_5.png" class="img-fluid">
-                            <figcaption>Piensa Labs</figcaption>
-                            <img src="img/imago/artboard_6.png" class="img-fluid">
-                            <figcaption>Autti</figcaption>
-                            <img src="img/imago/artboard_7.png" class="img-fluid">
-                            <figcaption>Tegola</figcaption>
-                            <img src="img/imago/artboard_8.png" class="img-fluid">
-                            <figcaption>Geo-Dash</figcaption>
-                            <img src="img/imago/artboard_9.png" class="img-fluid">
-                            <figcaption></figcaption>
+                      <div id="imago-postal" class="container">
+                            <div class="row">
+                                <div class="col-sm-1 col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                                    <img src="img/imago/artboard_1.png" class="img-fluid">
+                                    <figcaption>Fundación Cultural Cazadores de Auroras</figcaption>
+                                </div>
+                                <div class="col-sm-1 col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                                    <img src="img/imago/artboard_2.png" class="img-fluid">
+                                    <figcaption>Wiqonn Technologies</figcaption>
+                                </div>
+                                <div class="col-sm-1 col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                                    <img src="img/imago/artboard_3.png" class="img-fluid">
+                                    <figcaption>Contexto · Noticias con criterio</figcaption>
+                                </div>
+
+                                <div class="col-sm-1 col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                                    <img src="img/imago/artboard_4.png" class="img-fluid">
+                                    <figcaption>Red de Radios Comunitarias del Caribe</figcaption>
+                                </div>
+                                <div class="col-sm-1 col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                                    <img src="img/imago/artboard_5.png" class="img-fluid">
+                                    <figcaption>Piensa Labs</figcaption>
+                                </div>
+                                <div class="col-sm-1 col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                                    <img src="img/imago/artboard_6.png" class="img-fluid">
+                                    <figcaption>Autti</figcaption>
+                                </div>
+
+                                <div class="col-sm-1 col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                                    <img src="img/imago/artboard_7.png" class="img-fluid">
+                                    <figcaption>Tegola</figcaption>
+                                </div>
+                                <div class="col-sm-1 col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                                    <img src="img/imago/artboard_8.png" class="img-fluid">
+                                    <figcaption>Geo-Dash</figcaption>
+                                </div>
+                                <div class="col-sm-1 col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                                    <img src="img/imago/artboard_9.png" class="img-fluid">
+                                    <figcaption>Periodismo Ambiental</figcaption>
+                                </div>
+
+                                <div class="col-sm-1 col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                                    <img src="img/imago/artboard_10.png" class="img-fluid">
+                                    <figcaption>Rios Voladores</figcaption>
+                                </div>
+                            </div>
+                        </div>
                       </div>
-                      <div class="col-4 offset-4" id="imago-icon-end">
+                      <!-- <div class="col-4 offset-4" id="imago-icon-end">
                         <a href="index.html">
                             <img src="img/gs-logo.svg" class="img-fluid">
                         </a>
-                      </div>
+                      </div> -->
                   </div>
             </div>
         </div>
@@ -123,7 +151,7 @@
 
 <!-- JAVASCRIPT -->
 
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+
   </body>
 </html>

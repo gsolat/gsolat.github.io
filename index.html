@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Inicio · Portafolio de Guillermo Solano</title>
+    <title>Guillermo Solano · Diseño gráfico & Comunicación visual</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Comunicación visual táctica para iniciativas culturales.">
     <meta property="og:image" content="img/gs-logo.svg">
@@ -17,7 +17,8 @@
 
 <!-- CSS -->
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-grid.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <link rel="shortcut icon" href="img/gs.ico">
@@ -29,27 +30,23 @@
 <!-- NAV -->
 
 <nav class="container navbar navbar-expand-lg fixed-top navbar-light bg-light">
-      <a class="navbar-brand" href="index.html"><img src="img/gs-logo.svg"/>Guillermo Solano / Diseñador gráfico</a>
-          <!-- <span class="navbar-text">
-              Diseñador gráfico
-          </span> -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span ><i class="fas fa-bars"></i></span>
+      <a class="navbar-brand" href="index.html"><img src="img/gs-logo.svg"/>Diseño gráfico & Comunicación Visual</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
       </button>
+
       <div class="collapse navbar-collapse justify-content-end" id="navbarText">
             <ul class="nav justify-content-end">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Proyectos </a>
+                <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Proyectos </a>
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="contextomedia.html">Contexto</a>
                         <a class="dropdown-item" href="imago.html">Imago</a>
-                        <!-- <a class="dropdown-item" href="tropical-abstracto.html">Tropical Abstracto</a>
-                        <a class="dropdown-item" href="manualpolitico.html">Manual de Coaching Político</a> -->
                         <a class="dropdown-item" href="arrecife.html">Arrecife</a>
                     </div>
-                </li>
+                </li> -->
                   <li class="nav-item active">
-                      <a class="nav-link" href="bio.html" title="acerca de">Perfil</a>
+                      <a class="nav-link" href="perfil.html" title="acerca de">Perfil</a>
                   </li>
                   <li class="nav-item">
                       <a class="nav-link" href="https://gsolat.github.io/blog/" title="blog">Blog</a>
@@ -63,28 +60,52 @@
 <section id="portfolio">
     <div class="container">
         <div class="row">
-            <div class="col-xl-12 project">
-                  <div class="row" id="contexto">
+            <div class="col-sm-1 col-lg-6 col-md-6 col-sm-6 col-xs-12 project">
+                 <div class="row" id="periodistica">
                   </div>
                   <div class="row justify-content-end">
-                      <div class="pre-body col-xl-2 col-lg-3 col-md-3 col-sm-12 col-12">
-                            <h5 class="pre-title">Contexto</h5>
-                            <p class="pre-text">Identidad visual para medio de comunicación digital con criterio y sin afán.</p>
-                            <a href="contextomedia.html" class="btn btn-xs">Ver proyecto</a>
+                      <div class="pre-body col-lg-4 col-md-12 col-sm-12 col-12">
+                            <h5 class="pre-title">Ilustraciones</h5>
+                            <p class="pre-text">Colección de imágenes que ilustran escritos periodísticos.</p>
+                            <a href="imagen-periodismo.html" class="btn btn-xs">Ver proyecto</a>
                       </div>
                   </div>
             </div>
-            <div class="col-xl-12 project">
-                  <div class="row" id="imago">
+            <div class="col-sm-1 col-lg-6 col-md-6 col-sm-6 col-xs-12 project">
+                 <div class="row" id="imago">
                   </div>
                   <div class="row justify-content-end">
-                      <div class="pre-body col-xl-2 col-lg-3 col-md-3 col-sm-12 col-12">
-                            <h5 class="pre-title">Imago</h5>
-                            <p class="pre-text">Selección de logotipos, íconos y sistemas de identidad visual realizados.</p>
+                      <div class="pre-body col-lg-4 col-md-12 col-sm-12 col-12">
+                            <h5 class="pre-title">Logotipo</h5>
+                            <p class="pre-text">Identidad visual para organizaciones sociales y emprendimientos.</p>
                             <a href="imago.html" class="btn btn-xs">Ver proyecto</a>
                       </div>
                   </div>
             </div>
+            <div class="col-sm-1 col-lg-6 col-md-6 col-sm-6 col-xs-12 project">
+                  <div class="row" id="contexto">
+                  </div>
+                  <div class="row justify-content-end">
+                      <div class="pre-body col-lg-4 col-md-12 col-sm-12 col-12">
+                            <h5 class="pre-title">Contexto</h5>
+                            <p class="pre-text">Identidad visual para medio de comunicación digital con enfoque cultural y humanista.</p>
+                            <a href="contextomedia.html" class="btn btn-xs">Ver proyecto</a>
+                      </div>
+                  </div>
+            </div>
+            <div class="col-sm-1 col-lg-6 col-md-6 col-sm-6 col-xs-12 project">
+                  <div class="row" id="arrecife">
+                  </div>
+                  <div class="row justify-content-end">
+                      <div class="pre-body col-lg-4 col-md-12 col-sm-12 col-12">
+                            <h5 class="pre-title">Revista Arrecife</h5>
+                            <p class="pre-text">Diseño de publicación digital <i>web-friendly</i> para navegadores de internet.</p>
+                            <a href="arrecife.html" class="btn btn-xs">Ver proyecto</a>
+                      </div>
+                  </div>
+            </div>
+            <!-- <div class="col-xl-12 project"> -->
+
             <!-- <div class="col-xl-12 project">
                   <div class="row" id="mcp">
                   </div>
@@ -107,17 +128,6 @@
                       </div>
                   </div>
             </div> -->
-            <div class="col-xl-12 project">
-                  <div class="row" id="arrecife">
-                  </div>
-                  <div class="row justify-content-end">
-                      <div class="pre-body col-xl-2 col-lg-3 col-md-3 col-sm-12 col-12">
-                            <h5 class="pre-title">Revista Arrecife</h5>
-                            <p class="pre-text">Diseño de publicación digital <i>web-friendly</i> para navegadores de internet.</p>
-                            <a href="arrecife.html" class="btn btn-xs">Ver proyecto</a>
-                      </div>
-                  </div>
-            </div>
         </div>
     </div>
 </section>
@@ -149,9 +159,7 @@
 
 <!-- JAVASCRIPT -->
 
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-
+    <script src="js/bootstrap.bundle.js"></script>
 
   </body>
 </html>
