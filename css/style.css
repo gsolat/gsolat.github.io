@@ -3801,16 +3801,16 @@ hr {
         font-weight: 100;
     }
     .pre-title {
-        font-size: calc(1.275rem + 0.3vw);
+        font-size: calc(1rem + 0.3vw);
         margin-bottom: 5px;
     }
     .pre-body .btn {
-        font-size: .7em;
+        font-size: .8em;
         padding: 2px 6px;
         margin-top: 10px;
     }
     .pre-text {
-        font-size: 1em;
+        font-size: 0.8em;
         margin-bottom: 7px;
         line-height: 1.3;
     }
