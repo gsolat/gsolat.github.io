@@ -4209,7 +4209,7 @@ hr {
         margin-bottom: 300px;
     }
     #contexto-font #font-weight img:first-child {
-        margin-bottom: 50px;
+        margin-bottom: auto;
     }
     #contexto-logo-end {
         height: 85vh;
