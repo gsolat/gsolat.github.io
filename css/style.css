@@ -252,7 +252,7 @@ hr {
         font-size: 1rem;
     }
     .navbar .nav-link {
-        font-size: .9em;
+        font-size: 1em;
     }
     .nav {
         display: block;
@@ -275,7 +275,7 @@ hr {
         min-width: 90vw;
         padding: 0 0 .5rem 0;
         margin: .125rem 0 0;
-        font-size: .7rem;
+        font-size: .8rem;
         color: #212529;
         text-align: left;
         list-style: none;
