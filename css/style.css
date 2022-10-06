@@ -161,7 +161,7 @@ hr {
     }
     .dropdown-item {
         display: block;
-        width: 50%;
+        width: 60%;
         padding: .25rem 1.1rem;
         clear: both;
         color: #256d7b;
@@ -752,115 +752,36 @@ hr {
         max-width: 200px;
     }
 
-    /* manual de coaching político  */
+    /* israel / palestina  */
 
-    /* .project #mcp {
-        height: 50vh;
-        background-image: url('../img/mcp/cover-book.jpg');
+    .project #ip {
+        height: 40vh;
+        background-image: url('../img/israelpalestina/israel-palestina-cover.jpg');
         background-size: cover;
+        background-position: center;
         background-repeat: no-repeat;
     }
-    .project-mcp {
+    .project-ip {
         height: auto;
         color: #333;
     }
-    .project-mcp p {
+    .project-ip p {
         font-size: 1em;
         line-height: 2;
         font-weight: 100;
         margin-top: 20px;
     }
-    .blockquote-footer {
-        color:#333;
-        text-align: right;
-    }
-    #img-presentation{
-        height: 560px;
-        background-image: url('../img/mcp/MCP-libro-portada.png');
-        background-size: cover;
-        background-position: center;
-        margin-bottom: 40px;
-    }
-    #mcp-link {
-        margin-bottom: 150px;
-        text-align: center;
-    }
-    #mcp-link .btn {
+    #ip-text {
+        margin-top: 35vh;
+        font-style: italic;
+        text-align: left;
         font-weight: 100;
-        letter-spacing: 1px;
-        color: #000;
-        background-color: #fff;
-        border: 1px solid #fff;
-        border-radius: 3px;
+        margin-bottom: 35vh;
     }
-    #mcp-link .btn:hover {
-        color: #000;
-        background-color: transparent;
-        border: 1px solid #000;
-    }
-    #mcp-icon {
-        height: 60vh;
-        text-align: center;
-    }
-    #mcp-icon {
-        text-align: center;
-        margin-top: 30vh;
-    }
-    #mcp-icon img {
-        max-width: 250px;
-    }
-    #mcp-text {
-        font-weight: 100;
-        margin-bottom: 120px;
-    }
-    #mcp-title {
-        text-align: center;
-    }
-    #mcp-postal hr {
-        margin-bottom: 8rem !important;
-    }
-    #mcp-postal img {
+    #ip-postal img {
         border-radius: 3px;
         margin-bottom: 80px;
-    } */
-
-    /* --- CONTACTO --- */
-
-    /* #contact {
-        padding-top: 15px;
-        padding-bottom: 10px;
-        height: 100px;
-        background-color: #f2efe3;
     }
-    #contact-info {
-        color: #fff;
-        text-align: center;
-        font-family: 'Ubuntu', sans-serif;
-    }
-    #contact-info a {
-        font-weight: 300;
-        padding: 8px;
-        margin: 0;
-        color: #424242;
-    }
-    #contact-info a:hover {
-        color: #ff3d00;
-    }
-    #contact-info > p {
-        font-weight: 300;
-        margin: 0;
-    }
-    #contact-info p:last-child {
-        margin-top: 5px;
-        margin-bottom: 5px;
-        text-transform: uppercase;
-        font-size: .7em;
-        color: #424242;
-    }
-    #contact-info i {
-        font-size: 1em;
-        padding:0 10px 10px 0;
-    } */
 
     /* --- ABOUT --- */
 
@@ -1359,137 +1280,19 @@ hr {
         max-width: 200px;
     }
 
-    /* .project #contexto {
+    /* israel/palestina  */
+
+    .project #ip {
         height: 40vh;
-        background-image: url('../img/contexto/umit-aslan-v-Js84xYlRI-unsplash.png');
+        background-image: url('../img/israelpalestina/israel-palestina-cover.jpg');
         background-size: cover;
-        background-position: center;
         background-repeat: no-repeat;
-        background-color: #ff6347;
     }
-    .project-contexto {
+    .project-ip {
         height: auto;
         color: #333;
     }
-    .project-contexto p {
-        font-size: 1em;
-        line-height: 2;
-        font-weight: 100;
-    }
-    #contexto-abstract {
-        margin-top: 350px;
-        margin-bottom: 200px;
-        font-style: italic;
-        text-align: center;
-    }
-    #contexto-icon {
-        height: auto;
-        text-align: center;
-        background-image: url('../img/contexto/umit-aslan-v-Js84xYlRI-unsplash.jpg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-    #contexto-icon img {
-        max-width: 110px;
-        margin-top: 200px;
-    }
-    #contexto-text h2 {
-        font-family: 'Akrobat', sans-serif;
-        font-weight: bold;
-        color: #fff;
-    }
-    #contexto-text {
-        text-align: left;
-        font-size: .9em;
-        margin-top: 100px;
-        margin-bottom: 200px;
-        color: #fff;
-    }
-    #contexto-desc {
-        margin-top: 250px;
-        margin-bottom: 150px;
-        text-align: left;
-    }
-    #contexto-desc img {
-        margin-bottom: 100px;
-    }
-    #contexto-link {
-        text-align: center;
-        margin-bottom: 100px;
-    }
-    #contexto-link .btn {
-        font-weight: 100;
-        letter-spacing: 1px;
-        color: #000;
-        background-color: #ffcba4;
-        border: 0px solid #000;
-        border-radius: 3px;
-    }
-    #contexto-caption figcaption {
-        margin-top: -50px;
-        padding-top: 10px;
-        background-color: #f2efe3;
-        margin-bottom: 80px;
-        text-align: center;
-        font-weight: 100;
-    }
-    #contexto-link .btn:hover {
-        color: #000;
-        background-color: #fff;
-    }
-    #contexto-art-insp {
-        margin-top: 20px;
-        margin-bottom: 200px;
-    }
-    #contexto-art-insp img {
-        margin-bottom: 10px;
-        max-height: 240px;
-    }
-    #contexto-palette {
-        margin-top: 200px;
-        margin-bottom: 20px;
-    }
-    #contexto-colors {
-        margin-top: 10px;
-    }
-    #contexto-font {
-        background-size: contain;
-        background-position: bottom;
-        background-repeat: no-repeat;
-        margin-top: 200px;
-        margin-bottom: 0px;
-    }
-    #contexto-font #font-weight {
-        margin-top: 100px;
-        margin-bottom: 300px;
-    }
-    #contexto-font #font-weight img:first-child {
-        margin-bottom: 50px;
-    }
-    #contexto-logo-end {
-        padding: 200px 100px;
-        margin-bottom: 0px;
-        text-align: center;
-        background-color: #ff6347;
-        background-image: url('../img/contexto/umit-aslan-v-Js84xYlRI-unsplash.jpg');
-        background-size: cover;
-        background-position: center;
-    } */
-
-    /* manual de coaching político  */
-
-    /* .project #mcp {
-        height: 640px;
-        background-image: url('../img/mcp/cover-book.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    .project-mcp {
-        height: auto;
-        color: #333;
-    }
-    .project-mcp p {
+    .project-ip p {
         font-size: 1em;
         line-height: 2;
         font-weight: 100;
@@ -1499,52 +1302,17 @@ hr {
         color:#333;
         text-align: right;
     }
-    #img-presentation{
-        height: 560px;
-        background-image: url('../img/mcp/MCP-libro-portada.png');
-        background-size: cover;
-        background-position: center;
-        margin-bottom: 40px;
-    }
-    #mcp-link {
-        margin-bottom: 150px;
-        text-align: center;
-    }
-    #mcp-link .btn {
-        font-weight: 100;
-        letter-spacing: 1px;
-        color: #000;
-        background-color: #fff;
-        border: 1px solid #fff;
-        border-radius: 3px;
-    }
-    #mcp-link .btn:hover {
-        color: #000;
-        background-color: transparent;
-        border: 1px solid #000;
-    }
-    #mcp-icon {
-        height: 70vh;
-        text-align: center;
-    }
-    #mcp-icon img {
+    #ip-text {
         margin-top: 35vh;
-        max-width: 250px;
-    }
-    #mcp-text {
+        font-style: italic;
+        text-align: left;
         font-weight: 100;
-        margin-bottom: 120px;
+        margin-bottom: 35vh;
     }
-    #mcp-title {
-        text-align: center;
-    }
-    #mcp-postal hr {
-        margin-bottom: 8rem !important;
-    }
-    #mcp-postal img {
+    #ip-postal img {
         border-radius: 3px;
         margin-bottom: 80px;
-    } */
+    }
 
     /* --- CONTACTO --- */
 
@@ -2080,189 +1848,33 @@ hr {
         max-width: 200px;
     }
 
-    /* .project #contexto {
+    /* israel/palestina  */
+
+    .project #ip {
+        background-image: url('../img/israelpalestina/israel-palestina-cover.jpg');
         height: 40vh;
-        background-image: url('../img/contexto/umit-aslan-v-Js84xYlRI-unsplash.png');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        background-color: #ff6347;
     }
-    .project-contexto {
+    .project-ip {
         height: auto;
         color: #333;
     }
-    .project-contexto p{
-        font-size: 1em;
-        line-height: 2;
-        font-weight: 100;
-    }
-    #contexto-abstract {
-        margin-top: 350px;
-        margin-bottom: 200px;
-        font-style: italic;
-        text-align: center;
-    }
-    #contexto-icon {
-        height: auto;
-        text-align: center;
-        background-image: url('../img/contexto/umit-aslan-v-Js84xYlRI-unsplash.jpg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-    #contexto-icon img {
-        max-width: 110px;
-        margin-top: 150px;
-    }
-    #contexto-text h2 {
-        font-family: 'Akrobat', sans-serif;
-        font-weight: bold;
-        color: #fff;
-    }
-    #contexto-text {
-        text-align: left;
-        font-size: .9em;
-        margin-top: 100px;
-        margin-bottom: 150px;
-        color: #fff;
-    }
-    #contexto-desc {
-        margin-top: 250px;
-        margin-bottom: 200px;
-        text-align: left;
-    }
-    #contexto-desc img {
-        margin-bottom: 100px;
-    }
-    #contexto-link {
-        text-align: center;
-        margin-bottom: 0px;
-    }
-    #contexto-link .btn {
-        font-weight: 100;
-        letter-spacing: 1px;
-        color: #000;
-        background-color: #ffcba4;
-        border: 0px solid #000;
-        border-radius: 3px;
-    }
-    #contexto-caption figcaption {
-        margin-top: -50px;
-        padding-top: 10px;
-        background-color: #f2efe3;
-        margin-bottom: 80px;
-        text-align: center;
-        font-weight: 100;
-    }
-    #contexto-link .btn:hover {
-        color: #000;
-        background-color: #fff;
-    }
-    #contexto-art-insp {
-        margin-top: 20px;
-        margin-bottom: 200px;
-    }
-    #contexto-art-insp img {
-        margin-bottom: 10px;
-        max-height: 240px;
-    }
-    #contexto-palette {
-        margin-top: 250px;
-        margin-bottom: 20px;
-    }
-    #contexto-colors {
-        margin-top: 10px;
-    }
-    #contexto-font {
-        background-size: contain;
-        background-position: bottom;
-        background-repeat: no-repeat;
-        margin-top: 200px;
-        margin-bottom: 0px;
-    }
-    #contexto-font #font-weight {
-        margin-top: 100px;
-        margin-bottom: 300px;
-    }
-    #contexto-font #font-weight img:first-child {
-        margin-bottom: 50px;
-    }
-    #contexto-logo-end {
-        padding: 200px 100px;
-        margin-bottom: 0px;
-        text-align: center;
-        background-color: #ff6347;
-        background-image: url('../img/contexto/umit-aslan-v-Js84xYlRI-unsplash.jpg');
-        background-size: cover;
-        background-position: center;
-    } */
-
-    /* manual de coaching político  */
-
-    .project #mcp {
-        background-image: url('../img/mcp/cover-book.jpg');
-        height: 640px;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    .project-mcp {
-        height: auto;
-        color: #333;
-    }
-    .project-mcp p {
+    .project-ip p {
         font-size: 1em;
         line-height: 2;
         font-weight: 100;
         margin-top: 20px;
     }
-    .blockquote-footer {
-        color:#333;
-        text-align: right;
-    }
-    #img-presentation{
-        height: 450px;
-        background-image: url('../img/mcp/MCP-libro-portada.png');
-        background-size: cover;
-        background-position: center;
-        margin-bottom: 40px;
-    }
-    #mcp-link {
-        margin-bottom: 150px;
-        text-align: center;
-    }
-    #mcp-link .btn {
-        font-weight: 100;
-        letter-spacing: 1px;
-        color: #000;
-        background-color: #fff;
-        border: 1px solid #fff;
-        border-radius: 3px;
-    }
-    #mcp-link .btn:hover {
-        color: #000;
-        background-color: transparent;
-        border: 1px solid #000;
-    }
-    #mcp-icon {
-        height: 70vh;
-        text-align: center;
-    }
-    #mcp-icon img {
+    #ip-text {
         margin-top: 35vh;
-        max-width: 250px;
-    }
-    #mcp-text {
+        font-style: italic;
+        text-align: left;
         font-weight: 100;
-        margin-bottom: 120px;
+        margin-bottom: 35vh;
     }
-    #mcp-title {
-        text-align: center;
-    }
-    #mcp-postal hr {
-        margin-bottom: 8rem !important;
-    }
-    #mcp-postal img {
+    #ip-postal img {
         border-radius: 3px;
         margin-bottom: 80px;
     }
@@ -2795,189 +2407,36 @@ hr {
         max-width: 150px;
     }
 
-    /* .project #contexto {
+    /* israel/paletina  */
+
+    .project #ip {
         height: 40vh;
-        background-image: url('../img/contexto/umit-aslan-v-Js84xYlRI-unsplash.png');
-        background-size: cover;
+        background-image: url('../img/israelpalestina/israel-palestina-cover.jpg');
         background-position: center;
+        background-size: cover;
         background-repeat: no-repeat;
-        background-color: #ff6347;
     }
-    .project-contexto {
+    .project-ip {
         height: auto;
         color: #333;
     }
-    .project-contexto p{
+    .project-ip p {
         font-size: 1em;
         line-height: 2;
         font-weight: 100;
+        margin-top: 20px;
     }
-    #contexto-abstract {
-        margin-top: 350px;
-        margin-bottom: 200px;
+    #ip-text {
+        margin-top: 35vh;
         font-style: italic;
-        text-align: center;
-    }
-    #contexto-icon {
-        height: auto;
-        text-align: center;
-        background-image: url('../img/contexto/umit-aslan-v-Js84xYlRI-unsplash.jpg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-    #contexto-icon img {
-        max-width: 110px;
-        margin-top: 150px;
-    }
-    #contexto-text h2 {
-        font-family: 'Akrobat', sans-serif;
-        font-weight: bold;
-        color: #fff;
-    }
-    #contexto-text {
         text-align: left;
-        font-size: .9em;
-        margin-top: 100px;
-        margin-bottom: 150px;
-        color: #fff;
-    }
-    #contexto-desc {
-        margin-top: 250px;
-        margin-bottom: 200px;
-        text-align: left;
-    }
-    #contexto-desc img {
-        margin-bottom: 100px;
-    }
-    #contexto-link {
-        text-align: center;
-        margin-bottom: 0px;
-    }
-    #contexto-link .btn {
         font-weight: 100;
-        letter-spacing: 1px;
-        color: #000;
-        background-color: #ffcba4;
-        border: 0px solid #000;
-        border-radius: 3px;
+        margin-bottom: 35vh;
     }
-    #contexto-caption figcaption {
-        margin-top: -50px;
-        padding-top: 10px;
-        background-color: #f2efe3;
-        margin-bottom: 80px;
-        text-align: center;
-        font-weight: 100;
-    }
-    #contexto-link .btn:hover {
-        color: #000;
-        background-color: #fff;
-    }
-    #contexto-art-insp {
-        margin-top: 20px;
-        margin-bottom: 200px;
-    }
-    #contexto-art-insp img {
-        margin-bottom: 10px;
-        max-height: 240px;
-    }
-    #contexto-palette {
-        margin-top: 250px;
-        margin-bottom: 20px;
-    }
-    #contexto-colors {
-        margin-top: 10px;
-    }
-    #contexto-font {
-        background-size: contain;
-        background-position: bottom;
-        background-repeat: no-repeat;
-        margin-top: 200px;
-        margin-bottom: 0px;
-    }
-    #contexto-font #font-weight {
-        margin-top: 100px;
-        margin-bottom: 300px;
-    }
-    #contexto-font #font-weight img:first-child {
-        margin-bottom: 50px;
-    }
-    #contexto-logo-end {
-        padding: 200px 100px;
-        margin-bottom: 100px;
-        text-align: center;
-        background-color: #ff6347;
-        background-image: url('../img/contexto/umit-aslan-v-Js84xYlRI-unsplash.jpg');
-        background-size: cover;
-        background-position: center;
-    } */
-
-    /* manual de coaching político  */
-
-    /* .project #mcp {
-        height: 406px;
-        background-image: url('../img/mcp/cover-book.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    .project-mcp {
-        height: auto;
-        color: #333;
-    }
-    .project-mcp p {
-        font-size: 1em;
-        line-height: 2;
-        font-weight: 100;
-        margin-top: 20px;
-    }
-    .blockquote-footer {
-        color:#333;
-        text-align: right;
-    }
-    #img-presentation{
-        height: 450px;
-        background-image: url('../img/mcp/MCP-libro-portada.png');
-        background-size: cover;
-        background-position: center;
-        margin-bottom: 40px;
-    }
-    #mcp-link {
-        margin-bottom: 150px;
-        text-align: center;
-    }
-    #mcp-link .btn {
-        font-weight: 100;
-        letter-spacing: 1px;
-        color: #000;
-        background-color: #fff;
-        border: 1px solid #fff;
-        border-radius: 3px;
-    }
-    #mcp-link .btn:hover {
-        color: #000;
-        background-color: transparent;
-        border: 1px solid #000;
-    }
-    #mcp-icon {
-        height: 90vh;
-        text-align: center;
-    }
-    #mcp-icon img {
-        margin-top: 40vh;
-        max-width: 250px;
-    }
-    #mcp-text {
-        font-weight: 100;
-        margin-bottom: 120px;
-    }
-    #mcp-postal hr {
-        margin-bottom: 8rem !important;
-    }
-    #mcp-postal img {
+    #ip-postal img {
         border-radius: 3px;
         margin-bottom: 80px;
-    } */
+    }
 
     /* --- CONTACTO --- */
 
@@ -3508,188 +2967,33 @@ hr {
         max-width: 120px;
     }
 
-    /* .project #contexto {
+    /* israel/palestina  */
+
+    .project #ip {
         height: 40vh;
-        background-image: url('../img/contexto/umit-aslan-v-Js84xYlRI-unsplash.png');
-        background-size: cover;
+        background-image: url('../img/israelpalestina/israel-palestina-cover.jpg');
         background-position: center;
+        background-size: cover;
         background-repeat: no-repeat;
-        background-color: #ff6347;
     }
-    .project-contexto {
+    .project-ip {
         height: auto;
         color: #333;
     }
-    .project-contexto p{
+    .project-ip p {
         font-size: 1em;
         line-height: 2;
         font-weight: 100;
+        margin-top: 20px;
     }
-    #contexto-abstract {
-        margin-top: 350px;
-        margin-bottom: 200px;
+    #ip-text {
+        margin-top: 35vh;
         font-style: italic;
-        text-align: center;
-    }
-    #contexto-icon {
-        height: auto;
-        text-align: center;
-        background-image: url('../img/contexto/umit-aslan-v-Js84xYlRI-unsplash.jpg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-    #contexto-icon img {
-        max-width: 110px;
-        margin-top: 150px;
-    }
-    #contexto-text h2 {
-        font-family: 'Akrobat', sans-serif;
-        font-weight: bold;
-        color: #fff;
-    }
-    #contexto-text {
         text-align: left;
-        font-size: .9em;
-        margin-top: 100px;
-        margin-bottom: 150px;
-        color: #fff;
-    }
-    #contexto-desc {
-        margin-top: 250px;
-        margin-bottom: 200px;
-        text-align: left;
-    }
-    #contexto-desc img {
-        margin-bottom: 100px;
-    }
-    #contexto-link {
-        text-align: center;
-        margin-bottom: 0px;
-    }
-    #contexto-link .btn {
         font-weight: 100;
-        letter-spacing: 1px;
-        color: #000;
-        background-color: #ffcba4;
-        border: 0px solid #000;
-        border-radius: 3px;
+        margin-bottom: 35vh;
     }
-    #contexto-caption figcaption {
-        margin-top: -50px;
-        padding-top: 10px;
-        background-color: #f2efe3;
-        margin-bottom: 80px;
-        text-align: center;
-        font-weight: 100;
-    }
-    #contexto-link .btn:hover {
-        color: #000;
-        background-color: #fff;
-    }
-    #contexto-art-insp {
-        margin-top: 20px;
-        margin-bottom: 200px;
-    }
-    #contexto-art-insp img {
-        margin-bottom: 10px;
-        max-height: 240px;
-    }
-    #contexto-palette {
-        margin-top: 250px;
-        margin-bottom: 20px;
-    }
-    #contexto-colors {
-        margin-top: 10px;
-    }
-    #contexto-font {
-        background-size: contain;
-        background-position: bottom;
-        background-repeat: no-repeat;
-        margin-top: 200px;
-        margin-bottom: 0px;
-    }
-    #contexto-font #font-weight {
-        margin-top: 100px;
-        margin-bottom: 300px;
-    }
-    #contexto-font #font-weight img:first-child {
-        margin-bottom: 50px;
-    }
-    #contexto-logo-end {
-        padding: 200px 100px;
-        margin-bottom: 100px;
-        text-align: center;
-        background-color: #ff6347;
-        background-image: url('../img/contexto/umit-aslan-v-Js84xYlRI-unsplash.jpg');
-        background-size: cover;
-        background-position: center;
-    } */
-
-    /* manual de coaching político  */
-
-    .project #mcp {
-        height: 203px;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    .project-mcp {
-        height: auto;
-        color: #333;
-    }
-    .project-mcp p {
-        font-size: 1em;
-        line-height: 2;
-        font-weight: 100;
-        margin-top: 20px;
-    }
-    .blockquote-footer {
-        color:#333;
-        text-align: right;
-    }
-    #img-presentation{
-        height: 340px;
-        background-image: url('../img/mcp/MCP-libro-portada.png');
-        background-size: cover;
-        background-position: center;
-        margin-bottom: 40px;
-    }
-    #mcp-link {
-        margin-bottom: 150px;
-        text-align: center;
-    }
-    #mcp-link .btn {
-        font-weight: 100;
-        letter-spacing: 1px;
-        color: #000;
-        background-color: #fff;
-        border: 1px solid #fff;
-        border-radius: 3px;
-    }
-    #mcp-link .btn:hover {
-        color: #000;
-        background-color: transparent;
-        border: 1px solid #000;
-    }
-    #mcp-icon {
-        height: 90vh;
-        text-align: center;
-    }
-    #mcp-icon img {
-        margin-top: 40vh;
-        max-width: 120px;
-    }
-    #mcp-text {
-        font-weight: 100;
-        margin-bottom: 120px;
-    }
-    #mcp-title {
-        text-align: center;
-    }
-    #mcp-postal hr {
-        margin-bottom: 4rem !important;
-    }
-    #mcp-postal img {
+    #ip-postal img {
         border-radius: 3px;
         margin-bottom: 80px;
     }
@@ -4223,194 +3527,36 @@ hr {
         max-width: 120px;
     }
 
-    /* .project #contexto {
-        height: 70vh;
-        background-image: url('../img/contexto/umit-aslan-v-Js84xYlRI-unsplash.png');
-        background-size: cover;
+    /* israel/palestina  */
+
+    .project #ip {
+        height: 50vh;
+        background-image: url('../img/israelpalestina/israel-palestina-cover.jpg');
         background-position: center;
+        background-size: cover;
         background-repeat: no-repeat;
-        background-color: #ff6347;
     }
-    .project-contexto {
+    .project-ip {
         height: auto;
         color: #333;
     }
-    .project-contexto p{
-        font-size: 1em;
-        line-height: 2;
-        font-weight: 100;
-    }
-    #contexto-abstract {
-        margin-top: 30vh;
-        margin-bottom: 15vh;
-        font-style: italic;
-        text-align: center;
-    }
-    #contexto-icon {
-        height: 85vh;
-        text-align: center;
-        background-image: url('../img/contexto/umit-aslan-v-Js84xYlRI-unsplash.jpg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-    #contexto-icon img {
-        max-width: 110px;
-        margin-top: 10vh;
-    }
-    #contexto-text h2 {
-        font-family: 'Akrobat', sans-serif;
-        font-weight: bold;
-        color: #fff;
-    }
-    #contexto-text {
-        text-align: left;
-        font-size: .9em;
-        margin-top: 12vh;
-        margin-bottom: 150px;
-        color: #fff;
-    }
-    #contexto-desc {
-        margin-top: 15vh;
-        margin-bottom: 15vh;
-        text-align: left;
-    }
-    #contexto-desc img {
-        margin-bottom: 50px;
-    }
-    #contexto-link {
-        text-align: center;
-        margin-bottom: 0px;
-    }
-    #contexto-link .btn {
-        font-weight: 100;
-        letter-spacing: 1px;
-        color: #000;
-        background-color: #ffcba4;
-        border: 0px solid #000;
-        border-radius: 3px;
-    }
-    #contexto-caption figcaption {
-        margin-top: -50px;
-        padding-top: 10px;
-        background-color: #f2efe3;
-        margin-bottom: 80px;
-        text-align: center;
-        font-weight: 100;
-    }
-    #contexto-link .btn:hover {
-        color: #000;
-        background-color: #fff;
-    }
-    #contexto-art-insp {
-        margin-top: 0;
-        margin-bottom: 15vh;
-    }
-    #contexto-art-insp img {
-        margin-bottom: 10px;
-        max-height: 240px;
-    }
-    #contexto-palette {
-        margin-top: 15vh;
-        margin-bottom: 20px;
-    }
-    #contexto-colors {
-        margin-top: 10px;
-    }
-    #contexto-font {
-        background-size: contain;
-        background-position: bottom;
-        background-repeat: no-repeat;
-        margin-top: 15vh;
-        margin-bottom: 0px;
-    }
-    #contexto-font #font-weight {
-        margin-top: 30px;
-        margin-bottom: 30vh;
-    }
-    #contexto-font #font-weight img:first-child {
-        margin-bottom: auto;
-    }
-    #contexto-logo-end {
-        padding: 200px 100px;
-        margin-bottom: 20vh;
-        text-align: center;
-        background-color: #ff6347;
-        background-image: url('../img/contexto/umit-aslan-v-Js84xYlRI-unsplash.jpg');
-        background-size: cover;
-        background-position: center;
-    } */
-
-    /* manual de coaching político  */
-
-    /* .project #mcp {
-        height: 70vh;
-        background-image: url('../img/mcp/cover-book.jpg');
-        background-position: 25%;
-        background-size: cover;
-        background-repeat: no-repeat;
-
-    }
-    .project-mcp {
-        height: auto;
-        color: #333;
-    }
-    .project-mcp p {
+    .project-ip p {
         font-size: 1em;
         line-height: 2;
         font-weight: 100;
         margin-top: 20px;
     }
-    .blockquote-footer {
-        color:#333;
-        text-align: right;
-    }
-    #img-presentation{
-        height: 60vh;
-        background-image: url('../img/mcp/MCP-libro-portada.png');
-        background-size: cover;
-        background-position: center;
-        margin-bottom: 40px;
-    }
-    #mcp-link {
-        margin-bottom: 150px;
-        text-align: center;
-    }
-    #mcp-link .btn {
+    #ip-text {
+        margin-top: 35vh;
+        font-style: italic;
+        text-align: left;
         font-weight: 100;
-        letter-spacing: 1px;
-        color: #000;
-        background-color: #fff;
-        border: 1px solid #fff;
-        border-radius: 3px;
+        margin-bottom: 35vh;
     }
-    #mcp-link .btn:hover {
-        color: #000;
-        background-color: transparent;
-        border: 1px solid #000;
-    }
-    #mcp-icon {
-        height: 90vh;
-        text-align: center;
-    }
-    #mcp-icon img {
-        margin-top: 40vh;
-        max-width: 120px;
-    }
-    #mcp-text {
-        font-weight: 100;
-        margin-bottom: 110px;
-    }
-    #mcp-title {
-        text-align: center;
-    }
-    #mcp-postal hr {
-        margin-bottom: 4rem !important;
-    }
-    #mcp-postal img {
+    #ip-postal img {
         border-radius: 0;
         margin-bottom: 60px;
-    } */
+    }
 
     /* --- CONTACTO --- */
 
