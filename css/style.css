@@ -25,7 +25,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-weight: 200;
+    font-weight: 400;
     font-family: 'Ubuntu', sans-serif;
 }
 
@@ -108,7 +108,7 @@ hr {
     .navbar .navbar-brand {
         width: auto;
         background-color: transparent;
-        font-weight: lighter;
+        font-weight: 400;
         text-transform: uppercase;
         font-size: .9em;
         color: #256d7b;
@@ -126,7 +126,7 @@ hr {
         color: #256d7b;
     }
     .nav-link {
-        font-weight: 100;
+        font-weight: 400;
         font-size: .9em;
         padding: .5rem 1.05rem .5rem 1.13rem;
         color: #256d7b;
@@ -250,8 +250,16 @@ hr {
         max-width: 30px;
         margin-right: 10px;
     }
-    .navbar-toggler {
+    .navbar .navbar-toggler {
+        top:0.5rem;
         font-size: 1rem;
+    }
+    .navbar-toggler-icon {
+        display: inherit;
+        color: #256d7b;
+    }
+    .navbar-toggler:focus {
+        box-shadow: none;
     }
     .navbar .nav-link {
         font-size: 1em;
@@ -834,6 +842,23 @@ hr {
         background-color: #f2efe3;
     }
 
+    /* --- TIENDA --- */
+
+    .sidebar {
+        box-shadow: none;
+    }
+    .sidebar-heading {
+        text-transform: none;
+    }
+    .sidebar .nav-link {
+        padding: 0.2rem 1rem;
+        color: #256d7b;
+    }
+    #sidebarMenu ul {
+        margin-top: 20px;
+    }
+
+
     /* --- MODAL --- */
 
     .modal-content {
@@ -843,7 +868,7 @@ hr {
         width: 100%;
         font-size: .9em;
         font-weight: 200;
-        line-height: 1;
+        line-height: 1.2;
         pointer-events: auto;
         background-color: #fff;
         background-clip: padding-box;
@@ -867,6 +892,7 @@ hr {
     .close {
         width: 30px;
         border: 0;
+        border-radius: 5px;
         background-color: #ffffff;
         margin-left: 568px;
     }
@@ -881,7 +907,7 @@ hr {
     }
     .project {
         font-size: .9em;
-        max-height: 80vh;
+        margin-bottom: 30px;
     }
     .project .obra {
         margin-bottom: 30px;
@@ -897,7 +923,7 @@ hr {
         text-decoration: none;
     }
     .project .obra p {
-        line-height: 1;
+        line-height: 1.2;
     }
 
     /* -- gallery --*/
@@ -914,9 +940,8 @@ hr {
 
     /*.col-12 img:hover {
       opacity: 1;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
-
-    }
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }*/
 }
 
 @media (min-width: 1200px) and (max-width: 1399px) {
@@ -1485,6 +1510,107 @@ hr {
         padding-bottom: 5px;
         background-color: #f2efe3;
     }
+
+    /* --- TIENDA --- */
+
+    .sidebar {
+        box-shadow: none;
+    }
+    .sidebar-heading {
+        text-transform: none;
+    }
+    .sidebar .nav-link {
+        padding: 0.2rem 1rem;
+        color: #256d7b;
+    }
+    #sidebarMenu ul {
+        margin-top: 20px;
+    }
+
+
+    /* --- MODAL --- */
+
+    .modal-content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        font-size: .9em;
+        font-weight: 200;
+        line-height: 1.2;
+        pointer-events: auto;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 0.3rem;
+        outline: 0;
+    }
+    .modal-dialog {
+        max-width: 600px;
+    }
+    .modal-dialog img {
+        max-height: auto;
+        margin-bottom: 20px;
+    }
+    .modal-content button {
+        float: right;
+    }
+    .carousel-text {
+        margin-left: 20px;
+    }
+    .close {
+        width: 30px;
+        border: 0;
+        border-radius: 5px;
+        background-color: #ffffff;
+        margin-left: 568px;
+    }
+
+    /* -- PORTAFOLIO -- */
+
+    #portfolio {
+        height: auto;
+        padding-top: 58px;
+        padding-bottom: 100px;
+        color: #333;
+    }
+    .project {
+        font-size: .9em;
+        margin-bottom: 30px;
+    }
+    .project .obra {
+        margin-bottom: 30px;
+        padding: 10px;
+        background-color: #fafbfd;
+        font-weight: 100;
+    }
+    .project .obra img {
+        max-width: 700px;
+        margin-bottom: 20px;
+    }
+    .project .obra a {
+        text-decoration: none;
+    }
+    .project .obra p {
+        line-height: 1.2;
+    }
+
+    /* -- gallery --*/
+
+    /* .close {
+      font-size: 1.5rem;
+    } */
+
+    .col-12 img {
+      opacity: 1;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    /*.col-12 img:hover {
+      opacity: 1;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }*/
 }
 
 @media (min-width: 993px) and (max-width: 1199px) {
@@ -2049,6 +2175,108 @@ hr {
         padding-bottom: 5px;
         background-color: #f2efe3;
     }
+
+        /* --- TIENDA --- */
+
+    .sidebar {
+        box-shadow: none;
+    }
+    .sidebar-heading {
+        text-transform: none;
+    }
+    .sidebar .nav-link {
+        padding: 0.2rem 1rem;
+        color: #256d7b;
+    }
+    #sidebarMenu ul {
+        margin-top: 20px;
+    }
+
+
+    /* --- MODAL --- */
+
+    .modal-content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        font-size: .9em;
+        font-weight: 200;
+        line-height: 1.2;
+        pointer-events: auto;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 0.3rem;
+        outline: 0;
+    }
+    .modal-dialog {
+        max-width: 600px;
+    }
+    .modal-dialog img {
+        max-height: auto;
+        margin-bottom: 20px;
+    }
+    .modal-content button {
+        float: right;
+    }
+    .carousel-text {
+        margin-left: 20px;
+    }
+    .close {
+        width: 30px;
+        border: 0;
+        border-radius: 5px;
+        background-color: #ffffff;
+        margin-left: 568px;
+    }
+
+    /* -- PORTAFOLIO -- */
+
+    #portfolio {
+        height: auto;
+        padding-top: 58px;
+        padding-bottom: 100px;
+        color: #333;
+    }
+    .project {
+        font-size: .9em;
+        margin-bottom: 30px;
+    }
+    .project .obra {
+        margin-bottom: 30px;
+        padding: 10px;
+        background-color: #fafbfd;
+        font-weight: 100;
+    }
+    .project .obra img {
+        max-width: 700px;
+        margin-bottom: 20px;
+    }
+    .project .obra a {
+        text-decoration: none;
+    }
+    .project .obra p {
+        line-height: 1.2;
+    }
+
+    /* -- gallery --*/
+
+    /* .close {
+      font-size: 1.5rem;
+    } */
+
+    .col-12 img {
+      opacity: 1;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    /*.col-12 img:hover {
+      opacity: 1;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }*/
+
 }
 
 @media (min-width: 768px) and (max-width: 992px){
@@ -2613,6 +2841,107 @@ hr {
         padding-bottom: 5px;
         background-color: #f2efe3;
     }
+
+        /* --- TIENDA --- */
+
+    .sidebar {
+        box-shadow: none;
+    }
+    .sidebar-heading {
+        text-transform: none;
+    }
+    .sidebar .nav-link {
+        padding: 0.2rem 1rem;
+        color: #256d7b;
+    }
+    #sidebarMenu ul {
+        margin-top: 20px;
+    }
+
+
+    /* --- MODAL --- */
+
+    .modal-content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        font-size: .9em;
+        font-weight: 200;
+        line-height: 1.2;
+        pointer-events: auto;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 0.3rem;
+        outline: 0;
+    }
+    .modal-dialog {
+        max-width: 600px;
+    }
+    .modal-dialog img {
+        max-height: auto;
+        margin-bottom: 20px;
+    }
+    .modal-content button {
+        float: right;
+    }
+    .carousel-text {
+        margin-left: 20px;
+    }
+    .close {
+        width: 30px;
+        border: 0;
+        border-radius: 5px;
+        background-color: #ffffff;
+        margin-left: 568px;
+    }
+
+    /* -- PORTAFOLIO -- */
+
+    #portfolio {
+        height: auto;
+        padding-top: 58px;
+        padding-bottom: 100px;
+        color: #333;
+    }
+    .project {
+        font-size: .9em;
+        margin-bottom: 30px;
+    }
+    .project .obra {
+        margin-bottom: 30px;
+        padding: 10px;
+        background-color: #fafbfd;
+        font-weight: 100;
+    }
+    .project .obra img {
+        max-width: 700px;
+        margin-bottom: 20px;
+    }
+    .project .obra a {
+        text-decoration: none;
+    }
+    .project .obra p {
+        line-height: 1.2;
+    }
+
+    /* -- gallery --*/
+
+    /* .close {
+      font-size: 1.5rem;
+    } */
+
+    .col-12 img {
+      opacity: 1;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    /*.col-12 img:hover {
+      opacity: 1;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }*/
 }
 
 @media (min-width: 420px) and (max-width: 767px){
@@ -3168,6 +3497,107 @@ hr {
         padding-top: 10px;
         background-color: #f2efe3;
     }
+
+            /* --- TIENDA --- */
+
+    .sidebar {
+        box-shadow: none;
+    }
+    .sidebar-heading {
+        text-transform: none;
+    }
+    .sidebar .nav-link {
+        padding: 0.2rem 1rem;
+        color: #256d7b;
+    }
+    #sidebarMenu ul {
+        margin-top: 20px;
+    }
+
+
+    /* --- MODAL --- */
+
+    .modal-content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        font-size: .9em;
+        font-weight: 200;
+        line-height: 1.2;
+        pointer-events: auto;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 0.3rem;
+        outline: 0;
+    }
+    .modal-dialog {
+        max-width: 600px;
+    }
+    .modal-dialog img {
+        max-height: auto;
+        margin-bottom: 20px;
+    }
+    .modal-content button {
+        float: right;
+    }
+    .carousel-text {
+        margin-left: 20px;
+    }
+    .close {
+        width: 30px;
+        border: 0;
+        border-radius: 5px;
+        background-color: #ffffff;
+/*        margin-left: 568px;*/
+    }
+
+    /* -- PORTAFOLIO -- */
+
+    #portfolio {
+        height: auto;
+        padding-top: 58px;
+        padding-bottom: 100px;
+        color: #333;
+    }
+    .project {
+        font-size: .9em;
+        margin-bottom: 30px;
+    }
+    .project .obra {
+        margin-bottom: 30px;
+        padding: 10px;
+        background-color: #fafbfd;
+        font-weight: 100;
+    }
+    .project .obra img {
+        max-width: 700px;
+        margin-bottom: 20px;
+    }
+    .project .obra a {
+        text-decoration: none;
+    }
+    .project .obra p {
+        line-height: 1.2;
+    }
+
+    /* -- gallery --*/
+
+    /* .close {
+      font-size: 1.5rem;
+    } */
+
+    .col-12 img {
+      opacity: 1;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    /*.col-12 img:hover {
+      opacity: 1;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }*/
 }
 
 @media (max-width: 419px){
@@ -3718,4 +4148,106 @@ hr {
     #bio {
         margin-top: 5vh;
     }
+
+            /* --- TIENDA --- */
+
+    .sidebar {
+        box-shadow: none;
+    }
+    .sidebar-heading {
+        text-transform: none;
+    }
+    .sidebar .nav-link {
+        padding: 0.2rem 1rem;
+        color: #256d7b;
+    }
+    #sidebarMenu ul {
+        margin-top: 20px;
+    }
+
+
+    /* --- MODAL --- */
+
+    .modal-content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        font-size: .9em;
+        font-weight: 200;
+        line-height: 1.2;
+        pointer-events: auto;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 0.3rem;
+        outline: 0;
+    }
+    .modal-dialog {
+        max-width: 600px;
+    }
+    .modal-dialog img {
+        max-height: auto;
+        margin-bottom: 20px;
+    }
+    .modal-content button {
+        float: right;
+    }
+    .carousel-text {
+        margin-left: 20px;
+    }
+    .close {
+        width: 30px;
+        border: 0;
+        border-radius: 5px;
+        background-color: #ffffff;
+        margin-left: 568px;
+    }
+
+    /* -- PORTAFOLIO -- */
+
+    #portfolio {
+        height: auto;
+        padding-top: 58px;
+        padding-bottom: 100px;
+        color: #333;
+    }
+    .project {
+        font-size: .9em;
+        margin-bottom: 30px;
+    }
+    .project .obra {
+        margin-bottom: 30px;
+        padding: 10px;
+        background-color: #fafbfd;
+        font-weight: 100;
+    }
+    .project .obra img {
+        max-width: 700px;
+        margin-bottom: 20px;
+    }
+    .project .obra a {
+        text-decoration: none;
+    }
+    .project .obra p {
+        line-height: 1.2;
+    }
+
+    /* -- gallery --*/
+
+    /* .close {
+      font-size: 1.5rem;
+    } */
+
+    .col-12 img {
+      opacity: 1;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    /*.col-12 img:hover {
+      opacity: 1;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }*/
+
 }
