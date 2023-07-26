@@ -1,0 +1,221 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Guillermo Solano · Diseño gráfico & Comunicación visual</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Comunicación visual táctica para iniciativas culturales.">
+    <meta property="og:image" content="img/gs-logo.svg">
+
+
+    <meta name="keywords" content="diseño gráfico, graphic design, visual communication, comunicación visual"/>
+    <meta name="author" content="Guillermo Solano">
+    <meta name="robots" content="index"/>
+    <meta name="robots" content="follow"/>
+    <meta http-equiv="cache-control" content="no-cache"/>
+
+<!-- CSS -->
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-grid.css" rel="stylesheet">
+    <link href="css/dashboard.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" href="img/gs.ico">
+  </head>
+
+<body>
+  <div>
+
+<!-- NAV -->
+
+<header class="navbar sticky-top flex-md-nowrap p-0 bg-light">
+  <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="tienda.html">Tienda de regalos</a>
+  <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+  </button>
+</header>
+
+<div class="container-fluid">
+  <div class="row">
+    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+      <div class="position-sticky pt-3">
+
+        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+            <span>Las imágenes y objetos en este sitio hacen parte de un catálogo, si piensas adquirir algo envía un mensaje a las direcciones de contacto correo@guillermosolano.co</span>
+        </h6>
+         <ul class="nav flex-column mb-2">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <span data-feather="file-text"></span>
+               Diseño gráfico
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://gsolat.github.io/blog/">
+              <span data-feather="file-text"></span>
+               Futuro disperso
+            </a>
+          </li>
+        </ul>
+
+        <!-- <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="file"></span>
+              Obras
+            </a>
+          </li>
+        </ul> -->
+
+        <!--ul class="nav flex-column mb-2">
+          <li class="nav-item">
+            <a class="nav-link" href="--.html">
+              <span data-feather="file-text"></span>
+               --
+            </a>
+          </li> 
+        </ul-->
+
+      </div>
+    </nav>
+
+<!-- PORTAFOLIO -->
+
+<section id="portfolio">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 offset-lg-2 col-md-6 col-sm-8 offset-sm-4 col-xs-12 project">
+                 <div class="row">
+                          <div class="obra col-lg-3 col-offset-lg-2 col-md-10 col-sm-12 col-offset-sm-5 -col-12">
+                                <h5 class="title">Caso de éxito</h5>
+                                <p class="text">La técnica y la experiencia del poder aplicada a los menos privilegiados.
+                                </p>
+                          </div>
+
+                          <div class="row d-flex flex-wrap align-items-start" data-toggle="modal" data-target="#lightbox" id="gallery-img">
+                                <div class="col-12 col-md-6 col-lg-4 obra">
+                                    <img src="img/caso-de-exito/caso-de-exito-1-low.jpg" data-target="#indicators" data-slide-to="0" alt="" / class="img-fluid">
+                                    <div class="modal-text">
+                                        <h7 class="title">Caso de éxito 1</h7>
+                                        <p class="text">Collage<br>19 cm * 25 cm<br>$650.000</p>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4 obra">
+                                    <img src="img/caso-de-exito/caso-de-exito-2-low.jpg" data-target="#indicators" data-slide-to="0" alt="" / class="img-fluid">
+                                    <div class="modal-text">
+                                        <h7 class="title">Caso de éxito 2</h7>
+                                        <p class="text">Collage<br>25 cm * 35 cm<br>$350.000<br><b>Vendido</b></p>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4 obra">
+                                    <img src="img/caso-de-exito/caso-de-exito-3-low.jpg" data-target="#indicators" data-slide-to="0" alt="" / class="img-fluid">
+                                    <div class="modal-text">
+                                        <h7 class="title">Caso de éxito 3 (obsesión)</h7>
+                                        <p class="text">Collage<br>19 cm * 25 cm<br>$350.000</p>
+                                    </div>
+                                </div>
+                                </div>
+                          </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- <div class="container">
+  <div class="row d-flex flex-wrap align-items-center" data-toggle="modal" data-target="#lightbox">
+    <div class="col-12 col-md-6 col-lg-3">
+        <img src="https://source.unsplash.com/random/200" data-target="#indicators" data-slide-to="0" alt="" />
+    </div>
+  </div>
+</div> -->
+
+<!-- Modal -->
+    <div class="modal fade" id="lightbox" role="dialog" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <button type="button" class="close text-right p-2" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&Chi;</span>
+            </button>
+           <div id="indicators" class="carousel slide" data-interval="false">
+              <ol class="carousel-indicators">
+                <li data-target="#indicators" data-slide-to="0" class="active"></li>
+                <li data-target="#indicators" data-slide-to="1"></li>
+                <li data-target="#indicators" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block w-100" src="img/caso-de-exito/caso-de-exito-1-low.jpg" alt="First slide">
+                  <div class="carousel-text">
+                      <h7 class="title">Caso de éxito 1</h7>
+                      <p class="text">Collage<br>19 cm * 25 cm<br>$650.000</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="img/caso-de-exito/caso-de-exito-2-low.jpg" alt="Second slide">
+                  <div class="carousel-text">
+                      <h7 class="title">Caso de éxito 2</h7>
+                      <p class="text">Collage<br>19 cm * 25 cm<br>$350.000<br><b>Vendido<b></p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="img/caso-de-exito/caso-de-exito-3-low.jpg" alt="Third slide">
+                  <div class="carousel-text">
+                      <h7 class="title">Caso de éxito 3</h7>
+                      <p class="text">Collage<br>19 cm * 25 cm<br>$350.000</p>
+                  </div>
+                </div>
+
+              <a class="carousel-control-prev" href="#indicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#indicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- CONTACT -->
+
+<section id="contact" class="container-fluid">
+    <div id="contact-info" class="row">
+        <!-- <div class="col-xl-4 offset-xl-4 col-lg-4 offset-lg-4 col-md-4 offset-md-4 col-sm-4 offset-sm-4 col-10 offset-1"> -->
+            <!-- <div>
+                <a href="mailto:correo@guillosolano.com"><i class="far fa-envelope"></i></a>
+                <a href="callto:+573015449122"><i class="fas fa-mobile-alt"></i></a>
+                <a href="https://www.instagram.com/guillo_solano/"><i class="fab fa-instagram"></i></a>
+                <p>todos los derechos reservados &#169;</p>
+            </div> -->
+            <nav class="navbar fixed-bottom navbar-light bg-light">
+                <div class="col-xl-4 offset-xl-4 col-lg-4 offset-lg-4 col-md-4 offset-md-4 col-sm-4 offset-sm-4 col-10 offset-1">
+                    <div>
+                        <a href="mailto:correo@guillermosolano.co"><i class="far fa-envelope"></i></a>
+                        <a href="callto:+573015449122"><i class="fas fa-mobile-alt"></i></a>
+                        <a href="https://www.instagram.com/guillosolano_/"><i class="fab fa-instagram"></i></a>
+                        <p>todos los derechos reservados &#169;</p>
+                    </div>
+                </div>
+            </nav>
+        <!-- </div> -->
+    </div>
+</section>
+
+</div>
+
+<!-- JAVASCRIPT -->
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/dashboard.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.3/umd/popper.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js'></script>
+    <script src="https://kit.fontawesome.com/efb5b5285a.js" crossorigin="anonymous"></script>
+
+
+  </body>
+</html>
