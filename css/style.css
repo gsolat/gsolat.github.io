@@ -935,7 +935,7 @@ hr {
     .col-12 img {
       opacity: 1;
       cursor: pointer;
-      width: 100%;
+      width: auto;
     }
 
     /*.col-12 img:hover {
@@ -2269,7 +2269,7 @@ hr {
     .col-12 img {
       opacity: 1;
       cursor: pointer;
-      width: 100%;
+      width: auto;
     }
 
     /*.col-12 img:hover {
@@ -2935,7 +2935,7 @@ hr {
     .col-12 img {
       opacity: 1;
       cursor: pointer;
-      width: 100%;
+      width: auto;
     }
 
     /*.col-12 img:hover {
