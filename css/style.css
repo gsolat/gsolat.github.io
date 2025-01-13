@@ -5,6 +5,16 @@
        src: url(../fonts/WEB/Akrobat-Regular.woff);
     }
 
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 200 to 900
+
+.reddit-sans-<uniquifier> {
+  font-family: "Reddit Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -14,7 +24,7 @@ body {
     position: relative;
     width: 100%;
     font-size: 14px;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Nunito', sans-serif;
     background-color: #fafbfd;
     /* background-color: #f2efe3; */
 }
@@ -26,7 +36,7 @@ h4,
 h5,
 h6 {
     font-weight: 400;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 a {
@@ -580,130 +590,46 @@ hr {
         font-weight: 100;
     }
 
-    /* meneonupcial */
-
-    /* .project #meneonupcial {
-        height: 80vh;
-        background-image: url('../img/meneonupcial/portada-meneo.png');
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    .project-meneonupcial {
-        height: auto;
-        color: #333;
-    }
-    .project-meneonupcial p{
-        font-size: 1em;
-        line-height: 2;
-        font-weight: 100;
-        margin-top: 20px;
-    }
-    #meneonupcial-icon {
-        height: auto;
-        text-align: center;
-    }
-    #meneonupcial-icon img {
-        margin-top: 20px;
-    }
-    #meneonupcial-text {
-        text-align: center;
-    }
-    #meneonupcial-desc {
-        margin-top: 30vh;
-        margin-bottom: 30vh;
-        text-align: center;
-    }
-    #meneonupcial-link {
-        text-align: center;
-        margin-bottom: 100px;
-    }
-    #meneonupcial-link .btn {
-        font-weight: 100;
-        letter-spacing: 1px;
-        color: #363333;
-        background-color: #D7B045;
-        border: 0px solid #000;
-        border-radius: 3px;
-    }
-    #meneonupcial-caption {
-        margin-bottom: 30vh;
-        line-height: 2;
-    }
-    #meneonupcial-caption-color {
-        text-align: center;
-        margin-bottom: 30vh;
-        line-height: 2;
-    }
-    #meneonupcial-caption figcaption {
-        margin-top: -50px;
-        padding-top: 10px;
-        background-color: #f2efe3;
-        margin-bottom: 80px;
-        text-align: center;
-        font-weight: 100;
-    }
-    #meneonupcial-link .btn:hover {
-        color: #000;
-        background-color: #fff;
-    }
-    #meneonupcial-caption-color {
-        margin-bottom: 40vh;
-    }
-    #meneonupcial-palette #color-1 {
-        height: 100px;
-        background-color: #E6DBCF;
-    }
-    #meneonupcial-palette #color-2 {
-        height: 100px;
-        background-color: #DFB4A1;
-    }
-    #meneonupcial-palette #color-3 {
-        height: 100px;
-        background-color: #D7B045;
-    }
-    #meneonupcial-palette #color-4 {
-        height: 100px;
-        background-color: #CE4143;
-    }
-    #meneonupcial-end {
-        height: 100vh;
-        padding-top: 10vh;
-    } */
-
     /* contexto */
 
     .project #contexto {
         height: 40vh;
         background-image: url('../img/contexto/umit-aslan-v-Js84xYlRI-unsplash.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .project-contexto {
+        color: #333;
+        height: 90vh;
+        background-image: url('../img/contexto/umit-aslan-v-Js84xYlRI-unsplash.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
     }
-    .project-contexto {
-        height: auto;
-        color: #333;
-    }
-    .project-contexto p{
-        font-size: 1em;
-        line-height: 2;
-        font-weight: 100;
-    }
-    #contexto-abstract {
-        margin-top: 35vh;
-        margin-bottom: 200px;
-        font-style: italic;
-        text-align: left;
-    }
-    #contexto-text h2 {
-        font-family: 'Akrobat', sans-serif;
-        font-weight: bold;
-    }
-    #contexto-text {
+    .project-contexto #contexto-text {
         text-align: left;
         font-size: .9em;
-        margin-top: 100px;
+        margin-top: 20vh;
+        color:#fff;
         margin-bottom: 200px;
+    }
+    .project-contexto #contexto-text img{
+        padding: 30px;
+        max-width: 40%;
+    }
+    .project-contexto #contexto-abstract {
+        margin-top: 35vh;
+        margin-bottom: 200px;
+    }
+    .project-contexto #contexto-text h2 {
+        font-family: 'Nunito', sans-serif;
+        font-weight: bold;
+    }
+    .project-contexto p{
+        font-size: 1.2em;
+        line-height: 2;
+        font-weight: 100;
     }
     #contexto-desc {
         margin-top: 250px;
@@ -714,11 +640,12 @@ hr {
         margin-bottom: 100px;
     }
     #contexto-link .btn {
+        margin-top: 30px;
         font-weight: 100;
         letter-spacing: 1px;
-        color: #000;
-        background-color: #ffcba4;
-        border: 0px solid #000;
+        color: #fff;
+        background-color: #256d7b;
+        border: 0px solid #256d7b;
         border-radius: 3px;
     }
     #contexto-art-insp {
@@ -751,13 +678,13 @@ hr {
         margin-bottom: 50px;
     }
     #contexto-logo-end {
-        height: 80vh;
+        height: 60vh;
+        margin-top: 30vh;
         text-align: left;
         background-size: cover;
         background-position: center;
     }
     #contexto-logo-end img {
-        margin: 10vh 0;
         text-align: center;
         max-width: 200px;
     }
@@ -1211,107 +1138,33 @@ hr {
         font-weight: 100;
     }
 
-    /* meneonupcial */
-
-    /* .project #meneonupcial {
-        height: 50vh;
-        background-image: url('../img/meneonupcial/portada-meneo.png');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-    .project-meneonupcial {
-        height: auto;
-        color: #333;
-    }
-    .project-meneonupcial p{
-        font-size: 1em;
-        line-height: 2;
-        font-weight: 100;
-        margin-top: 20px;
-    }
-    #meneonupcial-icon {
-        height: 650px;
-        text-align: center;
-    }
-    #meneonupcial-icon img {
-        margin-top: 100px;
-    }
-    #meneonupcial-text {
-        text-align: center;
-    }
-    #meneonupcial-desc {
-        margin-top: 150px;
-        margin-bottom: 150px;
-        text-align: center;
-    }
-    #meneonupcial-link {
-        text-align: center;
-        margin-bottom: 100px;
-    }
-    #meneonupcial-link .btn {
-        font-weight: 100;
-        letter-spacing: 1px;
-        color: #363333;
-        background-color: #D7B045;
-        border: 0px solid #000;
-        border-radius: 3px;
-    }
-    #meneonupcial-caption {
-        margin-bottom: 150px;
-        line-height: 2;
-    }
-    #meneonupcial-caption-color {
-        text-align: center;
-        margin-bottom: 150px;
-        line-height: 2;
-    }
-    #meneonupcial-caption figcaption {
-        margin-top: -50px;
-        padding-top: 10px;
-        background-color: #f2efe3;
-        margin-bottom: 80px;
-        text-align: center;
-        font-weight: 100;
-    }
-    #meneonupcial-link .btn:hover {
-        color: #000;
-        background-color: #fff;
-    }
-    #meneonupcial-palette #color-1 {
-        height: 100px;
-        background-color: #E6DBCF;
-    }
-    #meneonupcial-palette #color-2 {
-        height: 100px;
-        background-color: #DFB4A1;
-    }
-    #meneonupcial-palette #color-3 {
-        height: 100px;
-        background-color: #D7B045;
-    }
-    #meneonupcial-palette #color-4 {
-        height: 100px;
-        background-color: #CE4143;
-    }
-    #meneonupcial-end {
-        height: 100vh;
-        padding-top: 10vh;
-    } */
-
     /* contexto */
 
     .project #contexto {
         height: 40vh;
         background-image: url('../img/contexto/umit-aslan-v-Js84xYlRI-unsplash.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .project-contexto {
+        color: #333;
+        height: 90vh;
+        background-image: url('../img/contexto/umit-aslan-v-Js84xYlRI-unsplash.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        background-color: #ff6347;
     }
-    .project-contexto {
-        height: auto;
-        color: #333;
+    .project-contexto #contexto-text {
+        text-align: left;
+        font-size: .9em;
+        margin-top: 20vh;
+        color:#fff;
+        margin-bottom: 200px;
+    }
+    .project-contexto #contexto-text img{
+        padding: 30px;
+        max-width: 40%;
     }
     .project-contexto p{
         font-size: 1em;
@@ -1321,8 +1174,6 @@ hr {
     #contexto-abstract {
         margin-top: 35vh;
         margin-bottom: 200px;
-        font-style: italic;
-        text-align: left;
     }
     #contexto-text h2 {
         font-family: 'Akrobat', sans-serif;
@@ -1370,23 +1221,22 @@ hr {
         background-position: bottom;
         background-repeat: no-repeat;
         margin-top: 200px;
-        margin-bottom: 0px;
+        margin-bottom: 300px;
     }
     #contexto-font #font-weight {
         margin-top: 100px;
-        margin-bottom: 300px;
     }
     #contexto-font #font-weight img:first-child {
-        margin-bottom: 50px;
+        max-width: 120px;
     }
     #contexto-logo-end {
-        height: 80vh;
+        height: 60vh;
+        margin-bottom: 0vh;
         text-align: left;
         background-size: cover;
         background-position: center;
     }
     #contexto-logo-end img {
-        margin: 10vh 0;
         text-align: center;
         max-width: 200px;
     }
@@ -1881,106 +1731,33 @@ hr {
         font-weight: 100;
     }
 
-    /* meneonupcial */
-
-    .project #meneonupcial {
-        height: 540px;
-        background-image: url('../img/meneonupcial/portada-meneo.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    .project-meneonupcial {
-        height: auto;
-        color: #333;
-    }
-    .project-meneonupcial p{
-        font-size: 1em;
-        line-height: 2;
-        font-weight: 100;
-        margin-top: 20px;
-    }
-    #meneonupcial-icon {
-        height: 650px;
-        text-align: center;
-    }
-    #meneonupcial-icon img {
-        margin-top: 100px;
-    }
-    #meneonupcial-text {
-        text-align: center;
-    }
-    #meneonupcial-desc {
-        margin-top: 150px;
-        margin-bottom: 150px;
-        text-align: center;
-    }
-    #meneonupcial-link {
-        text-align: center;
-        margin-bottom: 100px;
-    }
-    #meneonupcial-link .btn {
-        font-weight: 100;
-        letter-spacing: 1px;
-        color: #363333;
-        background-color: #D7B045;
-        border: 0px solid #000;
-        border-radius: 3px;
-    }
-    #meneonupcial-caption {
-        margin-bottom: 150px;
-        line-height: 2;
-    }
-    #meneonupcial-caption-color {
-        text-align: center;
-        margin-bottom: 150px;
-        line-height: 2;
-    }
-    #meneonupcial-caption figcaption {
-        margin-top: -50px;
-        padding-top: 10px;
-        background-color: #f2efe3;
-        margin-bottom: 80px;
-        text-align: center;
-        font-weight: 100;
-    }
-    #meneonupcial-link .btn:hover {
-        color: #000;
-        background-color: #fff;
-    }
-    #meneonupcial-palette #color-1 {
-        height: 100px;
-        background-color: #E6DBCF;
-    }
-    #meneonupcial-palette #color-2 {
-        height: 100px;
-        background-color: #DFB4A1;
-    }
-    #meneonupcial-palette #color-3 {
-        height: 100px;
-        background-color: #D7B045;
-    }
-    #meneonupcial-palette #color-4 {
-        height: 100px;
-        background-color: #CE4143;
-    }
-    #meneonupcial-end {
-        height: 60vh;
-        padding-top: 10vh;
-    }
-
     /* contexto */
 
     .project #contexto {
         height: 40vh;
         background-image: url('../img/contexto/umit-aslan-v-Js84xYlRI-unsplash.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .project-contexto {
+        color: #333;
+        height: 90vh;
+        background-image: url('../img/contexto/umit-aslan-v-Js84xYlRI-unsplash.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        background-color: #ff6347;
     }
-    .project-contexto {
-        height: auto;
-        color: #333;
+    .project-contexto #contexto-text {
+        text-align: left;
+        font-size: .9em;
+        margin-top: 20vh;
+        color:#fff;
+        margin-bottom: 200px;
+    }
+    .project-contexto #contexto-text img{
+        padding: 30px;
+        max-width: 40%;
     }
     .project-contexto p{
         font-size: 1em;
@@ -1990,8 +1767,6 @@ hr {
     #contexto-abstract {
         margin-top: 35vh;
         margin-bottom: 200px;
-        font-style: italic;
-        text-align: left;
     }
     #contexto-text h2 {
         font-family: 'Akrobat', sans-serif;
@@ -2055,9 +1830,9 @@ hr {
         background-position: center;
     }
     #contexto-logo-end img {
-        margin: 10vh 0;
+        margin: 0;
         text-align: center;
-        max-width: 200px;
+        max-width: 120px;
     }
 
     /* israel/palestina  */
@@ -2543,105 +2318,34 @@ hr {
         font-weight: 100;
     }
 
-    /* meneonupcial */
-
-    /* .project #meneonupcial {
-        height: 406px;
-        background-image: url('../img/meneonupcial/portada-meneo.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    .project-meneonupcial {
-        height: auto;
-        color: #333;
-    }
-    .project-meneonupcial p{
-        font-size: 1em;
-        line-height: 2;
-        font-weight: 100;
-        margin-top: 20px;
-    }
-    #meneonupcial-icon {
-        height: 650px;
-        text-align: center;
-    }
-    #meneonupcial-icon img {
-        margin-top: 100px;
-    }
-    #meneonupcial-text {
-        text-align: center;
-    }
-    #meneonupcial-desc {
-        margin-top: 150px;
-        margin-bottom: 150px;
-        text-align: center;
-    }
-    #meneonupcial-link {
-        text-align: center;
-        margin-bottom: 100px;
-    }
-    #meneonupcial-link .btn {
-        font-weight: 100;
-        letter-spacing: 1px;
-        color: #363333;
-        background-color: #D7B045;
-        border: 0px solid #000;
-        border-radius: 3px;
-    }
-    #meneonupcial-caption {
-        margin-bottom: 150px;
-        line-height: 2;
-    }
-    #meneonupcial-caption-color {
-        text-align: center;
-        margin-bottom: 150px;
-        line-height: 2;
-    }
-    #meneonupcial-caption figcaption {
-        padding-top: 10px;
-        background-color: #f2efe3;
-        margin-bottom: 80px;
-        text-align: center;
-        font-weight: 100;
-    }
-    #meneonupcial-link .btn:hover {
-        color: #000;
-        background-color: #fff;
-    }
-    #meneonupcial-palette #color-1 {
-        height: 100px;
-        background-color: #E6DBCF;
-    }
-    #meneonupcial-palette #color-2 {
-        height: 100px;
-        background-color: #DFB4A1;
-    }
-    #meneonupcial-palette #color-3 {
-        height: 100px;
-        background-color: #D7B045;
-    }
-    #meneonupcial-palette #color-4 {
-        height: 100px;
-        background-color: #CE4143;
-    }
-    #meneonupcial-end {
-        height: 100vh;
-        padding-top: 40vh;
-    } */
-
     /* contexto */
 
     .project #contexto {
         height: 40vh;
         background-image: url('../img/contexto/umit-aslan-v-Js84xYlRI-unsplash.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .project-contexto {
+        color: #333;
+        height: 90vh;
+        background-image: url('../img/contexto/umit-aslan-v-Js84xYlRI-unsplash.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         background-color: #ff6347;
     }
-    .project-contexto {
-        height: auto;
-        color: #333;
+    .project-contexto #contexto-text {
+        text-align: left;
+        font-size: .9em;
+        margin-top: 20vh;
+        color:#fff;
+        margin-bottom: 200px;
+    }
+    .project-contexto #contexto-text img{
+        padding: 30px;
+        max-width: 40%;
     }
     .project-contexto p{
         font-size: 1em;
@@ -2651,11 +2355,9 @@ hr {
     #contexto-abstract {
         margin-top: 35vh;
         margin-bottom: 200px;
-        font-style: italic;
-        text-align: left;
     }
     #contexto-text h2 {
-        font-family: 'Akrobat', sans-serif;
+        font-family: 'Nunito', sans-serif;
         font-weight: bold;
     }
     #contexto-text {
@@ -2716,7 +2418,7 @@ hr {
         background-position: center;
     }
     #contexto-logo-end img {
-        margin: 10vh 0;
+        margin: 0;
         text-align: center;
         max-width: 150px;
     }
@@ -3203,106 +2905,35 @@ hr {
         font-weight: 100;
     }
 
-    /* meneonupcial */
-
-    /* .project #meneonupcial {
-        height: 406px;
-        background-image: url('../img/meneonupcial/portada-meneo.png');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-    .project-meneonupcial {
-        height: auto;
-        color: #333;
-    }
-    .project-meneonupcial p{
-        font-size: 1em;
-        line-height: 2;
-        font-weight: 100;
-        margin-top: 20px;
-    }
-    #meneonupcial-icon {
-        height: 450px;
-        text-align: center;
-    }
-    #meneonupcial-icon img {
-        margin-top: 50px;
-    }
-    #meneonupcial-text {
-        text-align: center;
-    }
-    #meneonupcial-desc {
-        margin-top: 150px;
-        margin-bottom: 150px;
-        text-align: center;
-    }
-    #meneonupcial-link {
-        text-align: center;
-        margin-bottom: 100px;
-    }
-    #meneonupcial-link .btn {
-        font-weight: 100;
-        letter-spacing: 1px;
-        color: #363333;
-        background-color: #D7B045;
-        border: 0px solid #000;
-        border-radius: 3px;
-    }
-    #meneonupcial-caption {
-        margin-bottom: 150px;
-        line-height: 2;
-    }
-    #meneonupcial-caption-color {
-        text-align: center;
-        margin-bottom: 150px;
-        line-height: 2;
-    }
-    #meneonupcial-caption figcaption {
-        padding-top: 10px;
-        background-color: #f2efe3;
-        margin-bottom: 80px;
-        text-align: center;
-        font-weight: 100;
-    }
-    #meneonupcial-link .btn:hover {
-        color: #000;
-        background-color: #fff;
-    }
-    #meneonupcial-palette #color-1 {
-        height: 100px;
-        background-color: #E6DBCF;
-    }
-    #meneonupcial-palette #color-2 {
-        height: 100px;
-        background-color: #DFB4A1;
-    }
-    #meneonupcial-palette #color-3 {
-        height: 100px;
-        background-color: #D7B045;
-    }
-    #meneonupcial-palette #color-4 {
-        height: 100px;
-        background-color: #CE4143;
-    }
-    #meneonupcial-end {
-        height: 100vh;
-        padding-top: 40vh;
-    } */
-
     /* contexto */
 
     .project #contexto {
         height: 40vh;
         background-image: url('../img/contexto/umit-aslan-v-Js84xYlRI-unsplash.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .project-contexto {
+        color: #333;
+        height: 90vh;
+        background-image: url('../img/contexto/umit-aslan-v-Js84xYlRI-unsplash.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         background-color: #ff6347;
     }
-    .project-contexto {
-        height: auto;
-        color: #333;
+    .project-contexto #contexto-text {
+        text-align: left;
+        font-size: .9em;
+        margin-top: 20vh;
+        color:#fff;
+        margin-bottom: 200px;
+    }
+    .project-contexto #contexto-text img{
+        padding: 30px;
+        max-width: 40%;
     }
     .project-contexto p{
         font-size: 1em;
@@ -3312,8 +2943,6 @@ hr {
     #contexto-abstract {
         margin-top: 35vh;
         margin-bottom: 200px;
-        font-style: italic;
-        text-align: left;
     }
     #contexto-text h2 {
         font-family: 'Akrobat', sans-serif;
@@ -3369,17 +2998,18 @@ hr {
     }
     #contexto-font #font-weight img:first-child {
         margin-bottom: 50px;
+        max-width: 50%;
     }
     #contexto-logo-end {
         height: 75vh;
-        text-align: left;
+        text-align: center;
         background-size: cover;
         background-position: center;
     }
     #contexto-logo-end img {
-        margin: 10vh 0;
+        margin: 10vh 0 5vh 0;
         text-align: center;
-        max-width: 120px;
+        max-width: 180px;
     }
 
     /* israel/palestina  */
@@ -3864,137 +3494,55 @@ hr {
         font-weight: 100;
     }
 
-    /* meneonupcial */
-
-    /* .project #meneonupcial {
-        height: 70vh;
-        background-image: url('../img/meneonupcial/portada-meneo.png');
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    .project-meneonupcial {
-        height: auto;
-        color: #333;
-    }
-    .project-meneonupcial p{
-        font-size: 1em;
-        line-height: 2;
-        font-weight: 100;
-        margin-top: 20px;
-    }
-    #meneonupcial-icon {
-        height: 450px;
-        text-align: center;
-    }
-    #meneonupcial-icon img {
-        margin-top: 50px;
-    }
-    #meneonupcial-text {
-        text-align: center;
-    }
-    #meneonupcial-desc {
-        margin-top: 150px;
-        margin-bottom: 150px;
-        text-align: center;
-    }
-    #meneonupcial-link {
-        text-align: center;
-        margin-bottom: 100px;
-    }
-    #meneonupcial-link .btn {
-        font-weight: 100;
-        letter-spacing: 1px;
-        color: #363333;
-        background-color: #D7B045;
-        border: 0px solid #000;
-        border-radius: 3px;
-    }
-    #meneonupcial-caption {
-        margin-bottom: 150px;
-        line-height: 2;
-    }
-    #meneonupcial-caption-color {
-        text-align: center;
-        margin-bottom: 150px;
-        line-height: 2;
-    }
-    #meneonupcial-caption figcaption {
-        padding-top: 10px;
-        background-color: #f2efe3;
-        margin-bottom: 80px;
-        text-align: center;
-        font-weight: 100;
-    }
-    #meneonupcial-link .btn:hover {
-        color: #000;
-        background-color: #fff;
-    }
-    #meneonupcial-palette #color-1 {
-        height: 100px;
-        background-color: #E6DBCF;
-    }
-    #meneonupcial-palette #color-2 {
-        height: 100px;
-        background-color: #DFB4A1;
-    }
-    #meneonupcial-palette #color-3 {
-        height: 100px;
-        background-color: #D7B045;
-    }
-    #meneonupcial-palette #color-4 {
-        height: 100px;
-        background-color: #CE4143;
-    }
-    #meneonupcial-end {
-        height: 100vh;
-        padding-top: 40vh;
-    } */
-
     /* contexto */
 
     .project #contexto {
-        height: 50vh;
+        height: 40vh;
         background-image: url('../img/contexto/umit-aslan-v-Js84xYlRI-unsplash.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .project-contexto {
+        height: 90vh;
+        background-image: url('../img/contexto/umit-aslan-v-Js84xYlRI-unsplash.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        background-color: #ff6347;
     }
-    .project-contexto {
-        height: auto;
-        color: #333;
+    .project-contexto #contexto-text {
+        text-align: left;
+        font-size: .9em;
+        margin-top: 15vh;
+        color:#fff;
+        margin-bottom: 200px;
+    }
+    .project-contexto #contexto-text img{
+        padding: 30px;
+        max-width: 40%;
+    }
+    .project-contexto  #contexto-abstract {
+        margin-top: 35vh;
+        margin-bottom: 200px;
+    }
+    .project-contexto #contexto-text h2 {
+        font-family: 'Nunito', sans-serif;
+        font-weight: bold;
     }
     .project-contexto p{
         font-size: 1em;
         line-height: 2;
         font-weight: 100;
     }
-    #contexto-abstract {
-        margin-top: 35vh;
-        margin-bottom: 200px;
-        font-style: italic;
-        text-align: left;
-    }
-    #contexto-text h2 {
-        font-family: 'Akrobat', sans-serif;
-        font-weight: bold;
-    }
-    #contexto-text {
-        text-align: left;
-        font-size: .9em;
-        margin-top: 100px;
-        margin-bottom: 200px;
-    }
-    #contexto-desc {
+    .project-contexto #contexto-desc {
         margin-top: 250px;
         margin-bottom: 150px;
         text-align: left;
     }
-    #contexto-desc img {
+    .project-contexto #contexto-desc img {
         margin-bottom: 100px;
     }
-    #contexto-link .btn {
+    .project-contexto #contexto-link .btn {
         font-weight: 100;
         letter-spacing: 1px;
         color: #000;
@@ -4002,44 +3550,44 @@ hr {
         border: 0px solid #000;
         border-radius: 3px;
     }
-    #contexto-art-insp {
+    .project-contexto #contexto-art-insp {
         margin-top: 20px;
         margin-bottom: 200px;
     }
-    #contexto-art-insp img {
+    .project-contexto #contexto-art-insp img {
         margin-bottom: 10px;
         max-height: 240px;
     }
-    #contexto-palette {
+    .project-contexto #contexto-palette {
         margin-top: 200px;
         margin-bottom: 20px;
     }
-    #contexto-colors {
+    .project-contexto #contexto-colors {
         margin-top: 10px;
     }
-    #contexto-font {
+    .project-contexto #contexto-font {
         background-size: contain;
         background-position: bottom;
         background-repeat: no-repeat;
         margin-top: 200px;
         margin-bottom: 0px;
     }
-    #contexto-font #font-weight {
+    .project-contexto #contexto-font #font-weight {
         margin-top: 100px;
         margin-bottom: 300px;
     }
     #contexto-font #font-weight img:first-child {
         margin-bottom: auto;
+        max-width: 40%;
     }
     #contexto-logo-end {
         height: 85vh;
-        text-align: left;
+        text-align: center;
         background-size: cover;
         background-position: center;
     }
     #contexto-logo-end img {
         margin: 10vh 0;
-        text-align: center;
         max-width: 120px;
     }
 
