@@ -25,7 +25,7 @@ body {
     width: 100%;
     font-size: 16px;
     font-family: 'Nunito', sans-serif;
-    font-weight: 600;
+    font-weight: 700;
     background-color: #fafbfd;
     /* background-color: #f2efe3; */
 }
@@ -3261,7 +3261,7 @@ hr {
         margin-top: 10px;
     }
     .pre-text {
-        font-size: 1em;
+        font-size: 1.1em;
         margin-bottom: 7px;
         line-height: 1.3;
     }
