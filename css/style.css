@@ -119,7 +119,7 @@ hr {
     .navbar .navbar-brand {
         width: auto;
         background-color: transparent;
-        font-weight: 400;
+/*        font-weight: 400;*/
         text-transform: uppercase;
         font-size: .9em;
         color: #256d7b;
@@ -3092,7 +3092,7 @@ hr {
         padding-top: 56px;
         padding-bottom: 0px;
         color: #256d7b;
-        background-color: #f2efe3;
+        background-color: #fafbfd;
     }
     #shortbio #photo #experience {
         height: 50vh;
@@ -3101,12 +3101,12 @@ hr {
         background-repeat: no-repeat;
     }
     #shortbio #photo img {
-        margin-top: 20vh;
-        max-width: 150px;
+        margin-top: 30vh;
+        max-width: 50vw;
     }
     #shortbio p {
         margin-bottom: 10px;
-        font-size: 0.8em;
+        font-size: 1em;
         font-weight: 100;
     }
     #shortbio a {
@@ -3124,10 +3124,10 @@ hr {
         padding-left: 8px;
     }
     #bio {
-        margin-top: 15vh;
+        margin-top: 5vh;
         padding-bottom: 5px;
         padding-top: 10px;
-        background-color: #f2efe3;
+        background-color: #fafbfd;
     }
 
             /* --- TIENDA --- */
@@ -3235,6 +3235,7 @@ hr {
 @media (max-width: 419px){
 
     /* -- PORTAFOLIO -- */
+
     #portfolio {
         min-height: 500px;
         padding-top: 56px;
@@ -3635,7 +3636,7 @@ hr {
     #contact-info {
         color: #fff;
         text-align: center;
-        font-family: 'Ubuntu', sans-serif;
+        font-family: 'Nunito', sans-serif;
     }
     #contact-info a {
         font-weight: 300;
@@ -3691,7 +3692,7 @@ hr {
         font-weight: 100;
     }
     #shortbio a {
-        font-family: 'Ubuntu', sans-serif;
+        font-family: 'Nunito', sans-serif;
         color: #fff;
         font-weight: 100;
         margin: 0;
