@@ -2665,16 +2665,16 @@ hr {
         font-weight: 100;
     }
     .pre-title {
-        font-size: .9em;
+        font-size: 1.3em;
         margin-bottom: 5px;
     }
     .pre-body .btn {
-        font-size: .7em;
+        font-size: .8em;
         padding: 2px 6px;
         margin-right: 20px;
     }
     .pre-text {
-        font-size: 1em;
+        font-size: 1.1em;
         margin-bottom: 7px;
         line-height: 1.3;
     }
