@@ -251,7 +251,7 @@ hr {
 
     .navbar .navbar-brand {
         text-transform: uppercase;
-        font-size: .8rem;
+/*        font-size: .8rem;*/
     }
     .navbar .navbar-text {
         display: visible;
@@ -2654,7 +2654,7 @@ hr {
         height: auto;
         padding-top: 56px;
         padding-bottom: 0;
-        color: #333;
+        color: #256d7b;
     }
     .project {
         padding: 0 20px 20px 20px;
@@ -2665,8 +2665,10 @@ hr {
         font-weight: 100;
     }
     .pre-title {
-        font-size: 1.3em;
+        font-size: 1.1em;
+        font-weight: 600;
         margin-bottom: 5px;
+        color: #256d7b;
     }
     .pre-body .btn {
         font-size: .8em;
@@ -2674,8 +2676,9 @@ hr {
         margin-right: 20px;
     }
     .pre-text {
-        font-size: 1.1em;
+        font-size: 1em;
         font-weight: 500;
+        color: #256d7b;
         margin-bottom: 7px;
         line-height: 1.3;
     }
@@ -3085,50 +3088,48 @@ hr {
     /* --- ABOUT --- */
 
     #about {
-        height: 90vh;
+        height: 70vh;
     }
     #shortbio {
-        height: 90vh;
-        padding-top: 56px;
-        padding-bottom: 0px;
+        margin-top: 10vh;
         color: #256d7b;
         background-color: #fafbfd;
-    }
-    #shortbio #photo #experience {
-        height: 50vh;
         background-size: cover;
         background-position: top left;
         background-repeat: no-repeat;
     }
+    #shortbio #photo #experience {
+        height: 50vh;
+    }
     #shortbio #photo img {
-        margin-top: 30vh;
-        max-width: 50vw;
+        max-width: 40vw;
+        margin-top: 0vh;
     }
     #shortbio p {
         margin-bottom: 10px;
         font-size: 1em;
-        font-weight: 100;
+        line-height: 1.1;
+        font-weight: 500;
+        color: #256d7b;
     }
     #shortbio a {
-        font-family: 'Ubuntu', sans-serif;
+        font-family: 'Nunito', sans-serif;
         color: #256d7b;
         font-weight: 100;
         margin: 0;
         padding-left: 8px;
     }
     #shortbio a:hover {
-        font-family: 'Ubuntu', sans-serif;
+        font-family: 'Nunito', sans-serif;
         color: #FE6F5E;
         font-weight: 100;
         margin: 0;
         padding-left: 8px;
     }
     #bio {
-        margin-top: 5vh;
-        padding-bottom: 5px;
-        padding-top: 10px;
-        background-color: #fafbfd;
+        margin-top: 10px;
     }
+
 
             /* --- TIENDA --- */
 
@@ -3666,40 +3667,48 @@ hr {
     /* --- ABOUT --- */
 
     #about {
-        height: 70vh;
+        height: 100vh;
     }
     #shortbio {
-        background-image: url('../img/guillosolano.png');
+        margin: 10vh 0;
+        color: #256d7b;
+        background-color: #fafbfd;
         background-size: cover;
-        background-position: center;
-        height: 90vh;
-        padding-top: 56px;
-        padding-bottom: 0px;
-        color: #fafbfd;
-    }
-    #shortbio #photo #experience {
-        height: 40vh;
-        background-size: 190%;
         background-position: top left;
         background-repeat: no-repeat;
     }
+    #shortbio #photo #experience {
+        height: 50vh;
+    }
     #shortbio #photo img {
-        display: none;
+        max-width: 40vw;
+        margin-top: 0vh;
     }
     #shortbio p {
         margin-bottom: 10px;
-        font-size: 0.8em;
-        font-weight: 100;
+        font-size: 1em;
+        line-height: 1.1;
+        font-weight: 500;
+        color: #256d7b;
     }
     #shortbio a {
         font-family: 'Nunito', sans-serif;
-        color: #fff;
+        color: #256d7b;
         font-weight: 100;
         margin: 0;
+        padding-left: 8px;
+    }
+    #shortbio a:hover {
+        font-family: 'Nunito', sans-serif;
+        color: #FE6F5E;
+        font-weight: 100;
+        margin: 0;
+        padding-left: 8px;
     }
     #bio {
-        margin-top: 5vh;
+        margin-top: 10px;
     }
+
 
             /* --- TIENDA --- */
 
