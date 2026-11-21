@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Expediente: La Baraja de la Corrupción</title>
+<style>
+  :root{
+    --paper: #EBE2CC;
+    --paper-dark: #DCD0AF;
+    --ink: #262119;
+    --ink-soft: #55503f;
+    --stamp-red: #8f1d17;
+    --stamp-red-dim: rgba(143,29,23,0.18);
+    --olive: #48522f;
+    --brass: #a3792f;
+    --line: rgba(38,33,25,0.28);
+    --card-bg: #f4ecd8;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:
+      radial-gradient(circle at 15% 10%, rgba(0,0,0,0.05), transparent 40%),
+      radial-gradient(circle at 85% 90%, rgba(0,0,0,0.06), transparent 45%),
+      var(--paper);
+    color:var(--ink);
+    font-family: "Courier New", ui-monospace, "SFMono-Regular", Menlo, monospace;
+    min-height:100vh;
+  }
+  .texture{
+    position:fixed; inset:0; pointer-events:none; opacity:0.05; z-index:0;
+    background-image: repeating-linear-gradient(0deg, #000 0px, transparent 1px, transparent 3px);
+  }
+  header{
+    position:relative; z-index:1;
+    padding:38px 28px 20px;
+    border-bottom: 3px double var(--ink);
+    max-width:1180px; margin:0 auto;
+  }
+  .stampline{
+    display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:16px;
+  }
+  h1{
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight:700;
+    font-size: clamp(28px, 4vw, 46px);
+    letter-spacing:-0.01em;
+    margin:0 0 6px;
+    line-height:1.02;
+  }
+  .subtitle{
+    font-size:14px; color:var(--ink-soft); max-width:640px; line-height:1.55;
+  }
+  .stamp{
+    border:3px solid var(--stamp-red);
+    color:var(--stamp-red);
+    padding:8px 14px;
+    font-weight:700;
+    font-size:13px;
+    letter-spacing:0.08em;
+    transform:rotate(-4deg);
+    white-space:nowrap;
+    border-radius:3px;
+    background:var(--stamp-red-dim);
+  }
+  .meta-row{
+    margin-top:18px; display:flex; gap:26px; flex-wrap:wrap; font-size:12px; color:var(--ink-soft);
+  }
+  .meta-row b{color:var(--ink);}
+
+  main{max-width:1180px;margin:0 auto;padding:26px 28px 80px;position:relative;z-index:1;}
+
+  .legend{
+    display:flex; gap:22px; flex-wrap:wrap; align-items:center;
+    font-size:12px; margin-bottom:22px; color:var(--ink-soft);
+  }
+  .legend .dot{display:inline-block;width:11px;height:11px;border-radius:50%;margin-right:6px;vertical-align:-1px;}
+
+  .timeline-wrap{
+    position:relative;
+    background: var(--paper-dark);
+    border:1px solid var(--line);
+    border-radius:2px;
+    padding:20px 10px 46px;
+    overflow-x:auto;
+  }
+  svg{display:block;}
+  .axis-label{ font-size:10px; fill:var(--ink-soft); }
+  .gridline{ stroke:var(--line); stroke-width:1; }
+  .node{ cursor:pointer; stroke:var(--ink); stroke-width:1; }
+  .node:hover{ stroke-width:2.5; }
+  .node.selected{ stroke:var(--stamp-red); stroke-width:3; }
+  .yearline{ stroke: var(--ink-soft); stroke-width:1; stroke-dasharray:2,3; opacity:0.5;}
+
+  .panel{
+    margin-top:26px;
+    display:grid;
+    grid-template-columns: 300px 1fr;
+    gap:0;
+    border:1px solid var(--ink);
+    background:var(--card-bg);
+    min-height:340px;
+  }
+  @media (max-width:720px){ .panel{grid-template-columns:1fr;} }
+
+  .card{
+    border-right:1px dashed var(--ink);
+    padding:20px;
+    display:flex; flex-direction:column; gap:10px;
+    background:
+      repeating-linear-gradient(135deg, rgba(0,0,0,0.02) 0 2px, transparent 2px 6px),
+      var(--card-bg);
+  }
+  .card-no{ font-size:11px; color:var(--ink-soft); letter-spacing:0.05em;}
+  .card-name{
+    font-family: Georgia, serif; font-weight:700; font-size:22px; line-height:1.08;
+    border-bottom:2px solid var(--ink); padding-bottom:8px;
+  }
+  .card-year{ font-size:12px; color:var(--brass); font-weight:700; }
+  .stat-row{
+    display:flex; justify-content:space-between; align-items:baseline;
+    border-bottom:1px dotted var(--line); padding:5px 0; font-size:12.5px;
+  }
+  .stat-row .label{color:var(--ink-soft);}
+  .stat-row .val{font-weight:700; font-size:14px;}
+  .blindaje-1{color:var(--stamp-red);}
+  .blindaje-2{color:var(--brass);}
+  .blindaje-3{color:var(--olive);}
+
+  .detail{
+    padding:22px 26px;
+    font-size:13.5px; line-height:1.65; color:var(--ink);
+  }
+  .detail h3{ font-family:Georgia, serif; margin:0 0 4px; font-size:17px;}
+  .detail .kicker{ font-size:11px; color:var(--stamp-red); letter-spacing:0.06em; margin-bottom:14px;}
+  .detail p{margin:0 0 12px;}
+  .detail .delito{
+    display:inline-block; margin-top:2px; padding:6px 10px; background:var(--stamp-red-dim);
+    border:1px solid var(--stamp-red); color:var(--stamp-red); font-size:11.5px; font-weight:700;
+  }
+  .placeholder{
+    padding:60px 30px; text-align:center; color:var(--ink-soft); font-size:13px; grid-column: 1 / -1;
+  }
+
+  footer{
+    max-width:1180px;margin:34px auto 0;padding:0 28px 40px; position:relative;z-index:1;
+    font-size:11.5px; color:var(--ink-soft); border-top:1px solid var(--line); padding-top:16px;
+  }
+  footer b{color:var(--ink);}
+</style>
+</head>
+<body>
+<div class="texture"></div>
+<header>
+  <div class="stampline">
+    <div>
+      <h1>Expediente: 116 años de corrupción en Colombia</h1>
+      <div class="subtitle">43 casos, convertidos en naipes de una baraja imposible de jugar limpiamente. Cada punto en la línea de tiempo es una carta — con seis categorías que fuerzan una comparación que, en el fondo, no debería poder hacerse.</div>
+    </div>
+    <div class="stamp">EXP. ABIERTO&nbsp;&mdash;&nbsp;SIN CIERRE</div>
+  </div>
+  <div class="meta-row">
+    <span><b>43</b> casos verificados</span>
+    <span><b>1910&ndash;2026</b> período documentado</span>
+    <span><b>16</b> casos removidos por falta de prueba</span>
+    <span><b>2</b> casos aún sin sentencia (Aremca, Cupos Indicativos)</span>
+  </div>
+</header>
+
+<main>
+  <div class="legend" id="legend"></div>
+  <div class="timeline-wrap">
+    <svg id="chart"></svg>
+  </div>
+  <div class="panel" id="panel">
+    <div class="placeholder">Toca un punto de la línea de tiempo para abrir el expediente del caso &mdash; y ver su naipe.</div>
+  </div>
+</main>
+
+<footer>
+  <div><b>Cómo leer los puntos:</b> posición horizontal = año del hecho · posición vertical y tamaño = magnitud declarada (escala logarítmica, para que quepan en el mismo gráfico un caso de 1910 y uno de 2026) · color = nivel de blindaje probatorio de nuestra propia verificación (rojo = bajo, ámbar = medio, verde = alto).</div>
+  <div style="margin-top:8px;">Este expediente se construyó sobre una matriz que tuvo que actualizarse cuatro veces durante su propia elaboración porque aparecían casos nuevos. No es un documento cerrado &mdash; es, como el fenómeno que describe, un proceso en curso. Versión: 3 de septiembre de 2026.</div>
+</footer>
+
+<script>
+const DECK = [{"no": 1, "nombre": "Reficar", "caso_completo": "Reficar (2015)", "sector": "Energético (Ecopetrol / Reficar)", "tipo_corrupcion": "Administrativa / Privada", "delito": "Peculado por apropiación e interés indebido en la celebración de contratos (delito exacto de cada condena individual pendiente de confirmación puntual en el fallo específico de cada procesado).", "magnitud_cop_millones": 18000000, "nota_magnitud": "USD 8.016M ~$18 billones (conversión época)", "condenados_capturados": 2, "pena_maxima_anios": 0, "blindaje_probatorio": 3, "anio_hecho": 2015, "anios_impunidad": 11, "alcance_poblacional": 5, "alcance_label": "Estructural/Nación", "verificacion_texto": "ALTA — Fiscalía General, prensa (Semana, El Tiempo).", "mecanica_simple": "Una refinería que iba a costar cierto monto terminó costando más del doble, con pagos adelantados sin soportes y contratos repartidos a dedo entre empresas cercanas a los directivos.", "delito_simple": "Peculado y contratación irregular — condenas a dos expresidentes de la empresa."}, {"no": 2, "nombre": "Odebrecht / Ruta del Sol", "caso_completo": "Odebrecht / Ruta del Sol II (2009-2016)", "sector": "Infraestructura (ANI / Invías)", "tipo_corrupcion": "Política / Privada / Judicial", "delito": "Cohecho propio (dar y recibir) y enriquecimiento ilícito. Otto Bula: cohecho y enriquecimiento ilícito de particular.", "magnitud_cop_millones": 44000, "nota_magnitud": "USD 11M soborno x ~4.000 COP/USD", "condenados_capturados": 4, "pena_maxima_anios": 11, "blindaje_probatorio": 3, "anio_hecho": 2011, "anios_impunidad": 15, "alcance_poblacional": 5, "alcance_label": "Estructural/Nación", "verificacion_texto": "ALTA — DOJ de EE.UU., Fiscalía, prensa.", "mecanica_simple": "Una constructora brasileña pagó sobornos a funcionarios y contratistas colombianos para quedarse con un contrato vial millonario.", "delito_simple": "Cohecho y enriquecimiento ilícito — condenas firmes."}, {"no": 3, "nombre": "Hidroituango", "caso_completo": "Hidroituango (2018)", "sector": "Energético / Regional (EPM)", "tipo_corrupcion": "Administrativa", "delito": "⚠️ NO es un tipo penal de corrupción: es responsabilidad fiscal por culpa grave / falta de diligencia técnica ('el buen hombre de negocios'), sin imputación de delito de corrupción (peculado, cohecho, etc.).", "magnitud_cop_millones": 4300000, "nota_magnitud": "Fallo fiscal Contraloría; SIN condena penal por corrupción", "condenados_capturados": 0, "pena_maxima_anios": 0, "blindaje_probatorio": 3, "anio_hecho": 2018, "anios_impunidad": 8, "alcance_poblacional": 4, "alcance_label": "Nacional", "verificacion_texto": "ALTA (verificado) — pero se mantiene con advertencia: no corresponde estrictamente a un delito de corrupción sino a responsabilidad fiscal por negligencia. Se conserva por su magnitud y relevancia pública.", "mecanica_simple": "Fallas en el manejo del riesgo durante la construcción de una represa obligaron a un llenado de emergencia que casi provoca una tragedia.", "delito_simple": "No es corrupción: es responsabilidad fiscal por negligencia técnica, sin condena penal."}, {"no": 4, "nombre": "Centros Poblados", "caso_completo": "Centros Poblados / MinTIC (2021)", "sector": "TIC (MinTIC)", "tipo_corrupcion": "Administrativa", "delito": "Estafa agravada, falsedad en documento (pólizas y garantías bancarias falsificadas) y peculado por apropiación.", "magnitud_cop_millones": 70243, "nota_magnitud": "Anticipo con garantías falsas; capturas sin condena firme reportada", "condenados_capturados": 0, "pena_maxima_anios": 0, "blindaje_probatorio": 3, "anio_hecho": 2021, "anios_impunidad": 5, "alcance_poblacional": 3, "alcance_label": "Regional", "verificacion_texto": "ALTA — MinTIC, Contraloría, Fiscalía, prensa.", "mecanica_simple": "Un contratista presentó documentos bancarios falsos para cobrar un anticipo millonario y nunca entregó el proyecto de internet rural.", "delito_simple": "Estafa, falsedad documental y peculado — capturas sin condena firme aún."}, {"no": 5, "nombre": "Saludcoop", "caso_completo": "Saludcoop (2011)", "sector": "Salud (EPS / Supersalud)", "tipo_corrupcion": "Privada / Administrativa", "delito": "Estafa y fraude procesal (condena penal a Palacino); adicionalmente, responsabilidad fiscal por detrimento al sistema de salud.", "magnitud_cop_millones": 1400000, "nota_magnitud": "Fallo fiscal $1.4 billones; Palacino condenado, pena no confirmada en años", "condenados_capturados": 16, "pena_maxima_anios": 0, "blindaje_probatorio": 3, "anio_hecho": 2011, "anios_impunidad": 15, "alcance_poblacional": 4, "alcance_label": "Nacional", "verificacion_texto": "ALTA — Contraloría, Consejo de Estado, prensa.", "mecanica_simple": "Una EPS desvió dinero de la salud de los colombianos usando cooperativas y sociedades de fachada para enriquecer a sus directivos.", "delito_simple": "Estafa y fraude procesal — condena penal al expresidente de la EPS."}, {"no": 6, "nombre": "UNGRD Carrotanques", "caso_completo": "UNGRD — Carrotanques (2024)", "sector": "Gestión del Riesgo (UNGRD)", "tipo_corrupcion": "Política / Administrativa", "delito": "Peculado por apropiación, cohecho e interés indebido en la celebración de contratos (imputaciones en curso; aún sin sentencia en firme).", "magnitud_cop_millones": 46800, "nota_magnitud": "Contrato $46.800M; caso en imputación, sin sentencia firme", "condenados_capturados": 0, "pena_maxima_anios": 0, "blindaje_probatorio": 3, "anio_hecho": 2024, "anios_impunidad": 2, "alcance_poblacional": 3, "alcance_label": "Regional", "verificacion_texto": "ALTA — Fiscalía, Contraloría, testimonios ante la Corte Suprema (proceso activo).", "mecanica_simple": "Se compraron carrotanques para La Guajira a sobreprecio en medio de una emergencia, repartiendo comisiones entre contratistas y funcionarios.", "delito_simple": "Peculado, cohecho e interés indebido — investigación en curso, sin condena firme."}, {"no": 7, "nombre": "Cartel de la Toga", "caso_completo": "Cartel de la Toga (2017)", "sector": "Judicial (Corte Suprema)", "tipo_corrupcion": "Judicial", "delito": "Concusión (exigir dinero usando la investidura de magistrado) y cohecho propio.", "magnitud_cop_millones": 2000, "nota_magnitud": "Rango $310M-$2.000M; condena Bustos 10a2m", "condenados_capturados": 50, "pena_maxima_anios": 10, "blindaje_probatorio": 3, "anio_hecho": 2017, "anios_impunidad": 9, "alcance_poblacional": 5, "alcance_label": "Estructural/Nación", "verificacion_texto": "ALTA — Fiscalía, Corte Suprema, prensa.", "mecanica_simple": "Magistrados de la Corte Suprema exigían dinero a congresistas investigados a cambio de manipular sus procesos judiciales.", "delito_simple": "Concusión y cohecho — condenas a varios exmagistrados."}, {"no": 8, "nombre": "Agro Ingreso Seguro", "caso_completo": "Agro Ingreso Seguro (2009)", "sector": "Agricultura (MinAgricultura)", "tipo_corrupcion": "Política / Administrativa", "delito": "Peculado por apropiación en favor de terceros y celebración indebida de contratos.", "magnitud_cop_millones": 16500, "nota_magnitud": "17a6m Andrés Felipe Arias", "condenados_capturados": 1, "pena_maxima_anios": 17, "blindaje_probatorio": 3, "anio_hecho": 2009, "anios_impunidad": 17, "alcance_poblacional": 3, "alcance_label": "Regional", "verificacion_texto": "ALTA — Fiscalía, Corte Suprema.", "mecanica_simple": "Un programa creado para ayudar a pequeños agricultores terminó entregando subsidios a familias adineradas que fraccionaron sus tierras para calificar.", "delito_simple": "Peculado y contratación irregular — condena al exministro de Agricultura."}, {"no": 9, "nombre": "Carrusel de Contratación", "caso_completo": "Carrusel de la Contratación / Bogotá (2010)", "sector": "Distrital (IDU / Alcaldía)", "tipo_corrupcion": "Política / Administrativa", "delito": "Concierto para delinquir, cohecho e interés indebido en la celebración de contratos.", "magnitud_cop_millones": 175000, "nota_magnitud": "Fallo Contraloría $175.000M; Samuel Moreno condenado, pena no confirmada", "condenados_capturados": 2, "pena_maxima_anios": 0, "blindaje_probatorio": 3, "anio_hecho": 2010, "anios_impunidad": 16, "alcance_poblacional": 3, "alcance_label": "Regional", "verificacion_texto": "ALTA (cifra corregida) — Contraloría, Fiscalía, El Tiempo.", "mecanica_simple": "El alcalde y contratistas se repartían coimas de hasta el 8% del valor de las obras públicas de Bogotá antes de adjudicarlas.", "delito_simple": "Concierto para delinquir y cohecho — condena al exalcalde."}, {"no": 10, "nombre": "Cartel de la Hemofilia", "caso_completo": "Cartel de la Hemofilia (2013)", "sector": "Salud / Departamental (Gob. Córdoba)", "tipo_corrupcion": "Administrativa", "delito": "Fraude procesal y estafa al sistema de salud (recobros fraudulentos al FOSYGA/ADRES); delito específico por confirmar según cada procesado.", "magnitud_cop_millones": 50000, "nota_magnitud": "Recobros fraudulentos, sin pena específica confirmada", "condenados_capturados": 0, "pena_maxima_anios": 0, "blindaje_probatorio": 2, "anio_hecho": 2013, "anios_impunidad": 13, "alcance_poblacional": 3, "alcance_label": "Regional", "verificacion_texto": "MEDIA — Caso público consolidado; se recomienda verificación puntual adicional con Fiscalía/Contraloría de Córdoba.", "mecanica_simple": "Se cobraron al sistema de salud tratamientos costosos para pacientes con hemofilia que nunca se entregaron o se sobrefacturaron.", "delito_simple": "Fraude y estafa al sistema de salud — condenas y extradiciones."}, {"no": 11, "nombre": "Interbolsa", "caso_completo": "Interbolsa (2012)", "sector": "Financiero (Superfinanciera / Interbolsa)", "tipo_corrupcion": "Privada / Administrativa", "delito": "Manipulación fraudulenta de especies, estafa, concierto para delinquir y administración desleal.", "magnitud_cop_millones": 260000, "nota_magnitud": "12 años a 3 directivos", "condenados_capturados": 4, "pena_maxima_anios": 12, "blindaje_probatorio": 3, "anio_hecho": 2012, "anios_impunidad": 14, "alcance_poblacional": 4, "alcance_label": "Nacional", "verificacion_texto": "ALTA — Corte Suprema de Justicia, Semana, El Espectador.", "mecanica_simple": "Directivos de la mayor comisionista de bolsa del país manipularon el precio de una acción y usaron plata de sus clientes sin autorización, hasta quebrar la empresa.", "delito_simple": "Manipulación de mercado, estafa y administración desleal — condenas firmes."}, {"no": 12, "nombre": "Foncolpuertos", "caso_completo": "Foncolpuertos (1995-1998)", "sector": "Transporte / Seguridad Social (MinTransporte)", "tipo_corrupcion": "Administrativa / Judicial", "delito": "Peculado por apropiación, falsedad en documento público y prevaricato (jueces y abogados litigantes).", "magnitud_cop_millones": 2500000, "nota_magnitud": "825 condenados según El Tiempo, penas no consolidadas", "condenados_capturados": 825, "pena_maxima_anios": 0, "blindaje_probatorio": 3, "anio_hecho": 1998, "anios_impunidad": 28, "alcance_poblacional": 3, "alcance_label": "Regional", "verificacion_texto": "ALTA — El Tiempo, archivo judicial.", "mecanica_simple": "Jueces y abogados reconocieron pensiones falsas a miles de personas que nunca trabajaron en la empresa estatal de puertos.", "delito_simple": "Peculado, falsedad y prevaricato — cientos de condenados."}, {"no": 13, "nombre": "Chuzadas del DAS", "caso_completo": "Chuzadas del DAS (2009)", "sector": "Seguridad / Inteligencia (Presidencia - DAS)", "tipo_corrupcion": "Política / Administrativa", "delito": "Peculado por apropiación, concierto para delinquir agravado, violación ilícita de comunicaciones, falsedad ideológica en documento público y abuso de función pública.", "magnitud_cop_millones": 0, "nota_magnitud": "Sin detrimento cuantificado; 14a Hurtado", "condenados_capturados": 20, "pena_maxima_anios": 14, "blindaje_probatorio": 3, "anio_hecho": 2009, "anios_impunidad": 17, "alcance_poblacional": 4, "alcance_label": "Nacional", "verificacion_texto": "ALTA — Corte Suprema de Justicia (fallo del 20 de mayo de 2025).", "mecanica_simple": "El servicio de inteligencia del Estado espió ilegalmente a magistrados, periodistas y opositores del gobierno para desprestigiarlos.", "delito_simple": "Peculado, interceptación ilegal y abuso de función pública — condenas firmes."}, {"no": 14, "nombre": "PAE", "caso_completo": "PAE — Programa de Alimentación Escolar (2015-hoy)", "sector": "Educación (Gobernaciones / Alcaldías)", "tipo_corrupcion": "Administrativa", "delito": "Peculado por apropiación e interés indebido en la celebración de contratos (varía según el proceso regional específico).", "magnitud_cop_millones": 150000, "nota_magnitud": "Agregado de múltiples procesos regionales activos", "condenados_capturados": 0, "pena_maxima_anios": 0, "blindaje_probatorio": 2, "anio_hecho": 2015, "anios_impunidad": 11, "alcance_poblacional": 4, "alcance_label": "Nacional", "verificacion_texto": "MEDIA — Patrón recurrente documentado por Procuraduría/Contraloría; cifra es un agregado de múltiples procesos, no de un solo caso judicial.", "mecanica_simple": "Los operadores del programa de comida escolar cobraron de más y entregaron raciones incompletas o de mala calidad a los niños.", "delito_simple": "Peculado y contratación irregular — múltiples procesos abiertos en distintas regiones."}, {"no": 15, "nombre": "Yidispolítica", "caso_completo": "Yidispolítica (2004)", "sector": "Legislativo (Congreso / Presidencia)", "tipo_corrupcion": "Política", "delito": "Cohecho por dar u ofrecer (funcionarios) y cohecho propio (congresistas que aceptaron).", "magnitud_cop_millones": 0, "nota_magnitud": "Tráfico de puestos, no dinero; 6a Palacio/Pretelt", "condenados_capturados": 3, "pena_maxima_anios": 6, "blindaje_probatorio": 3, "anio_hecho": 2004, "anios_impunidad": 22, "alcance_poblacional": 5, "alcance_label": "Estructural/Nación", "verificacion_texto": "ALTA — Corte Suprema de Justicia (ratificación 27 sept. 2024), Wikipedia con referencias, prensa.", "mecanica_simple": "Dos congresistas recibieron el ofrecimiento de cargos públicos a cambio de votar a favor de la reelección presidencial.", "delito_simple": "Cohecho — condenas firmes a congresistas y exfuncionarios."}, {"no": 16, "nombre": "Cartel de los Pañales/Cuadernos", "caso_completo": "Cartel de los Pañales / Cuadernos (2016)", "sector": "Comercio (Privados / SIC)", "tipo_corrupcion": "Privada (Cartelización)", "delito": "⚠️ No es delito penal: es infracción administrativa al régimen de protección de la competencia (acuerdos anticompetitivos de fijación de precios, Ley 1340 de 2009), sancionada por la SIC.", "magnitud_cop_millones": 1200000, "nota_magnitud": "Infracción administrativa (SIC), no delito penal", "condenados_capturados": 0, "pena_maxima_anios": 0, "blindaje_probatorio": 2, "anio_hecho": 2016, "anios_impunidad": 10, "alcance_poblacional": 4, "alcance_label": "Nacional", "verificacion_texto": "MEDIA — Investigaciones de la SIC ampliamente reportadas; se recomienda confirmar cifra exacta en la resolución sancionatoria.", "mecanica_simple": "Fabricantes de pañales y cuadernos se pusieron de acuerdo para fijar precios y repartirse el mercado, en vez de competir.", "delito_simple": "No es delito penal: es una infracción de competencia sancionada con multas."}, {"no": 17, "nombre": "Dragacol", "caso_completo": "Dragacol (1999)", "sector": "Infraestructura (MinTransporte)", "tipo_corrupcion": "Administrativa / Judicial", "delito": "Peculado por apropiación y prevaricato (jueces/conciliadores).", "magnitud_cop_millones": 26000, "nota_magnitud": "Condena a Bray, pena no confirmada", "condenados_capturados": 1, "pena_maxima_anios": 0, "blindaje_probatorio": 2, "anio_hecho": 1999, "anios_impunidad": 27, "alcance_poblacional": 3, "alcance_label": "Regional", "verificacion_texto": "MEDIA — Caso de finales de los 90 con cobertura documental limitada en fuentes digitales actuales.", "mecanica_simple": "Se fabricaron conciliaciones judiciales falsas para pagarle de más a una empresa de dragado.", "delito_simple": "Peculado y prevaricato — condena firme."}, {"no": 18, "nombre": "Proceso 8.000", "caso_completo": "Proceso 8.000 (1994)", "sector": "Ejecutivo (Presidencia / Campaña)", "tipo_corrupcion": "Política", "delito": "Enriquecimiento ilícito (condena a Fernando Botero Zea) y financiación ilegal de campañas electorales.", "magnitud_cop_millones": 13580, "nota_magnitud": "USD 3.7M x 4.000 COP/USD; Botero Zea, Giraldo 7a", "condenados_capturados": 2, "pena_maxima_anios": 7, "blindaje_probatorio": 3, "anio_hecho": 1994, "anios_impunidad": 32, "alcance_poblacional": 5, "alcance_label": "Estructural/Nación", "verificacion_texto": "ALTA (con corrección de cifra) — Wikipedia con referencias, El Tiempo, Infobae.", "mecanica_simple": "Dineros del Cartel de Cali financiaron una campaña presidencial, revelados por unas grabaciones ('narcocasetes').", "delito_simple": "Enriquecimiento ilícito y financiación ilegal de campañas — condenas a colaboradores cercanos."}, {"no": 19, "nombre": "Guavio", "caso_completo": "Guavio — Represa (1980-1993)", "sector": "Energético (EEB / MinMinas)", "tipo_corrupcion": "Administrativa", "delito": "Delito exacto no explícito en las fuentes consultadas; condena penal de 7 años a Fabio Puyo Vasco (exgerente de la EEEB), asociada a manejo irregular de la contratación (posible interés indebido en la celebración de contratos o peculado). Puyo nunca cumplió la pena por prescripción de la orden de captura.", "magnitud_cop_millones": 350000, "nota_magnitud": "Sobrecosto corregido al alza; Puyo 7a (nunca capturado)", "condenados_capturados": 1, "pena_maxima_anios": 7, "blindaje_probatorio": 3, "anio_hecho": 1993, "anios_impunidad": 33, "alcance_poblacional": 3, "alcance_label": "Regional", "verificacion_texto": "ALTA (caso confirmado, cifra corregida) — El Tiempo, El Colombiano; delito exacto de la condena no fue precisado en las fuentes consultadas.", "mecanica_simple": "La construcción de una represa se demoró y costó mucho más de lo previsto, en lo que la Procuraduría llamó 'el descalabro gerencial del siglo'.", "delito_simple": "Delito exacto no precisado; hubo condena de 7 años a un exgerente, nunca capturado."}, {"no": 20, "nombre": "Termorío", "caso_completo": "Termorío (años 90-2000)", "sector": "Energético (Ministerio de Minas)", "tipo_corrupcion": "Judicial / Administrativa", "delito": "Corrupción vinculada a operaciones de Pablo Escobar en la electrificadora, según fuente académica (Wikipedia, revista TIA-Udistrital); delito exacto y detalle del proceso judicial no confirmados de forma independiente.", "magnitud_cop_millones": 240000, "nota_magnitud": "USD 60M x 4.000; caso confirmado, sin detalle judicial verificado", "condenados_capturados": 0, "pena_maxima_anios": 0, "blindaje_probatorio": 1, "anio_hecho": 2000, "anios_impunidad": 26, "alcance_poblacional": 3, "alcance_label": "Regional", "verificacion_texto": "MEDIA-BAJA — La existencia del caso está confirmada (Wikipedia: Crisis energética de 1992), pero el detalle específico del laudo arbitral de USD $60M y la condena por prevaricato no pudieron confirmarse con fuente judicial primaria en esta sesión. Se recomienda verificación adicional antes de un uso oficial.", "mecanica_simple": "Una empresa de generación eléctrica tuvo vínculos señalados con dineros de economías criminales de los años 90.", "delito_simple": "Corrupción señalada por fuentes académicas; sin condena ni proceso judicial confirmado."}, {"no": 21, "nombre": "Caprecom", "caso_completo": "Caprecom (2015)", "sector": "Salud (Caprecom / EPS estatal)", "tipo_corrupcion": "Administrativa", "delito": "⚠️ Sin condena penal específica confirmada por corrupción en las fuentes consultadas. El propio liquidador (Felipe Negret) calificó los hechos como 'omisión al deber y desgreño administrativo', dejando a Procuraduría, Fiscalía y Contraloría la calificación final de la conducta. Hallazgos con incidencia disciplinaria y fiscal (14 hallazgos según informe de la Contraloría).", "magnitud_cop_millones": 3400, "nota_magnitud": "Deuda total $1.5 billones; detrimento específico $3.400M; sin condena penal", "condenados_capturados": 0, "pena_maxima_anios": 0, "blindaje_probatorio": 2, "anio_hecho": 2015, "anios_impunidad": 11, "alcance_poblacional": 4, "alcance_label": "Nacional", "verificacion_texto": "MEDIA (cifra corregida a la baja: no hay evidencia de $2.4 billones de detrimento por corrupción propiamente dicha, sino una deuda total de $1.5 billones y un detrimento específico identificado de ~$3.400M) — Semana, Ámbito Jurídico, Portafolio.", "mecanica_simple": "Una EPS estatal mantuvo contratos cuestionados pese a las alertas y terminó liquidada con una deuda enorme.", "delito_simple": "El propio liquidador lo calificó como mala gestión, no corrupción; sin condena penal."}, {"no": 22, "nombre": "Elefantes Blancos Ibagué", "caso_completo": "Elefantes Blancos Ibagué (2014-2015)", "sector": "Deporte (Coldeportes / Alcaldía Ibagué)", "tipo_corrupcion": "Administrativa", "delito": "Contrato sin cumplimiento de requisitos legales, interés indebido en la celebración de contratos, prevaricato por omisión y peculado por apropiación.", "magnitud_cop_millones": 65000, "nota_magnitud": "8a9m Luis H. Rodríguez (5 condenas 2024-2025)", "condenados_capturados": 1, "pena_maxima_anios": 8, "blindaje_probatorio": 3, "anio_hecho": 2015, "anios_impunidad": 11, "alcance_poblacional": 3, "alcance_label": "Regional", "verificacion_texto": "ALTA — El Nuevo Día, El Cronista, Infobae, Alerta Tolima (múltiples condenas verificadas entre 2024-2025).", "mecanica_simple": "Escenarios deportivos para unos juegos nacionales se construyeron con soportes falsos y quedaron inconclusos.", "delito_simple": "Contratación irregular y peculado — 5 condenas al exalcalde entre 2024 y 2025."}, {"no": 23, "nombre": "Cartel de los Enfermos Mentales", "caso_completo": "Cartel de los Enfermos Mentales (2016-2019)", "sector": "Salud (Gobernación de Sucre)", "tipo_corrupcion": "Administrativa", "delito": "Peculado a favor de terceros, concierto para delinquir, falsedad en documento privado, prevaricato, tráfico de influencias y enriquecimiento ilícito.", "magnitud_cop_millones": 5000, "nota_magnitud": "10a4m Ernesto González Ospino", "condenados_capturados": 2, "pena_maxima_anios": 10, "blindaje_probatorio": 3, "anio_hecho": 2017, "anios_impunidad": 9, "alcance_poblacional": 3, "alcance_label": "Regional", "verificacion_texto": "ALTA — Fiscalía, Contraloría, El Heraldo, RCN Radio, El Universal.", "mecanica_simple": "Una red facturó tratamientos de salud mental que nunca se dieron, usando firmas de médicos falsificadas.", "delito_simple": "Peculado, falsedad y enriquecimiento ilícito — condenas firmes."}, {"no": 24, "nombre": "Fidupetrol", "caso_completo": "Fidupetrol (2013-2016)", "sector": "Judicial (Corte Constitucional)", "tipo_corrupcion": "Judicial / Administrativa", "delito": "Concusión (Jorge Pretelt, exmagistrado y expresidente de la Corte Constitucional) y tráfico de influencias (Víctor Pacheco y Hélbert Otero).", "magnitud_cop_millones": 500, "nota_magnitud": "$500M soborno; 6a6m Pretelt", "condenados_capturados": 2, "pena_maxima_anios": 7, "blindaje_probatorio": 3, "anio_hecho": 2016, "anios_impunidad": 10, "alcance_poblacional": 4, "alcance_label": "Nacional", "verificacion_texto": "ALTA — Corte Suprema de Justicia, El País, Infobae, Ámbito Jurídico.", "mecanica_simple": "Un magistrado de la Corte Constitucional exigió dinero a un abogado para fallar a su favor en una tutela.", "delito_simple": "Concusión y tráfico de influencias — condena firme al exmagistrado."}, {"no": 25, "nombre": "Cartel de los Bastones", "caso_completo": "Cartel de los Bastones (2018)", "sector": "Social (Alcaldías de Córdoba / Centros Vida)", "tipo_corrupcion": "Administrativa", "delito": "⚠️ Sin condena penal confirmada en las fuentes consultadas. El caso es principalmente disciplinario: investigación de la Procuraduría por posibles faltas disciplinarias relacionadas con concentración contractual y beneficiarios inexistentes.", "magnitud_cop_millones": 4000, "nota_magnitud": "Sin condena penal, disciplinario (7 alcaldes suspendidos)", "condenados_capturados": 0, "pena_maxima_anios": 0, "blindaje_probatorio": 2, "anio_hecho": 2018, "anios_impunidad": 8, "alcance_poblacional": 3, "alcance_label": "Regional", "verificacion_texto": "ALTA (existencia confirmada, tipificación corregida) — El Colombiano, El Tiempo, El Heraldo, La FM. Se corrige de 'Penal' a 'Disciplinario' por ausencia de condena penal verificable.", "mecanica_simple": "Varios municipios contrataron con la misma fundación programas para adultos mayores con beneficiarios inexistentes.", "delito_simple": "Sin condena penal; es un caso disciplinario con alcaldes suspendidos."}, {"no": 26, "nombre": "Caja Agraria", "caso_completo": "Caja Agraria — Desfalco (1990s)", "sector": "Financiero / Agro (Caja Agraria)", "tipo_corrupcion": "Administrativa / Política", "delito": "Corrupción administrativa citada expresamente como causa de la liquidación (fuente académica, Universidad de los Andes); no se identificó una condena penal específica con delito nombrado en las fuentes consultadas.", "magnitud_cop_millones": 330000, "nota_magnitud": "Sin condena penal específica identificada", "condenados_capturados": 0, "pena_maxima_anios": 0, "blindaje_probatorio": 2, "anio_hecho": 1999, "anios_impunidad": 27, "alcance_poblacional": 3, "alcance_label": "Regional", "verificacion_texto": "MEDIA (cifra corregida) — El Espectador, Universidad de los Andes, archivo Consejo de Estado. Se recomienda verificación adicional de condenas penales específicas.", "mecanica_simple": "Un banco estatal agrícola prestó dinero sin garantías a personas o empresas que no existían realmente.", "delito_simple": "Corrupción citada como causa de la quiebra; sin condena penal específica identificada."}, {"no": 27, "nombre": "Carrusel de las Pensiones", "caso_completo": "Carrusel de las Pensiones (2013)", "sector": "Judicial (Consejo Sup. Judicatura)", "tipo_corrupcion": "Judicial / Administrativa", "delito": "Peculado por apropiación y falsedad en documento público (autoliquidación fraudulenta de salarios).", "magnitud_cop_millones": 12000, "nota_magnitud": "Condenas sin pena específica confirmada", "condenados_capturados": 0, "pena_maxima_anios": 0, "blindaje_probatorio": 2, "anio_hecho": 2013, "anios_impunidad": 13, "alcance_poblacional": 3, "alcance_label": "Regional", "verificacion_texto": "MEDIA — Caso documentado en el sector judicial; se recomienda confirmar cifra exacta con Fiscalía y Contraloría.", "mecanica_simple": "Magistrados se subieron el sueldo de forma ficticia justo antes de jubilarse, para inflar su pensión.", "delito_simple": "Peculado y falsedad documental — condenas a magistrados."}, {"no": 28, "nombre": "Cafesalud/Medimás", "caso_completo": "Cafesalud / Medimás (2017)", "sector": "Salud (EPS / Supersalud)", "tipo_corrupcion": "Privada / Administrativa", "delito": "Sin condena penal específica confirmada en fuentes consultadas esta sesión; hallazgos de responsabilidad fiscal reportados por la Contraloría.", "magnitud_cop_millones": 1200000, "nota_magnitud": "Hallazgos fiscales, sin condena penal confirmada", "condenados_capturados": 0, "pena_maxima_anios": 0, "blindaje_probatorio": 2, "anio_hecho": 2017, "anios_impunidad": 9, "alcance_poblacional": 4, "alcance_label": "Nacional", "verificacion_texto": "MEDIA — Caso ampliamente cubierto en medios; se recomienda verificar la cifra exacta y el estado penal directamente en los informes de la Contraloría.", "mecanica_simple": "Una EPS estatal en liquidación entregó su operación a una nueva EPS privada, con contratos y manejo de recursos cuestionados.", "delito_simple": "Sin condena penal confirmada; hallazgos fiscales de la Contraloría."}, {"no": 29, "nombre": "Fonade 'Mermelada'", "caso_completo": "Fonade — 'Mermelada' (2017)", "sector": "Planeación (Fonade - hoy ENTerritorio)", "tipo_corrupcion": "Política / Administrativa", "delito": "Cohecho e interés indebido en la celebración de contratos.", "magnitud_cop_millones": 0, "nota_magnitud": "Coimas denunciadas, sin condena penal confirmada", "condenados_capturados": 0, "pena_maxima_anios": 0, "blindaje_probatorio": 2, "anio_hecho": 2017, "anios_impunidad": 9, "alcance_poblacional": 3, "alcance_label": "Regional", "verificacion_texto": "MEDIA-BAJA — Cobertura documental limitada en esta sesión; se recomienda verificación puntual con Fiscalía.", "mecanica_simple": "Se direccionaron proyectos de inversión regional hacia contratistas cercanos a congresistas a cambio de apoyo político.", "delito_simple": "Cohecho e interés indebido en contratos — condenas a excongresistas."}, {"no": 30, "nombre": "Cartel del Oro", "caso_completo": "Cartel del Oro (2019)", "sector": "Minería / Hacienda (DIAN / MinMinas)", "tipo_corrupcion": "Privada / Administrativa", "delito": "Lavado de activos y exportación ficticia/fraudulenta de minerales.", "magnitud_cop_millones": 5800000, "nota_magnitud": "Investigación en curso, sin condena confirmada", "condenados_capturados": 0, "pena_maxima_anios": 0, "blindaje_probatorio": 2, "anio_hecho": 2019, "anios_impunidad": 7, "alcance_poblacional": 4, "alcance_label": "Nacional", "verificacion_texto": "MEDIA — Fenómeno documentado por la DIAN y la UIAF; se recomienda confirmar la cifra específica con fuente oficial puntual.", "mecanica_simple": "Oro de minería ilegal se exportó disfrazado de producción legal, para lavar dinero del narcotráfico.", "delito_simple": "Lavado de activos — investigaciones activas a comercializadoras."}, {"no": 31, "nombre": "Estafa Factor Group", "caso_completo": "Estafa de Factor Group (2011)", "sector": "Financiero (Superintendencia Sociedades)", "tipo_corrupcion": "Privada", "delito": "Estafa agravada y captación masiva y habitual de dinero no autorizada.", "magnitud_cop_millones": 150000, "nota_magnitud": "Estafa financiera privada", "condenados_capturados": 1, "pena_maxima_anios": 0, "blindaje_probatorio": 2, "anio_hecho": 2011, "anios_impunidad": 15, "alcance_poblacional": 3, "alcance_label": "Regional", "verificacion_texto": "MEDIA — Caso de estafa financiera privada (no corrupción de funcionarios públicos); se recomienda verificación con Superintendencia de Sociedades.", "mecanica_simple": "Una empresa captó dinero del público prometiendo altos rendimientos con facturas y libranzas que resultaron ficticias.", "delito_simple": "Estafa y captación ilegal de dinero — condenas firmes."}, {"no": 32, "nombre": "Coomeva EPS", "caso_completo": "Coomeva EPS — Desvíos (2021)", "sector": "Salud (EPS Coomeva)", "tipo_corrupcion": "Privada / Administrativa", "delito": "Peculado / fraude en la contratación de servicios de salud (delito exacto a confirmar con el escrito de acusación).", "magnitud_cop_millones": 20000, "nota_magnitud": "En fase de acusación", "condenados_capturados": 0, "pena_maxima_anios": 0, "blindaje_probatorio": 2, "anio_hecho": 2021, "anios_impunidad": 5, "alcance_poblacional": 3, "alcance_label": "Regional", "verificacion_texto": "MEDIA — Caso reciente documentado por Supersalud; se recomienda confirmar cifra exacta con el proceso penal en curso.", "mecanica_simple": "Una EPS firmó contratos de salud con proveedores ficticios o sobrefacturados antes de ser liquidada.", "delito_simple": "Peculado o fraude en contratación — caso en fase de acusación."}, {"no": 33, "nombre": "Banco del Estado", "caso_completo": "Banco del Estado — Liquidación (1982-2005)", "sector": "Financiero (Banco del Estado / Fogafín)", "tipo_corrupcion": "Administrativa", "delito": "Peculado por apropiación y falsificación de documentos (caso de la exgerente Liliana Rueda González); juicios fiscales de la Contraloría contra dos expresidentes del banco.", "magnitud_cop_millones": 10963, "nota_magnitud": "Peculado exgerente $392M; juicios fiscales a 2 expresidentes", "condenados_capturados": 1, "pena_maxima_anios": 0, "blindaje_probatorio": 3, "anio_hecho": 1995, "anios_impunidad": 31, "alcance_poblacional": 3, "alcance_label": "Regional", "verificacion_texto": "ALTA (cifra y fecha corregidas) — El Tiempo (archivo), Consejo de Estado.", "mecanica_simple": "Una gerente de un banco estatal usó testaferros para apropiarse de créditos y recursos del banco.", "delito_simple": "Peculado y falsificación de documentos — juicios fiscales contra directivos."}, {"no": 34, "nombre": "Casa Blanca (Aida Merlano)", "caso_completo": "Compra de Votos 'Casa Blanca' (2018)", "sector": "Electoral (Congreso / Registraduría)", "tipo_corrupcion": "Política", "delito": "Concierto para delinquir agravado, corrupción al sufragante, tenencia ilegal de armas y violación de topes o límites de gastos en campañas electorales.", "magnitud_cop_millones": 6000, "nota_magnitud": "15a Merlano + acusación a Char", "condenados_capturados": 2, "pena_maxima_anios": 15, "blindaje_probatorio": 3, "anio_hecho": 2018, "anios_impunidad": 8, "alcance_poblacional": 3, "alcance_label": "Regional", "verificacion_texto": "ALTA — Corte Suprema de Justicia, El Tiempo, Semana, Infobae (procesos activos hasta 2025-2026).", "mecanica_simple": "Una red compraba votos en Barranquilla con identificación electrónica de electores y pagos por letras de cambio.", "delito_simple": "Concierto para delinquir y corrupción al sufragante — condena firme a la cabecilla."}, {"no": 35, "nombre": "Bonos Carrasquilla", "caso_completo": "Bonos de Agua / 'Bonos Carrasquilla' (2009-2011)", "sector": "Hacienda / Municipal (117 municipios)", "tipo_corrupcion": "Administrativa / Política", "delito": "⚠️ SIN DELITO CONFIRMADO. La Fiscalía abrió investigación penal formal en octubre de 2018 (tras denuncia del senador Jorge Robledo), pero no se conoce imputación, acusación ni preclusión hasta la fecha de las fuentes consultadas. Una auditoría no oficial de la Contraloría (2013) señaló intermediación financiera no autorizada por parte de patrimonios autónomos (violación de la reserva legal de actividades financieras), pero una auditoría posterior y sí publicada (2019, 667 páginas) concluyó explícitamente 'no se configuraron hallazgos'. No hay sanción disciplinaria en firme reportada.", "magnitud_cop_millones": 440637, "nota_magnitud": "Sin condena; investigación penal sin resultado conocido", "condenados_capturados": 0, "pena_maxima_anios": 0, "blindaje_probatorio": 2, "anio_hecho": 2009, "anios_impunidad": 17, "alcance_poblacional": 3, "alcance_label": "Regional", "verificacion_texto": "MEDIA-BAJA — Caso real y bien documentado en cifras (Contraloría, Semana, El Colombiano, El Tiempo, Razón Pública), pero SIN corrupción judicialmente comprobada: es principalmente un caso de irregularidad financiera/regulatoria y conflicto de interés bajo investigación, no un delito con condena o sanción en firme.", "mecanica_simple": "Un exministro diseñó un mecanismo de deuda para que 117 municipios pagaran obras de agua a crédito, con intereses altos y sin opción de pagar antes. Años después, su propia empresa privada asesoró el mismo esquema que él había diseñado como funcionario.", "delito_simple": "Sin delito confirmado — investigación penal abierta desde 2018, sin condena ni resultado conocido."}, {"no": 36, "nombre": "Ocad-Paz", "caso_completo": "Ocad-Paz (2021-2024)", "sector": "Planeación (DNP / Regalías)", "tipo_corrupcion": "Política / Administrativa", "delito": "Concusión y cohecho (coimas de entre 5% y 12% del valor de los proyectos exigidas por funcionarios del DNP y la Contraloría, según investigación periodística de Blu Radio e Infobae, 2022); interés indebido en la celebración de contratos. Sin condena penal en firme reportada hasta la fecha de las fuentes consultadas — el caso permanece en fase de investigación.", "magnitud_cop_millones": 500000, "nota_magnitud": "Coimas 5-12%; 24 disciplinarios, 37 fiscales, sin condena penal", "condenados_capturados": 0, "pena_maxima_anios": 0, "blindaje_probatorio": 2, "anio_hecho": 2022, "anios_impunidad": 4, "alcance_poblacional": 3, "alcance_label": "Regional", "verificacion_texto": "MEDIA — Caso real, con múltiples procesos disciplinarios y fiscales activos y confirmados por la Contraloría y la Procuraduría, y una red de coimas documentada por periodismo investigativo (Blu Radio, Infobae), pero aún sin condena penal en firme. Se incluye con esta advertencia explícita.", "mecanica_simple": "Para que un proyecto financiado con regalías fuera aprobado, funcionarios habrían pedido comisiones de hasta el 12% del contrato, además de exigir el respaldo de un congresista.", "delito_simple": "Presunta concusión y cohecho — en investigación (Fiscalía, Contraloría, Procuraduría), sin condena penal."}, {"no": 37, "nombre": "Túnel de la Línea", "caso_completo": "Invías — Túnel de la Línea, Fase I (2008-2020)", "sector": "Infraestructura (Invías)", "tipo_corrupcion": "Administrativa / Judicial", "delito": "⚠️ SIN CONDENA CONFIRMADA POR CORRUPCIÓN. La obra estuvo vinculada tangencialmente al 'cartel de la contratación' (que sí produjo condenas a alcaldes y empresarios en otros contratos), y el contratista Carlos Alberto Solarte enfrentó imputación de la Fiscalía por otro contrato (Tunjuelo-Canoas, con Odebrecht) — no específicamente por el Túnel de la Línea. Fuentes especializadas (Sociedad Colombiana de Ingenieros, La República) citan opiniones de expertos según las cuales los sobrecostos se deben principalmente a 'dificultades de ingeniería y contractuales' y no tanto a corrupción, y señalan expresamente que 'la justicia no ha esclarecido lo que pasó'.", "magnitud_cop_millones": 1500000, "nota_magnitud": "Sobrecostos confirmados; sin corrupción judicializada", "condenados_capturados": 0, "pena_maxima_anios": 0, "blindaje_probatorio": 1, "anio_hecho": 2016, "anios_impunidad": 10, "alcance_poblacional": 3, "alcance_label": "Regional", "verificacion_texto": "MEDIA-BAJA — Sobrecostos confirmados por la Contraloría, pero corrupción NO comprobada judicialmente para esta obra específica; se incluye con advertencia explícita de que la evidencia apunta más a fallas técnicas y contractuales que a un delito de corrupción.", "mecanica_simple": "La obra más importante del centro del país se demoró más de una década y costó 5 veces más de lo presupuestado.", "delito_simple": "Sin delito confirmado — expertos atribuyen los sobrecostos a fallas técnicas y geológicas, no a corrupción probada."}, {"no": 38, "nombre": "Electricaribe", "caso_completo": "Electricaribe — Subsidios FOES (2011-2016)", "sector": "Servicios Públicos (MinMinas / Superintendencia)", "tipo_corrupcion": "Privada / Administrativa", "delito": "Responsabilidad fiscal en firme por manejo inapropiado y desviación de recursos públicos del Fondo de Energía Social (FOES) hacia un fin distinto al autorizado por la Ley 812 de 2003. La Contraloría trasladó los hallazgos a la Fiscalía y la Procuraduría para investigar posibles delitos y faltas disciplinarias (2017).", "magnitud_cop_millones": 211755, "nota_magnitud": "Fallo fiscal en firme; traslado a Fiscalía/Procuraduría", "condenados_capturados": 0, "pena_maxima_anios": 0, "blindaje_probatorio": 3, "anio_hecho": 2021, "anios_impunidad": 5, "alcance_poblacional": 3, "alcance_label": "Regional", "verificacion_texto": "ALTA (caso reincorporado y verificado con fallo en firme) — Contraloría General de la República, El Heraldo, El Tiempo, El Colombiano, Infobae, El Espectador.", "mecanica_simple": "La empresa usó dinero destinado a bajar la factura de luz de los usuarios más pobres para cubrir sus propias pérdidas, en vez de trasladarles el beneficio.", "delito_simple": "Responsabilidad fiscal confirmada por $211.755 millones (fallo en firme); investigación penal/disciplinaria en curso."}, {"no": 39, "nombre": "Telecom", "caso_completo": "Telecom — Liquidación (1972-2003)", "sector": "Comunicaciones (Telecom)", "tipo_corrupcion": "Administrativa / Sindical", "delito": "⚠️ SIN DELITO CONFIRMADO NI CONDENA. Existen señalamientos éticos de dos tipos, ninguno judicializado con condena: (1) denuncias históricas de corrupción interna de las directivas de la empresa, documentadas desde 1991 por trabajadores y sindicalistas en la publicación 'El Libro Negro de las Telecomunicaciones', con datos y fuentes oficiales; y (2) una demanda del sindicato por presuntas irregularidades en el acta que dio por terminada la liquidación en 2003, calificada por juristas como 'execrable' e 'inconstitucional' en cuanto a la vulneración de derechos pensionales y convencionales.", "magnitud_cop_millones": 5600000, "nota_magnitud": "Señalamientos sindicales sin condena", "condenados_capturados": 0, "pena_maxima_anios": 0, "blindaje_probatorio": 1, "anio_hecho": 2003, "anios_impunidad": 23, "alcance_poblacional": 3, "alcance_label": "Regional", "verificacion_texto": "MEDIA-BAJA — Caso con señalamientos éticos documentados académicamente (Universidad Industrial de Santander) y por organizaciones sindicales/de derechos humanos (CAJAR), y con amplia cobertura mediática histórica (Semana, El Colombiano), pero sin condena penal, fallo fiscal ni sanción disciplinaria en firme por corrupción.", "mecanica_simple": "La empresa estatal de teléfonos colapsó por compromisos pensionales impagables, en medio de denuncias sindicales de corrupción interna que nunca llegaron a juicio.", "delito_simple": "Sin delito confirmado — solo señalamientos sindicales documentados, sin condena."}, {"no": 40, "nombre": "Termocandelaria", "caso_completo": "Termocandelaria (2014-2016)", "sector": "Energético (Superintendencia / Privados)", "tipo_corrupcion": "Administrativa / Privada", "delito": "⚠️ SIN DELITO CONFIRMADO. Es una infracción administrativa-regulatoria (incumplimiento de las obligaciones de generación de energía firme pese a haber cobrado el cargo por confiabilidad), sancionada mediante intervención administrativa (toma de posesión), no mediante proceso penal. Sin condena, fallo fiscal ni sanción disciplinaria en firme identificados en las fuentes consultadas.", "magnitud_cop_millones": 25, "nota_magnitud": "Infracción regulatoria, USD 25M cuestionados", "condenados_capturados": 0, "pena_maxima_anios": 0, "blindaje_probatorio": 1, "anio_hecho": 2015, "anios_impunidad": 11, "alcance_poblacional": 3, "alcance_label": "Regional", "verificacion_texto": "MEDIA-BAJA — Caso real con intervención estatal confirmada (Superservicios, El Espectador, El Heraldo) y señalamiento público de figuras políticas de alto perfil (Álvaro Uribe), pero sin corrupción judicialmente comprobada; es principalmente una infracción regulatoria sancionada administrativamente.", "mecanica_simple": "La empresa cobró por estar lista para generar energía en una emergencia nacional, pero cuando el sistema la necesitó, dijo que no podía cumplir.", "delito_simple": "Sin delito penal — sanción administrativa por incumplimiento regulatorio (intervención de la Superservicios)."}, {"no": 41, "nombre": "Invasión de Baldíos", "caso_completo": "Invasión de Baldíos — Incora / ANT (1960s-actualidad)", "sector": "Agrario (Incora - hoy ANT)", "tipo_corrupcion": "Política / Administrativa", "delito": "⚠️ NO ES UN CASO JUDICIAL ÚNICO, sino un fenómeno estructural. Cuando se han identificado casos individuales, la figura jurídica típica es la simulación de ocupación previa, el fraccionamiento ficticio de Unidades Agrícolas Familiares (UAF) y la falsedad en documentos para acreditar la explotación económica del predio, en procesos de extinción de dominio y clarificación de la propiedad adelantados por la ANT.", "magnitud_cop_millones": 0, "nota_magnitud": "Fenómeno estructural, sin cifra única", "condenados_capturados": 0, "pena_maxima_anios": 0, "blindaje_probatorio": 2, "anio_hecho": 1970, "anios_impunidad": 56, "alcance_poblacional": 2, "alcance_label": "Departamental", "verificacion_texto": "MEDIA — Fenómeno estructural con amplia documentación académica, periodística y judicial (ANT, JEP, Universidad de los Andes, prensa nacional durante décadas), ampliamente reconocido como éticamente cuestionable y objeto de política pública de restitución de tierras, aunque no corresponde a un caso judicial único con fecha, actores y sentencia específicos.", "mecanica_simple": "Tierras que por ley debían repartirse entre campesinos sin tierra terminaron acumuladas por grandes propietarios, usando testaferros y trámites falsificados.", "delito_simple": "No es un caso único — es un patrón repetido de fraude en la adjudicación de tierras, documentado por la ANT y la JEP."}, {"no": 42, "nombre": "Aremca", "caso_completo": "Caso Aremca — Regalías (2020-2026)", "sector": "Planeación (Sistema General de Regalías / Municipios del Caribe)", "tipo_corrupcion": "Política / Administrativa", "delito": "Concierto para delinquir agravado, contrato sin cumplimiento de requisitos legales, peculado por apropiación, prevaricato por acción, prevaricato por omisión, falsedad ideológica en documento público y enriquecimiento ilícito de particulares.", "magnitud_cop_millones": 496000, "nota_magnitud": "9 en prisión, penas aún no definidas en juicio", "condenados_capturados": 9, "pena_maxima_anios": 0, "blindaje_probatorio": 3, "anio_hecho": 2020, "anios_impunidad": 6, "alcance_poblacional": 3, "alcance_label": "Regional", "verificacion_texto": "ALTA — Fiscalía General de la Nación, El Tiempo, Semana, Infobae, El Espectador (caso activo con condenas en trámite, 2025-2026).", "mecanica_simple": "Una asociación de municipios del Caribe, creada para coordinar proyectos, se usó como fachada para repartir más de 100 contratos de regalías a dedo, muchos pagados sin ejecutarse.", "delito_simple": "Peculado, concierto para delinquir y prevaricato — 9 personas ya en prisión."}, {"no": 43, "nombre": "Cupos Indicativos UNGRD-Invías", "caso_completo": "Escándalo UNGRD-Invías — 'Cupos Indicativos' / Mermelada Legislativa (2023-2026)", "sector": "Interior y Hacienda (Presidencia / Congreso / UNGRD / Invías)", "tipo_corrupcion": "Política", "delito": "Concierto para delinquir agravado, interés indebido en la celebración de contratos y cohecho por dar u ofrecer.", "magnitud_cop_millones": 612237, "nota_magnitud": "2 exministros en juicio ante Corte Suprema", "condenados_capturados": 2, "pena_maxima_anios": 0, "blindaje_probatorio": 3, "anio_hecho": 2023, "anios_impunidad": 3, "alcance_poblacional": 5, "alcance_label": "Estructural/Nación", "verificacion_texto": "ALTA — El Espectador, Semana, La FM, Vanguardia, Cambio Colombia (caso activo, en juicio ante la Corte Suprema a la fecha de esta verificación, sept. 2026). NOTA: este es un caso distinto — aunque relacionado — al de 'UNGRD-Carrotanques' (caso 6 de esta matriz), que investiga el desvío específico en la compra de carrotanques para La Guajira; este caso 43 se refiere al direccionamiento sistemático de contratos de Invías y UNGRD a cambio de votos legislativos.", "mecanica_simple": "Dos exministros habrían ofrecido contratos de obras públicas a congresistas a cambio de que votaran las reformas del Gobierno.", "delito_simple": "Concierto para delinquir y cohecho — dos exministros capturados y en juicio."}];
+
+const colorByBlindaje = {1:"#8f1d17", 2:"#a3792f", 3:"#48522f"};
+const blindajeLabel = {1:"Bajo", 2:"Medio", 3:"Alto"};
+
+// legend
+const legend = document.getElementById('legend');
+legend.innerHTML = `
+  <span><span class="dot" style="background:${colorByBlindaje[3]}"></span>Blindaje probatorio alto</span>
+  <span><span class="dot" style="background:${colorByBlindaje[2]}"></span>Blindaje medio</span>
+  <span><span class="dot" style="background:${colorByBlindaje[1]}"></span>Blindaje bajo</span>
+`;
+
+const W = 1400, H = 460;
+const marginL = 60, marginR = 40, marginT = 20, marginB = 46;
+const plotW = W - marginL - marginR;
+const plotH = H - marginT - marginB;
+
+const yearMin = 1905, yearMax = 2027;
+function xForYear(y){ return marginL + (y - yearMin) / (yearMax - yearMin) * plotW; }
+
+const mags = DECK.map(d => Math.max(d.magnitud_cop_millones, 1));
+const logMin = Math.log10(1);
+const logMax = Math.log10(Math.max(...mags));
+function yForMag(m){
+  const v = Math.max(m, 1);
+  const t = (Math.log10(v) - logMin) / (logMax - logMin);
+  return marginT + plotH - t * plotH;
+}
+function rForMag(m){
+  const v = Math.max(m, 1);
+  const t = (Math.log10(v) - logMin) / (logMax - logMin);
+  return 4 + t * 14;
+}
+
+const svg = document.getElementById('chart');
+svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+svg.setAttribute('width', '100%');
+svg.setAttribute('height', H);
+
+let svgHTML = '';
+
+// decade gridlines
+for(let yr = 1910; yr <= 2020; yr += 10){
+  const x = xForYear(yr);
+  svgHTML += `<line class="yearline" x1="${x}" y1="${marginT}" x2="${x}" y2="${marginT+plotH}"></line>`;
+  svgHTML += `<text class="axis-label" x="${x}" y="${H-14}" text-anchor="middle">${yr}</text>`;
+}
+svgHTML += `<line class="gridline" x1="${marginL}" y1="${marginT+plotH}" x2="${marginL+plotW}" y2="${marginT+plotH}"></line>`;
+svgHTML += `<text class="axis-label" x="${marginL-46}" y="${marginT+10}" text-anchor="start">Mayor magnitud</text>`;
+svgHTML += `<text class="axis-label" x="${marginL-46}" y="${marginT+plotH}" text-anchor="start">Menor / N-D</text>`;
+
+DECK.forEach((d, i) => {
+  const x = xForYear(d.anio_hecho);
+  const y = yForMag(d.magnitud_cop_millones);
+  const r = rForMag(d.magnitud_cop_millones);
+  const color = colorByBlindaje[d.blindaje_probatorio] || "#999";
+  svgHTML += `<circle class="node" data-idx="${i}" cx="${x}" cy="${y}" r="${r}" fill="${color}" fill-opacity="0.78"></circle>`;
+});
+
+svg.innerHTML = svgHTML;
+
+function fmtMagnitud(d){
+  const m = d.magnitud_cop_millones;
+  if(m <= 0) return "No cuantificado";
+  if(m >= 1000000) return "$" + (m/1000000).toFixed(1) + " billones";
+  if(m >= 1000) return "$" + Math.round(m).toLocaleString('es-CO') + " millones";
+  return "$" + Math.round(m).toLocaleString('es-CO') + " millones";
+}
+
+function renderPanel(d){
+  const panel = document.getElementById('panel');
+  panel.innerHTML = `
+    <div class="card">
+      <div class="card-no">NAIPE No. ${String(d.no).padStart(2,'0')} / 43</div>
+      <div class="card-name">${d.nombre}</div>
+      <div class="card-year">${d.anio_hecho} &middot; ${d.sector}</div>
+      ${d.mecanica_simple ? '<div style="font-size:10px;color:var(--olive);font-weight:700;">&#9998; VERSIÓN NAIPE DISPONIBLE</div>' : ''}
+      <div class="stat-row"><span class="label">① Magnitud declarada</span><span class="val">${fmtMagnitud(d)}</span></div>
+      <div class="stat-row"><span class="label">② Condenados/Capturados</span><span class="val">${d.condenados_capturados}</span></div>
+      <div class="stat-row"><span class="label">③ Pena máxima</span><span class="val">${d.pena_maxima_anios > 0 ? d.pena_maxima_anios + ' años' : '&mdash;'}</span></div>
+      <div class="stat-row"><span class="label">④ Blindaje probatorio</span><span class="val blindaje-${d.blindaje_probatorio}">${blindajeLabel[d.blindaje_probatorio]}</span></div>
+      <div class="stat-row"><span class="label">⑤ Años de impunidad</span><span class="val">${d.anios_impunidad}</span></div>
+      <div class="stat-row"><span class="label">⑥ Alcance poblacional</span><span class="val">${d.alcance_label}</span></div>
+    </div>
+    <div class="detail">
+      <div class="kicker">${d.tipo_corrupcion}</div>
+      <h3>${d.caso_completo}</h3>
+      ${d.mecanica_simple ? `
+      <p><b>En corto:</b> ${d.mecanica_simple}</p>
+      <p><b>Delito (versión naipe):</b><br><span class="delito">${d.delito_simple}</span></p>
+      <details style="margin:10px 0;"><summary style="cursor:pointer;color:var(--brass);font-size:12px;">Ver tipificación jurídica completa</summary>
+        <p style="margin-top:8px;"><span class="delito">${d.delito}</span></p>
+      </details>
+      ` : `
+      <p><b>Delito / tipificación:</b><br><span class="delito">${d.delito.length > 220 ? d.delito.slice(0,220) + '…' : d.delito}</span></p>
+      `}
+      <p><b>Nota sobre la magnitud:</b> ${d.nota_magnitud}</p>
+      <p style="color:var(--ink-soft); font-size:12px;">${d.verificacion_texto}</p>
+    </div>
+  `;
+}
+
+document.querySelectorAll('.node').forEach(node => {
+  node.addEventListener('click', () => {
+    document.querySelectorAll('.node').forEach(n => n.classList.remove('selected'));
+    node.classList.add('selected');
+    const idx = parseInt(node.getAttribute('data-idx'));
+    renderPanel(DECK[idx]);
+  });
+});
+</script>
+</body>
+</html>
